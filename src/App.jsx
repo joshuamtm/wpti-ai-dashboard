@@ -1,0 +1,77 @@
+import { useState } from 'react'
+import ExecutiveDashboard from './components/ExecutiveDashboard'
+import LearnerDashboard from './components/LearnerDashboard'
+import { Users, Briefcase } from 'lucide-react'
+
+function App() {
+  const [activeView, setActiveView] = useState('executive')
+
+  return (
+    <div className="min-h-screen bg-beige">
+      {/* Navigation Toggle */}
+      <div className="bg-navy text-white shadow-lg sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center space-x-4">
+              <h1 className="text-xl font-bold text-white">WPTI AI Training Dashboard</h1>
+              <span className="text-turquoise text-sm font-medium">Session 1</span>
+            </div>
+
+            <div className="flex space-x-2 bg-navy/50 rounded-lg p-1">
+              <button
+                onClick={() => setActiveView('executive')}
+                className={`flex items-center space-x-2 px-4 py-2 rounded-md transition-all ${
+                  activeView === 'executive'
+                    ? 'bg-turquoise text-white'
+                    : 'text-gray-300 hover:text-white'
+                }`}
+              >
+                <Briefcase size={18} />
+                <span>Executive View</span>
+              </button>
+              <button
+                onClick={() => setActiveView('learner')}
+                className={`flex items-center space-x-2 px-4 py-2 rounded-md transition-all ${
+                  activeView === 'learner'
+                    ? 'bg-turquoise text-white'
+                    : 'text-gray-300 hover:text-white'
+                }`}
+              >
+                <Users size={18} />
+                <span>Learner View</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Dashboard Content */}
+      <main>
+        {activeView === 'executive' ? <ExecutiveDashboard /> : <LearnerDashboard />}
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-navy text-white mt-16 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-sm">
+            Created by{' '}
+            <a
+              href="https://mtm.now"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-turquoise hover:underline font-semibold"
+            >
+              Meet the Moment
+            </a>{' '}
+            | Resilience for Nonprofits
+          </p>
+          <p className="text-xs text-gray-400 mt-2">
+            © 2025 Meet the Moment. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  )
+}
+
+export default App

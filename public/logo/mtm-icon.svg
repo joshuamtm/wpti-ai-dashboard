@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- MTM Icon: Hand with Heart Shield -->
+  <defs>
+    <linearGradient id="mtmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2B5F8E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4AB5C4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Heart Shield -->
+  <path d="M50 20 L50 80 L30 60 L30 35 C30 28 35 23 42 23 C46 23 49 25 50 28 C51 25 54 23 58 23 C65 23 70 28 70 35 L70 60 Z"
+        fill="url(#mtmGradient)"
+        stroke="#2B5F8E"
+        stroke-width="2"/>
+
+  <!-- Accent Circle (the "O") -->
+  <circle cx="50" cy="45" r="12" fill="#4AB5C4" opacity="0.8"/>
+</svg>
