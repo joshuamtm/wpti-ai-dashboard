@@ -28,12 +28,6 @@ const LearnerDashboard = () => {
         'Personal accounts expose sensitive data',
         'Temperature settings control AI creativity'
       ],
-      resources: [
-        { title: 'Session 1 Slides', type: 'PDF', icon: 'Download' },
-        { title: 'Otter.ai Transcript', type: 'Text', icon: 'Download' },
-        { title: 'ChatGPT Getting Started', type: 'Link', icon: 'ExternalLink' },
-        { title: 'Data Privacy Guidelines', type: 'PDF', icon: 'Download' }
-      ],
       actionItems: [
         'Switch from personal to enterprise AI account',
         'Join the online community for peer learning',
@@ -56,10 +50,6 @@ const LearnerDashboard = () => {
       keyTakeaways: [
         'Coming after Session 2...'
       ],
-      resources: [
-        { title: 'Prompt Library Template', type: 'Template', icon: 'Download' },
-        { title: 'Iteration Framework', type: 'Guide', icon: 'Download' }
-      ],
       actionItems: [
         'Build your personal prompt library',
         'Practice iteration with 3 real tasks',
@@ -81,10 +71,6 @@ const LearnerDashboard = () => {
       keyTakeaways: [
         'Coming after Session 3...'
       ],
-      resources: [
-        { title: 'AI Ethics Checklist', type: 'Checklist', icon: 'Download' },
-        { title: 'Policy Template', type: 'Template', icon: 'Download' }
-      ],
       actionItems: [
         'Review your organization\'s AI policy',
         'Create a "safe to use AI" decision tree',
@@ -105,10 +91,6 @@ const LearnerDashboard = () => {
       ],
       keyTakeaways: [
         'Coming after Session 4...'
-      ],
-      resources: [
-        { title: 'Implementation Roadmap', type: 'Template', icon: 'Download' },
-        { title: 'Training Curriculum', type: 'Curriculum', icon: 'Download' }
       ],
       actionItems: [
         'Draft your AI adoption plan',
@@ -149,20 +131,17 @@ const LearnerDashboard = () => {
     {
       author: 'Carlton J.',
       role: 'Eagle Academy Foundation',
-      insight: 'I use AI to create presentations with Gamma and mind maps with NotebookLM. Sent 13 emails in an hour using AI assistance!',
-      likes: 15
+      insight: 'I use AI to create presentations with Gamma and mind maps with NotebookLM. Sent 13 emails in an hour using AI assistance!'
     },
     {
       author: 'Ariana B.',
       role: 'Co-Op Careers',
-      insight: 'Teaching our college grads how NOT to over-use AI. They need to network, not just auto-apply to 100 jobs.',
-      likes: 12
+      insight: 'Teaching our college grads how NOT to over-use AI. They need to network, not just auto-apply to 100 jobs.'
     },
     {
       author: 'Workshop Participant',
       role: 'Workforce Professional',
-      insight: 'I use AI to translate job descriptions for English language learners. Game changer for accessibility!',
-      likes: 10
+      insight: 'I use AI to translate job descriptions for English language learners. Game changer for accessibility!'
     }
   ]
 
@@ -343,32 +322,6 @@ const LearnerDashboard = () => {
             </div>
           </div>
 
-          {/* Resources */}
-          <div className="mt-6">
-            <h4 className="font-bold text-navy mb-3 flex items-center">
-              <Download className="mr-2 text-navy" size={20} />
-              Session Resources
-            </h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {selectedSession.resources.map((resource, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  className="flex items-center justify-between p-3 bg-gray-50 rounded hover:bg-gray-100 transition-all"
-                >
-                  <div className="flex items-center">
-                    {resource.icon === 'Download' ? (
-                      <Download size={16} className="mr-2 text-turquoise" />
-                    ) : (
-                      <ExternalLink size={16} className="mr-2 text-turquoise" />
-                    )}
-                    <span className="text-sm font-medium">{resource.title}</span>
-                  </div>
-                  <span className="text-xs text-gray-500">{resource.type}</span>
-                </a>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 
@@ -381,18 +334,11 @@ const LearnerDashboard = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {communityInsights.map((insight, index) => (
             <div key={index} className="card hover:shadow-lg transition-all">
-              <div className="flex items-start justify-between mb-3">
-                <div>
-                  <h4 className="font-bold text-sm">{insight.author}</h4>
-                  <p className="text-xs text-gray-600">{insight.role}</p>
-                </div>
-                <Heart className="text-red-400" size={20} />
+              <div className="mb-3">
+                <h4 className="font-bold text-sm">{insight.author}</h4>
+                <p className="text-xs text-gray-600">{insight.role}</p>
               </div>
-              <p className="text-sm mb-3 italic">"{insight.insight}"</p>
-              <div className="flex items-center text-xs text-gray-500">
-                <Heart size={14} className="mr-1" />
-                {insight.likes} people found this helpful
-              </div>
+              <p className="text-sm italic">"{insight.insight}"</p>
             </div>
           ))}
         </div>
