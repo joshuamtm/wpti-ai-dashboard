@@ -60,9 +60,8 @@ export const sentimentOverview = [
 
 export const themeDistribution = [
   { theme: 'Participant Concerns', count: 11 },
-  { theme: 'Employer Questions', count: 12 },
-  { theme: 'Organizational Issues', count: 12 },
-  { theme: 'Policy & Governance', count: 9 },
+  { theme: 'Employer Questions', count: 13 },
+  { theme: 'Organizational Issues', count: 20 },
 ];
 
 export const kirkpatrickScores = [
@@ -148,11 +147,11 @@ export const keyFindings = [
   },
   {
     id: 6,
-    title: 'Organizational Gap',
-    description: 'Most organizations "said very little to nothing about AI"',
+    title: 'Organizational Concerns Dominate',
+    description: '20 organizational issues captured - nearly half of all concerns',
     impact: 'high',
     icon: 'Building2',
-    metric: 'Critical',
+    metric: '45%',
     category: 'governance'
   },
 ];
@@ -216,6 +215,11 @@ export const qualitativeThemes = {
     'How does this affect future jobs?',
     'Using AI without knowing it\'s "cheating"',
     'Don\'t know how to use information correctly',
+    'What is the level of AI knowledge I need to have?',
+    'AI screening resumes and applications',
+    'Using AI to help writing casenotes',
+    'How can AI help with skills testing?',
+    'Making communication smoother with AI',
   ],
   employers: [
     'How do we maximize using AI?',
@@ -224,6 +228,13 @@ export const qualitativeThemes = {
     'How other cities are using AI for workforce development',
     'How to train workers for entry-level opportunities?',
     'What training can you provide?',
+    'What are these tools?',
+    'How do we train staff on AI?',
+    'What do our participants know about AI?',
+    'Quick turnover due to lack of competitive pay',
+    'No AI resumes',
+    'Who should be thinking about AI?',
+    'What do our participants know about AI?',
   ],
   organizations: [
     'Organization has said very little about AI',
@@ -232,14 +243,20 @@ export const qualitativeThemes = {
     'Slow IT implementation process',
     'How can we use AI to improve processes?',
     'How to automate processes?',
-  ],
-  policy: [
     'Guidelines for what you put into AI',
     'Implementing AI policies',
     'Data privacy and participant protection',
     'Deep fakes and misinformation',
     'Loss of autonomy and creativity',
     'Right to privacy',
+    'Would clients benefit?',
+    'How do we assign AI to staff?',
+    'Create AI lessons for computer training class',
+    'How can we use AI for independent job search?',
+    'Approved tools: ChatGPT, Gemini, NotebookLM, Co-Pilot',
+    'Organizations have employees who use it in silo',
+    'No direction from administration',
+    'Creative policies needed',
   ],
 };
 

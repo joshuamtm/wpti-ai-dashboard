@@ -257,7 +257,7 @@ const ExecutiveDashboard = () => {
             </BarChart>
           </ResponsiveContainer>
           <p className="mt-4 text-sm text-gray-600">
-            44 distinct concerns captured across 4 stakeholder groups through sticky note exercise
+            44 distinct concerns captured across 3 stakeholder groups through sticky note exercise - Organizational Issues dominated with 20 concerns (45%)
           </p>
         </div>
       </div>
