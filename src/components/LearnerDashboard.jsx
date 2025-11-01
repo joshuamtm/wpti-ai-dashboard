@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {
   BookOpen, CheckCircle, Circle, Award, Target, Lightbulb,
   Users, MessageSquare, Download, ExternalLink, Shield,
-  TrendingUp, Zap, Heart, Brain, Rocket, AlertCircle
+  TrendingUp, Zap, Heart, Brain, Rocket, AlertCircle, Clock
 } from 'lucide-react'
 
 const LearnerDashboard = () => {
@@ -13,7 +13,7 @@ const LearnerDashboard = () => {
       number: 1,
       title: 'AI Basics & Workforce Disruption',
       status: 'completed',
-      date: 'November 1, 2025',
+      date: 'October 31, 2025',
       topics: [
         'What is AI and how does it work?',
         'Probabilistic vs. Deterministic technology',
@@ -39,7 +39,7 @@ const LearnerDashboard = () => {
       number: 2,
       title: 'Prompting 101 & Putting AI to Work',
       status: 'upcoming',
-      date: 'November 8, 2025',
+      date: 'November 7, 2025',
       topics: [
         'Effective prompt engineering techniques',
         'Iteration and refinement strategies',
@@ -60,7 +60,7 @@ const LearnerDashboard = () => {
       number: 3,
       title: 'Risk, Responsibility & Ethics',
       status: 'upcoming',
-      date: 'November 15, 2025',
+      date: 'November 14, 2025',
       topics: [
         'AI bias and fairness considerations',
         'Environmental impact of AI',
@@ -81,7 +81,7 @@ const LearnerDashboard = () => {
       number: 4,
       title: 'Organizational Readiness & Implementation',
       status: 'upcoming',
-      date: 'November 22, 2025',
+      date: 'November 21, 2025',
       topics: [
         'Building AI literacy programs',
         'Training participants effectively',
@@ -175,8 +175,12 @@ const LearnerDashboard = () => {
         <h1 className="text-4xl font-bold text-navy mb-2">
           Your AI Learning Journey
         </h1>
-        <p className="text-gray-600 text-lg">
+        <p className="text-gray-600 text-lg mb-2">
           WPTI AI Training Workshop | 4-Session Series | Track Your Progress
+        </p>
+        <p className="text-turquoise font-semibold flex items-center">
+          <Clock className="mr-2" size={18} />
+          Office Hours: Wednesdays, 4-5 PM Eastern
         </p>
       </div>
 

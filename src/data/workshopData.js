@@ -3,10 +3,11 @@
 
 export const workshopMetrics = {
   totalParticipants: 30,
-  sessionDate: 'November 1, 2025',
+  sessionDate: 'October 31, 2025',
   location: 'New York City',
   sessionNumber: 1,
   sessionTitle: 'AI Basics & Workforce Disruption',
+  officeHours: 'Wednesdays, 4-5 PM Eastern',
 };
 
 export const aiUsageFrequency = [
