@@ -340,6 +340,11 @@ const ResearchContext = () => {
                 <Legend />
               </RadarChart>
             </ResponsiveContainer>
+            <div className="mt-4 pt-3 border-t border-gray-200">
+              <p className="text-xs text-gray-500 italic">
+                * Assessed from Session 1 data vs. industry benchmarks
+              </p>
+            </div>
           </div>
 
           <div className="card bg-gradient-to-br from-purple-50 to-pink-50">
