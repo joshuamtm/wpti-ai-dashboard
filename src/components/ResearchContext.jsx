@@ -128,7 +128,7 @@ const ResearchContext = () => {
               </h3>
               <p className="text-gray-700 mb-4">
                 Two AI voices from NotebookLM debate the MIT and Wharton reports, exploring implications
-                for small and mid-sized nonprofits. A thoughtful 30-minute conversation about navigating
+                for small and mid-sized nonprofits. A thoughtful conversation about navigating
                 the 95% failure rate.
               </p>
               <audio
@@ -142,7 +142,7 @@ const ResearchContext = () => {
               <div className="mt-3 flex items-center space-x-4 text-sm text-gray-600">
                 <span>📊 Based on both research reports</span>
                 <span>🎙️ Generated with NotebookLM</span>
-                <span>⏱️ ~30 minutes</span>
+                <span>⏱️ ~16 minutes</span>
               </div>
             </div>
           </div>
