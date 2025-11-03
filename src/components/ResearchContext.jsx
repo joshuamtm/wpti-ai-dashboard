@@ -60,7 +60,7 @@ const ResearchContext = () => {
       authors: 'MIT Project NANDA',
       sample: '300+ AI implementations, 52 organizations',
       keyFinding: '95% failure rate using P&L impact measures',
-      link: '#',
+      link: 'https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf',
       icon: Target,
       color: 'bg-purple-100 text-purple-800'
     },
