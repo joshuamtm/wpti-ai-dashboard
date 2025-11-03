@@ -66,22 +66,55 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-navy text-white mt-16 py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm">
-            Created by{' '}
-            <a
-              href="https://mtm.now"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-turquoise hover:underline font-semibold"
-            >
-              Meet the Moment
-            </a>{' '}
-            | Resilience for Nonprofits
-          </p>
-          <p className="text-xs text-gray-400 mt-2">
-            © 2025 Meet the Moment. All rights reserved.
-          </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* How This Dashboard Was Made */}
+          <div className="max-w-3xl mx-auto mb-6 pb-6 border-b border-gray-600">
+            <h3 className="text-sm font-semibold text-turquoise mb-3 text-center">How This Dashboard Was Made</h3>
+            <div className="text-xs text-gray-300 space-y-2">
+              <p>
+                <strong>Built with AI-assisted development:</strong> This dashboard was created using{' '}
+                <a
+                  href="https://claude.com/claude-code"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-turquoise hover:underline"
+                >
+                  Claude Code
+                </a>
+                , demonstrating how AI can accelerate nonprofit technology development.
+              </p>
+              <p>
+                <strong>Tools used:</strong> React 18, Vite, Tailwind CSS, Recharts for interactive visualizations
+              </p>
+              <p>
+                <strong>Data sources:</strong> Session 1 polling data (34 participants), transcript analysis,
+                Wharton AI Adoption Report (800 enterprises), MIT State of AI in Business Report (300+ implementations)
+              </p>
+              <p>
+                <strong>Updates:</strong> This dashboard is updated after each training session with new insights,
+                progress metrics, and learner feedback.
+              </p>
+            </div>
+          </div>
+
+          {/* Attribution */}
+          <div className="text-center">
+            <p className="text-sm">
+              Created by{' '}
+              <a
+                href="https://mtm.now"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-turquoise hover:underline font-semibold"
+              >
+                Meet the Moment
+              </a>{' '}
+              | Resilience for Nonprofits
+            </p>
+            <p className="text-xs text-gray-400 mt-2">
+              © 2025 Meet the Moment. All rights reserved.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
