@@ -51,7 +51,7 @@ const ResearchContext = () => {
       authors: 'Wharton Human-AI Research & GBK Collective',
       sample: '800 enterprise decision-makers',
       keyFinding: '75% report positive ROI using productivity measures',
-      link: '#',
+      link: 'https://ai.wharton.upenn.edu/wp-content/uploads/2025/10/2025-Wharton-GBK-AI-Adoption-Report_Full-Report.pdf',
       icon: BookOpen,
       color: 'bg-blue-100 text-blue-800'
     },
