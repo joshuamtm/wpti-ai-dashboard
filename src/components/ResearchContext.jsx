@@ -6,7 +6,7 @@ import {
 import {
   BookOpen, TrendingUp, AlertTriangle, Target, CheckCircle, XCircle,
   Users, Building2, Zap, Shield, Award, ExternalLink, Download,
-  ArrowRight, Lightbulb, GitBranch, Heart, Brain
+  ArrowRight, Lightbulb, GitBranch, Heart, Brain, Headphones
 } from 'lucide-react'
 
 const ResearchContext = () => {
@@ -113,6 +113,40 @@ const ResearchContext = () => {
         <p className="text-gray-600">
           Two groundbreaking studies reveal why most AI projects fail—and how WPTI's approach succeeds
         </p>
+      </div>
+
+      {/* AI-Generated Debate Audio */}
+      <div className="mb-12">
+        <div className="bg-gradient-to-r from-turquoise/10 to-purple/10 rounded-xl p-6 border-2 border-turquoise/30">
+          <div className="flex items-start space-x-4">
+            <div className="bg-turquoise text-white rounded-full p-3 flex-shrink-0">
+              <Headphones size={28} />
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-navy mb-2">
+                Listen: AI-Generated Deep Dive Discussion
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Two AI voices from NotebookLM debate the MIT and Wharton reports, exploring implications
+                for small and mid-sized nonprofits. A thoughtful 30-minute conversation about navigating
+                the 95% failure rate.
+              </p>
+              <audio
+                controls
+                className="w-full"
+                preload="metadata"
+              >
+                <source src="/ai-paradox-debate.m4a" type="audio/mp4" />
+                Your browser does not support the audio element.
+              </audio>
+              <div className="mt-3 flex items-center space-x-4 text-sm text-gray-600">
+                <span>📊 Based on both research reports</span>
+                <span>🎙️ Generated with NotebookLM</span>
+                <span>⏱️ ~30 minutes</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* The Paradox - Hero Section */}
