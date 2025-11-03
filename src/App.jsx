@@ -5,7 +5,7 @@ import ResearchContext from './components/ResearchContext'
 import { Users, Briefcase, Brain } from 'lucide-react'
 
 function App() {
-  const [activeView, setActiveView] = useState('executive')
+  const [activeView, setActiveView] = useState('learner')
 
   return (
     <div className="min-h-screen bg-beige">
