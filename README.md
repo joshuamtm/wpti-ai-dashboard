@@ -8,19 +8,23 @@
 
 ## 🎯 Overview
 
-This interactive dashboard application provides two distinct views:
+This interactive dashboard application provides three distinct views:
 
 1. **Executive Dashboard** - Comprehensive data analysis, visualizations, Kirkpatrick training evaluation, and actionable recommendations for organizational leaders
 2. **Learner Dashboard** - Progress tracking, session materials, community insights, and resources for course participants
+3. **Research Context** - Analysis of 800 enterprises and 300+ AI implementations from Wharton and MIT studies, explaining why most AI projects fail and how WPTI's approach succeeds
 
 ### Key Features
 
-- 📊 **7 Interactive Data Visualizations** using Recharts
+- 📊 **10+ Interactive Data Visualizations** using Recharts
 - 📈 **Kirkpatrick Level 1-4 Evaluation** with circular progress indicators
 - 🎓 **4-Session Learning Journey** tracker with progress metrics
 - 👥 **Community Insights** from workshop participants
 - 🔒 **Security Risk Analysis** and recommendations
 - 📚 **Comprehensive Resource Library** with downloadable materials
+- 🧠 **Research Context Page** - Wharton vs. MIT analysis with institutional fluency framework
+- 📉 **Build vs. Buy Analysis** - Why strategic partnerships succeed 2x more
+- 🎯 **GenAI Divide Visualization** - Where your organization stands
 - 🎨 **MTM Brand Styling** with navy, turquoise, and warm yellow palette
 - 📱 **Fully Responsive** design for all devices
 
@@ -63,10 +67,11 @@ wpti-ai-dashboard/
 ├── src/
 │   ├── components/
 │   │   ├── ExecutiveDashboard.jsx   # Executive insights & analysis
-│   │   └── LearnerDashboard.jsx     # Learner progress & resources
+│   │   ├── LearnerDashboard.jsx     # Learner progress & resources
+│   │   └── ResearchContext.jsx      # Wharton/MIT research analysis
 │   ├── data/
 │   │   └── workshopData.js          # All workshop data & metrics
-│   ├── App.jsx                      # Main app with view switching
+│   ├── App.jsx                      # Main app with 3-view switching
 │   ├── index.css                    # Tailwind styles & custom CSS
 │   └── main.jsx                     # React entry point
 ├── index.html
@@ -105,6 +110,16 @@ This project uses Meet the Moment's brand palette:
 - **Learning Objectives** - 4 core competencies with progress bars
 - **Community Insights** - Peer learning and shared experiences
 - **Resource Library** - Downloadable guides, templates, and tools
+
+### Research Context Dashboard
+
+- **The AI Paradox** - Wharton (75% success) vs. MIT (95% failure) explained
+- **WPTI Position** - 87% adoption vs. 22.7% organizational accounts
+- **Build vs. Buy** - Strategic partnerships succeed 2x more (66% vs. 33%)
+- **Institutional Fluency Framework** - Context, Problem-Solving, Taste
+- **ROI Comparison** - WPTI's 1,756% vs. industry average 300%
+- **Research Sources** - Links to full Wharton and MIT reports
+- **Actionable Insights** - Specific recommendations for executives and learners
 
 ## 🌐 Deployment to Netlify
 

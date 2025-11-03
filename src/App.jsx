@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import ExecutiveDashboard from './components/ExecutiveDashboard'
 import LearnerDashboard from './components/LearnerDashboard'
-import { Users, Briefcase } from 'lucide-react'
+import ResearchContext from './components/ResearchContext'
+import { Users, Briefcase, Brain } from 'lucide-react'
 
 function App() {
   const [activeView, setActiveView] = useState('executive')
@@ -40,6 +41,17 @@ function App() {
                 <Users size={18} />
                 <span>Learner View</span>
               </button>
+              <button
+                onClick={() => setActiveView('research')}
+                className={`flex items-center space-x-2 px-4 py-2 rounded-md transition-all ${
+                  activeView === 'research'
+                    ? 'bg-turquoise text-white'
+                    : 'text-gray-300 hover:text-white'
+                }`}
+              >
+                <Brain size={18} />
+                <span>Research</span>
+              </button>
             </div>
           </div>
         </div>
@@ -47,7 +59,9 @@ function App() {
 
       {/* Dashboard Content */}
       <main>
-        {activeView === 'executive' ? <ExecutiveDashboard /> : <LearnerDashboard />}
+        {activeView === 'executive' && <ExecutiveDashboard />}
+        {activeView === 'learner' && <LearnerDashboard />}
+        {activeView === 'research' && <ResearchContext />}
       </main>
 
       {/* Footer */}
