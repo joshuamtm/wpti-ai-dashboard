@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import {
   BookOpen, CheckCircle, Circle, Award, Target, Lightbulb,
   Users, MessageSquare, Download, ExternalLink, Shield,
-  TrendingUp, Zap, Heart, Brain, Rocket, AlertCircle, Clock
+  TrendingUp, Zap, Heart, Brain, Rocket, AlertCircle, Clock, FileText
 } from 'lucide-react'
 
-const LearnerDashboard = () => {
+const LearnerDashboard = ({ setActiveView }) => {
   const [activeSession, setActiveSession] = useState(1)
 
   const sessions = [
@@ -182,6 +182,24 @@ const LearnerDashboard = () => {
           <Clock className="mr-2" size={18} />
           Office Hours: Wednesdays, 4-5 PM Eastern
         </p>
+      </div>
+
+      {/* Session 1 Synopsis Banner */}
+      <div className="card mb-8 bg-gradient-to-r from-turquoise to-navy text-white hover:shadow-xl transition-all cursor-pointer" onClick={() => setActiveView('synopsis')}>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center">
+            <FileText className="mr-4" size={48} />
+            <div>
+              <h2 className="text-2xl font-bold mb-1">Session 1 Synopsis Now Available</h2>
+              <p className="text-turquoise-100">
+                Read the complete summary of our inaugural session including key takeaways, the CRAFT framework, and standout quotes
+              </p>
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <ExternalLink size={32} className="text-turquoise-200" />
+          </div>
+        </div>
       </div>
 
       {/* Progress Overview */}

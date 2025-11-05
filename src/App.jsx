@@ -2,6 +2,7 @@ import { useState } from 'react'
 import ExecutiveDashboard from './components/ExecutiveDashboard'
 import LearnerDashboard from './components/LearnerDashboard'
 import ResearchContext from './components/ResearchContext'
+import Session1Synopsis from './components/Session1Synopsis'
 import { Users, Briefcase, Brain } from 'lucide-react'
 
 function App() {
@@ -60,8 +61,9 @@ function App() {
       {/* Dashboard Content */}
       <main>
         {activeView === 'executive' && <ExecutiveDashboard />}
-        {activeView === 'learner' && <LearnerDashboard />}
+        {activeView === 'learner' && <LearnerDashboard setActiveView={setActiveView} />}
         {activeView === 'research' && <ResearchContext />}
+        {activeView === 'synopsis' && <Session1Synopsis onBack={() => setActiveView('learner')} />}
       </main>
 
       {/* Footer */}
