@@ -296,7 +296,12 @@ const Session1Synopsis = ({ onBack }) => {
           </div>
 
           <div className="bg-turquoise/10 p-4 rounded-lg border border-turquoise">
-            <h3 className="text-xl font-bold text-navy mb-2">The Unsatisfying But Honest Answer</h3>
+            <h3 className="text-xl font-bold text-navy mb-2">The Question: "How Should We Implement AI?"</h3>
+            <p className="text-gray-700 mb-3 italic">
+              With pressure from leadership to "figure out AI" and organizations asking "how do we do this AI thing?",
+              participants wanted to know: <strong>What's the best way to implement AI across our organization?</strong>
+            </p>
+            <h4 className="text-lg font-bold text-turquoise mb-2">The Unsatisfying But Honest Answer</h4>
             <p className="text-gray-700 mb-3">
               Joshua provided what he called an "unsatisfying answer for executives" but the honest truth:
               <strong> The best way forward is exactly what this cohort is doing:</strong>
