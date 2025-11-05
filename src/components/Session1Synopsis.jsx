@@ -174,9 +174,9 @@ const Session1Synopsis = ({ onBack }) => {
           </div>
 
           <div className="bg-white p-4 rounded-lg shadow-sm">
-            <h3 className="text-lg font-bold text-turquoise mb-2">T - Tone</h3>
+            <h3 className="text-lg font-bold text-turquoise mb-2">T - The audience</h3>
             <p className="text-sm text-gray-700">
-              Indicate the voice or style you want (professional, friendly, formal, casual, etc.).
+              Define who the output is for and what level of expertise they have.
             </p>
           </div>
 
