@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {
   Calendar, Users, Target, Lightbulb, BookOpen, Award,
   TrendingUp, MessageSquare, ArrowLeft, FileText, CheckCircle,
-  Zap, Brain, Layers, ImageIcon, Workflow
+  Zap, Brain, Layers, ImageIcon, Workflow, ExternalLink
 } from 'lucide-react'
 
 const Session2Synopsis = ({ onBack }) => {
@@ -397,6 +397,79 @@ const Session2Synopsis = ({ onBack }) => {
             </p>
             <p className="text-sm text-gray-600 mt-2">
               This finding demonstrated how AI can quickly surface meaningful insights from complex datasets
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Carlton's Interactive Dashboard */}
+      <div className="card mb-8 border-l-4 border-warmYellow bg-gradient-to-br from-warmYellow/5 to-turquoise/5">
+        <h2 className="text-2xl font-bold text-navy mb-4 flex items-center">
+          <Award className="mr-2 text-warmYellow" size={28} />
+          Carlton's Interactive Titanic Dashboard
+        </h2>
+
+        <div className="space-y-4">
+          <p className="text-gray-700 leading-relaxed">
+            During Session 2, <strong>Carlton</strong> created a stunning interactive data visualization dashboard
+            using Claude AI - showcasing exactly what participants learned about exploratory data analysis.
+            This exemplary work demonstrates the power of AI-assisted data storytelling.
+          </p>
+
+          <div className="bg-navy text-white p-4 rounded-lg">
+            <p className="font-semibold mb-2 flex items-center">
+              <Zap className="mr-2 text-warmYellow" size={20} />
+              Why This Is Exceptional:
+            </p>
+            <ul className="list-disc list-inside space-y-1 text-sm text-turquoise-100 ml-4">
+              <li>Created during the session - immediate application of skills learned</li>
+              <li>Professional-grade visualizations with compelling narrative</li>
+              <li>Clear insights: Class determined survival (1st class: 63%, 3rd class: 24.2%)</li>
+              <li>Interactive and shareable via Claude Artifacts</li>
+              <li>Perfect example of what's possible with AI-assisted analysis</li>
+            </ul>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+            <div>
+              <img
+                src="/session2/carlton-dashboard-header.png"
+                alt="Carlton's Titanic Dashboard Header - The Titanic Tragedy: A Data Story of Survival, Class, and Fate"
+                className="w-full rounded-lg shadow-lg border-2 border-turquoise/20"
+              />
+              <p className="text-xs text-gray-600 mt-2 text-center italic">Dashboard header with compelling narrative</p>
+            </div>
+            <div>
+              <img
+                src="/session2/carlton-dashboard-viz.png"
+                alt="Carlton's Titanic Dashboard Visualization showing survival rates by passenger class"
+                className="w-full rounded-lg shadow-lg border-2 border-turquoise/20"
+              />
+              <p className="text-xs text-gray-600 mt-2 text-center italic">Class survival analysis with interactive charts</p>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <a
+              href="https://claude.ai/public/artifacts/7ebc3030-207d-43bb-85f0-99248166cb18"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-turquoise hover:bg-navy text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
+            >
+              <ExternalLink className="mr-2" size={20} />
+              View Carlton's Interactive Dashboard
+            </a>
+            <p className="text-sm text-gray-600 mt-2">
+              Opens in new tab - explore the full interactive experience
+            </p>
+          </div>
+
+          <div className="bg-beige p-4 rounded-lg">
+            <p className="text-sm text-gray-700 italic">
+              <strong>Instructor's Note:</strong> Carlton's dashboard is a perfect example of Session 2's learning
+              objectives in action - using AI to transform raw data into compelling stories with professional
+              visualizations. This is the kind of work product that can elevate organizational reporting and
+              decision-making.
             </p>
           </div>
         </div>
