@@ -389,9 +389,15 @@ const LearnerDashboard = ({ setActiveView }) => {
           ))}
         </div>
         <div className="mt-4 text-center">
-          <button className="btn-primary">
-            Share Your Insight
-          </button>
+          <a
+            href="https://app.circle.so/wpti-ai-learning-lab"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary inline-flex items-center"
+          >
+            <MessageSquare className="mr-2" size={18} />
+            Share Your Insight in Community
+          </a>
         </div>
       </div>
 
