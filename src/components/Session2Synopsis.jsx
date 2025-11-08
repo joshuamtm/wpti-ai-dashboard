@@ -361,6 +361,61 @@ const Session2Synopsis = ({ onBack }) => {
               <li><strong>Zero hallucination</strong>: Most accurate tool for policy Q&A and document analysis</li>
             </ul>
           </div>
+
+          {/* Live Demo Section */}
+          <div className="bg-gradient-to-br from-turquoise/10 to-navy/10 p-6 rounded-lg border-2 border-turquoise/30">
+            <h3 className="text-xl font-bold text-navy mb-3 flex items-center">
+              <Zap className="mr-2 text-turquoise" size={24} />
+              Live Demo: AI-Resilient Careers Research
+            </h3>
+
+            <div className="bg-white p-4 rounded-lg mb-4">
+              <p className="text-sm text-gray-600 mb-2 font-semibold">Prompt used in session:</p>
+              <p className="text-gray-700 italic border-l-4 border-turquoise pl-4">
+                "Please research all of the job opportunities that would be available for high school graduates
+                that are unlikely to be replaced by artificial intelligence within the next 5-10 years."
+              </p>
+            </div>
+
+            <p className="text-gray-700 mb-4">
+              During Session 2, we demonstrated ChatGPT's Deep Research agent with a real workforce development query.
+              Within minutes, the AI autonomously researched, analyzed, and compiled a comprehensive report on
+              <strong> AI-resilient career options for NYC high school graduates</strong> through 2035.
+            </p>
+
+            <div className="bg-beige p-4 rounded-lg mb-4">
+              <h4 className="font-bold text-navy mb-2">What the Report Covers:</h4>
+              <ul className="list-disc list-inside space-y-1 text-sm text-gray-700 ml-4">
+                <li>Career paths in healthcare, skilled trades, education, and creative fields</li>
+                <li>NYC-specific job market analysis and salary ranges</li>
+                <li>Training pathways and certification requirements</li>
+                <li>Why these roles are automation-resistant</li>
+                <li>Actionable recommendations for workforce counselors</li>
+              </ul>
+            </div>
+
+            <div className="text-center">
+              <a
+                href="/session2/deep-research-demo.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-navy hover:bg-turquoise text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
+              >
+                <FileText className="mr-2" size={20} />
+                Download Full Research Report (PDF)
+              </a>
+              <p className="text-sm text-gray-600 mt-2">
+                126KB • AI-Resilient Career Options for High School Graduates in NYC (2025–2035 Outlook)
+              </p>
+            </div>
+
+            <div className="mt-4 p-3 bg-warmYellow/20 rounded border-l-4 border-warmYellow">
+              <p className="text-sm text-gray-700">
+                <strong>Key Insight:</strong> This research would have taken a counselor hours or days to compile manually.
+                Deep Research completed it in under 10 minutes with citations and structured recommendations.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
