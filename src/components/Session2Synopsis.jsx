@@ -209,6 +209,24 @@ const Session2Synopsis = ({ onBack }) => {
               </p>
             </div>
           </div>
+
+          <div className="mt-6">
+            <h3 className="text-xl font-bold text-navy mb-3">Workflow Mapping in Action</h3>
+            <p className="text-gray-700 mb-4">
+              Teams mapped their organizational workflows using Post-it notes, identifying opportunities for AI augmentation:
+            </p>
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
+              {workflowImages.map((img) => (
+                <div key={img.id} className="cursor-pointer" onClick={() => setSelectedImage(img)}>
+                  <img
+                    src={img.src}
+                    alt={img.caption}
+                    className="w-full rounded-lg shadow hover:shadow-lg transition-shadow"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
@@ -306,28 +324,6 @@ const Session2Synopsis = ({ onBack }) => {
               Vague prompts get vague results. This exercise demonstrated why the CRAFT framework matters.
             </p>
           </div>
-        </div>
-      </div>
-
-      {/* Workflow Mapping Photos */}
-      <div className="card mb-8">
-        <h2 className="text-2xl font-bold text-navy mb-4 flex items-center">
-          <Workflow className="mr-2 text-turquoise" size={28} />
-          Workflow Mapping in Action
-        </h2>
-        <p className="text-gray-700 mb-4">
-          Teams mapped their organizational workflows using Post-it notes, identifying opportunities for AI augmentation:
-        </p>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
-          {workflowImages.map((img) => (
-            <div key={img.id} className="cursor-pointer" onClick={() => setSelectedImage(img)}>
-              <img
-                src={img.src}
-                alt={img.caption}
-                className="w-full rounded-lg shadow hover:shadow-lg transition-shadow"
-              />
-            </div>
-          ))}
         </div>
       </div>
 
