@@ -19,10 +19,7 @@ const Session2Synopsis = ({ onBack }) => {
   const workflowImages = [
     { id: 1, src: '/session2/workflow-activity/IMG_9444.jpg', caption: 'Workflow Mapping Exercise 1' },
     { id: 2, src: '/session2/workflow-activity/IMG_9445.jpg', caption: 'Workflow Mapping Exercise 2' },
-    { id: 3, src: '/session2/workflow-activity/IMG_9446.jpg', caption: 'Workflow Mapping Exercise 3' },
-    { id: 4, src: '/session2/workflow-activity/IMG_9447.jpg', caption: 'Workflow Mapping Exercise 4' },
-    { id: 5, src: '/session2/workflow-activity/IMG_9448.jpg', caption: 'Workflow Mapping Exercise 5' },
-    { id: 6, src: '/session2/workflow-activity/IMG_9449.jpg', caption: 'Workflow Mapping Exercise 6' }
+    { id: 3, src: '/session2/workflow-activity/IMG_9449.jpg', caption: 'Workflow Mapping Exercise 3' }
   ]
 
   return (
