@@ -3,6 +3,7 @@ import ExecutiveDashboard from './components/ExecutiveDashboard'
 import LearnerDashboard from './components/LearnerDashboard'
 import ResearchContext from './components/ResearchContext'
 import Session1Synopsis from './components/Session1Synopsis'
+import Session2Synopsis from './components/Session2Synopsis'
 import { Users, Briefcase, Brain } from 'lucide-react'
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-4">
               <h1 className="text-xl font-bold text-white">WPTI AI Training Dashboard</h1>
-              <span className="text-turquoise text-sm font-medium">Session 1</span>
+              <span className="text-turquoise text-sm font-medium">Sessions 1-2 Complete | 4-Session Series</span>
             </div>
 
             <div className="flex space-x-2 bg-navy/50 rounded-lg p-1">
@@ -63,7 +64,8 @@ function App() {
         {activeView === 'executive' && <ExecutiveDashboard />}
         {activeView === 'learner' && <LearnerDashboard setActiveView={setActiveView} />}
         {activeView === 'research' && <ResearchContext />}
-        {activeView === 'synopsis' && <Session1Synopsis onBack={() => setActiveView('learner')} />}
+        {activeView === 'synopsis1' && <Session1Synopsis onBack={() => setActiveView('learner')} />}
+        {activeView === 'synopsis2' && <Session2Synopsis onBack={() => setActiveView('learner')} />}
       </main>
 
       {/* Footer */}

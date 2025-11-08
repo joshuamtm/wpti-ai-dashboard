@@ -3,11 +3,39 @@
 
 export const workshopMetrics = {
   totalParticipants: 30,
-  sessionDate: 'October 31, 2025',
-  location: 'New York City',
-  sessionNumber: 1,
-  sessionTitle: 'AI Basics & Workforce Disruption',
+  sessionsCompleted: 2,
+  totalSessions: 4,
   officeHours: 'Wednesdays, 4-5 PM Eastern',
+  sessions: [
+    {
+      number: 1,
+      date: 'October 31, 2025',
+      location: 'New York City',
+      title: 'AI Basics & Workforce Disruption',
+      status: 'completed'
+    },
+    {
+      number: 2,
+      date: 'November 7, 2025',
+      location: 'Civic Hall, NYC',
+      title: 'Prompting 101 & Putting AI to Work',
+      status: 'completed'
+    },
+    {
+      number: 3,
+      date: 'November 14, 2025',
+      location: 'TBD',
+      title: 'Risk, Responsibility & Ethics',
+      status: 'upcoming'
+    },
+    {
+      number: 4,
+      date: 'November 21, 2025',
+      location: 'TBD',
+      title: 'Organizational Readiness & Implementation',
+      status: 'upcoming'
+    }
+  ]
 };
 
 export const aiUsageFrequency = [
@@ -259,6 +287,62 @@ export const qualitativeThemes = {
     'No direction from administration',
     'Creative policies needed',
   ],
+};
+
+// Session 2 Data
+export const session2Metrics = {
+  date: 'November 7, 2025',
+  location: 'Civic Hall, NYC',
+  facilitators: ['Joshua Peskay', 'Kim Snyder (remote)'],
+  keyActivities: [
+    'Drawing Communication Game',
+    'Workflow Mapping Exercise',
+    'AI Package Creation (GPTs, Gems, Agents)',
+    'Deep Research Demonstrations',
+    'Exploratory Data Analysis with Titanic Dataset'
+  ],
+  toolsDemonstrated: [
+    'ChatGPT (GPTs & Projects)',
+    'Google Gemini (Gems)',
+    'Microsoft Copilot (Agents)',
+    'Google Notebook LM',
+    'Claude (Projects)',
+    'Zapier Automations'
+  ],
+  frameworks: [
+    'Stanford H1-H5 Human+AI Augmentation',
+    'Workflow Analysis & Mapping',
+    'CRAFT Framework (continued from Session 1)'
+  ]
+};
+
+export const session2Insights = {
+  mainThemes: [
+    'Human+AI Augmentation over Full Automation',
+    'Workflow-Based Thinking',
+    'Package Creation for Repetitive Tasks',
+    'Deep Research Capabilities',
+    'Clear Communication (Drawing Game Lesson)'
+  ],
+  participantHighlights: [
+    {
+      participant: 'Carlton',
+      achievement: 'Analyzed Titanic dataset across all 4 major AI platforms',
+      insight: 'Claude provided most interactive visualizations'
+    },
+    {
+      participant: 'Ariana',
+      question: 'Difference between GPTs and chatbots for policy Q&A',
+      answer: 'Notebook LM best for document-based Q&A (Retrieval Augmented Generation)'
+    }
+  ],
+  keyFinding: '49 out of 83 children under 16 survived Titanic (59% survival rate)',
+  bestPractices: [
+    'One designated voice for instructions (drawing game winner strategy)',
+    'Break workflows into discrete steps before applying AI',
+    'Use Notebook LM for policy documents to avoid hallucinations',
+    'Review rigor should match task complexity'
+  ]
 };
 
 export const chartColors = {

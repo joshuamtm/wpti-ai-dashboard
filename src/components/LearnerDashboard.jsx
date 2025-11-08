@@ -38,22 +38,29 @@ const LearnerDashboard = ({ setActiveView }) => {
     {
       number: 2,
       title: 'Prompting 101 & Putting AI to Work',
-      status: 'upcoming',
+      status: 'completed',
       date: 'November 7, 2025',
       topics: [
-        'Effective prompt engineering techniques',
-        'Iteration and refinement strategies',
-        'Context and specificity in prompts',
-        'Using AI as a thought partner',
-        'Practical applications for your role'
+        'Human+AI augmentation (Stanford H1-H5 framework)',
+        'Workflow planning and analysis',
+        'AI Packages (GPTs, Gems, Agents, Projects)',
+        'Deep Research capabilities',
+        'Exploratory Data Analysis with real datasets',
+        'Google Notebook LM for document analysis'
       ],
       keyTakeaways: [
-        'Coming after Session 2...'
+        'Think in workflows - break processes into discrete steps',
+        'Augmentation beats automation for most use cases',
+        'Create packages (GPTs/Gems) for repetitive prompts',
+        'Clear instructions win - the drawing game proved it',
+        'Notebook LM is best for policy Q&A (zero hallucinations)',
+        'Practice is the best way to learn AI capabilities'
       ],
       actionItems: [
-        'Build your personal prompt library',
-        'Practice iteration with 3 real tasks',
-        'Share successful prompts with peers'
+        'Map one organizational workflow using Post-its',
+        'Create your first GPT/Gem/Agent for a repetitive task',
+        'Try Notebook LM with organizational documents',
+        'Practice EDA with a dataset from your work'
       ]
     },
     {
@@ -184,20 +191,37 @@ const LearnerDashboard = ({ setActiveView }) => {
         </p>
       </div>
 
-      {/* Session 1 Synopsis Banner */}
-      <div className="card mb-8 bg-gradient-to-r from-turquoise to-navy text-white hover:shadow-xl transition-all cursor-pointer" onClick={() => setActiveView('synopsis')}>
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <FileText className="mr-4" size={48} />
-            <div>
-              <h2 className="text-2xl font-bold mb-1">Session 1 Synopsis Now Available</h2>
-              <p className="text-turquoise-100">
-                Read the complete summary of our inaugural session including key takeaways, the CRAFT framework, and standout quotes
-              </p>
+      {/* Session Synopsis Banners */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8">
+        {/* Session 1 Synopsis */}
+        <div className="card bg-gradient-to-r from-turquoise to-navy text-white hover:shadow-xl transition-all cursor-pointer" onClick={() => setActiveView('synopsis1')}>
+          <div className="flex items-start justify-between">
+            <div className="flex items-start">
+              <FileText className="mr-3 flex-shrink-0" size={40} />
+              <div>
+                <h2 className="text-xl font-bold mb-1">Session 1 Synopsis</h2>
+                <p className="text-sm text-turquoise-100">
+                  AI Basics, CRAFT framework, and standout quotes
+                </p>
+              </div>
             </div>
+            <ExternalLink size={24} className="text-turquoise-200 flex-shrink-0" />
           </div>
-          <div className="hidden md:block">
-            <ExternalLink size={32} className="text-turquoise-200" />
+        </div>
+
+        {/* Session 2 Synopsis */}
+        <div className="card bg-gradient-to-r from-warmYellow to-turquoise text-white hover:shadow-xl transition-all cursor-pointer" onClick={() => setActiveView('synopsis2')}>
+          <div className="flex items-start justify-between">
+            <div className="flex items-start">
+              <FileText className="mr-3 flex-shrink-0" size={40} />
+              <div>
+                <h2 className="text-xl font-bold mb-1">Session 2 Synopsis</h2>
+                <p className="text-sm text-white/90">
+                  Workflows, AI packages, robot drawing game & photos
+                </p>
+              </div>
+            </div>
+            <ExternalLink size={24} className="text-white/80 flex-shrink-0" />
           </div>
         </div>
       </div>
@@ -207,15 +231,15 @@ const LearnerDashboard = ({ setActiveView }) => {
         <div className="flex items-center justify-between mb-6">
           <div>
             <h2 className="text-2xl font-bold mb-1">Overall Progress</h2>
-            <p className="text-turquoise-100">Session 1 of 4 Complete</p>
+            <p className="text-turquoise-100">Sessions 1-2 of 4 Complete</p>
           </div>
           <div className="text-right">
-            <div className="text-4xl font-bold">25%</div>
+            <div className="text-4xl font-bold">50%</div>
             <p className="text-sm text-turquoise-100">of series complete</p>
           </div>
         </div>
         <div className="w-full bg-white/20 rounded-full h-4">
-          <div className="bg-warmYellow h-4 rounded-full" style={{ width: '25%' }}></div>
+          <div className="bg-warmYellow h-4 rounded-full transition-all duration-500" style={{ width: '50%' }}></div>
         </div>
       </div>
 
@@ -402,10 +426,10 @@ const LearnerDashboard = ({ setActiveView }) => {
       <div className="card bg-gradient-to-r from-turquoise to-navy text-white">
         <div className="text-center py-8">
           <Rocket className="mx-auto mb-4" size={48} />
-          <h2 className="text-3xl font-bold mb-4">Ready for Session 2?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready for Session 3?</h2>
           <p className="text-lg mb-6 max-w-2xl mx-auto">
-            Join us next week for Prompting 101 where you'll learn how to write effective prompts
-            and put AI to work solving real challenges in your role.
+            Join us on November 14 for Risk, Responsibility & Ethics where we'll tackle AI bias,
+            data privacy, and organizational policy development.
           </p>
           <div className="flex justify-center space-x-4">
             <button className="bg-white text-navy px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all">

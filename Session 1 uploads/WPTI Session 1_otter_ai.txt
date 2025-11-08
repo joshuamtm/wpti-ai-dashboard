@@ -1,0 +1,1669 @@
+Justin  0:00  
+Captured here.
+
+Joshua Peskay  0:19  
+Okay, and then you started, okay, and this is recording. Is Shana here, not yet, just so you guys hear now, yeah, the recorder is right here because it's running off my phone. So if you are chatting with each other while the class is going on, it may pick you up, just so you're aware. Okay, so if you have any snarky comments about me or Kim especially. Kim, yes, okay, make sure you like that. Kim, why is she saying that? Right? Perfect. Okay.
+
+Joshua Peskay  1:05  
+It All right, Justin, so we are good, perfect.
+
+Justin  1:11  
+Welcome everybody. Thanks for bearing with us as we kind of handle some of the last second logistics. Thank you for joining our AI Learning Lab. This is a brand new initiative from wpti. Like many of you, we're really diving into the AI space. As our field you really need to adapt to a change in work environment, a changing labor market, a really changing needs of both our participants, our employers and ourselves. And so this learning lab is really designed to help you, help your teams, help your organization, kind of understand what it means to adapt to an AI driven work environment. And that's really, again, to benefit your work as well as to benefit the folks that you serve. And so our goal throughout this learning lab is to really ensure that you're able to understand AI, understand the stakes for the labor market, and then also be able to really deploy AI effectively, ethically and safely. And that's what we brought in our amazing partners with me today. Kip Snyder, Joshua Peskay, from meet the moment they are technical experts, meet the moment I'm looking into this is a nonprofit organization that's spun off of roundtable technology, which is an organization that has done the really, the outsourced it work for wpti As long as I organization. And so these are folks who are operating, really in that tech environment with a deep understanding of what it means for nonprofit organizations, including workforce development organizations. So the perfect partner for this, and I'm going to hand it over to them. Thank you again for being our partners and thank you for joining us here today. If you haven't given me name for the attendance, that's okay. You can find me during the break, and I'll get you in the system.
+
+Kim Snyder  3:07  
+Thank you, Justin. So welcome everybody. And when Justin first presented this idea to us, and we do a lot of training around AI, and we've been doing a lot of training around a lot of places, and we have some funny stories about we didn't start too soon, and in fact, that was the name of our first course in 2022 before chat GPT came out. Okay, so we have been looking at this for a while, but can I just say that the opportunity to work with, plan content for and engage with you over this next set of time, because you are in workforce development, is so meaningful to me. I can't like I'm so grateful that you're all here.
+
+Kim Snyder  4:02  
+I but I'm serious, because this is where the rubber,
+
+Kim Snyder  4:07  
+this is where the rubber meets the road, really, with AI and a lot of the stuff we're hearing, and you will find Josh and I have worked together for 1000 years, 30, right? We don't have a day over 40, so I and so, yeah, so if we seem like an old married couple, that's why.
+
+Kim Snyder  4:31  
+But yeah, so we're thrilled,
+
+Joshua Peskay  4:36  
+yeah, absolutely thrilled to be here in person. It's very cozy in here. So we're all going to get to know each other over the next four weeks and today. So that's really fun. A couple of quick things I just want to correct that Justin said. One, we are not a nonprofit organization. Weekend moment is actually a consultancy, a for profit. That's we only work with nonprofit organizations. That is the only people that we serve, the only organizations that we work with are nonprofits, any bit of government, but almost exclusively nonprofits. And the other thing that I want to correct is that Justin called us experts in AI, and I get called experts in a few things, cybersecurity, and I no offense Justin hate that word, especially about AI. No one is an expert in AI. Hear me on this. No one. Kim and I have been teaching it for over three years. We have been implementing it at various nonprofits and organizations. Over the last three years, we use every tool that's out there, whether it's Claude or Gemini or chat GPT or copilot, or by coding with quad code or rep layer, all the things we use all of them. We do it all. We are not experts. Okay, the best way to do this is in community with other people, learning from each other, because this stuff is changing so fast, no one is going to be an expert in it at any point, because even if you were today, stuff would happen tomorrow that would make you not an expert anymore. So rest comfortably in the fact that wherever you are now, that is the perfect place to be, okay, and we're going to try to just get everybody moving forward and solving problems your organization or the people that you work with using these tools, that's it. Technical thing. It's just finding problems and saying, Hey, how can we use this cool, new technology to solve those problems? And we are, as Kim said, very reflect about doing this with you over the next few weeks.
+
+Kim Snyder  6:46  
+Oh, today's so the agenda. We are going to talk about work disruptions, right, and exponential growth in AI. We're going to cover some of the AI basics. I realize there's a mix I've seen. And thank you for the people who have joined the community, if you haven't yet. We so we are going to cover some just some AI basics, and get some grounding and common understanding power of iterations, and we're going to have some fun. And, wow, that should be a physical challenge. So just hold on to that one right before lunch, though, so then we can decompress, or at lunch we're going to do prompting 101, right? And then Joshua was just saying, like, putting AI to work for you, right? This is not the shiny new, like, Okay, how are we going to use this AI? It's more the other way around, and you will come to understand this. We have a lot to learn from you about what people in your world, the people that you work with, are needing, okay, so that the last and we you will learn something. We have a section called The Power of iterations. Joshua and I are highly iterative. That means we adapt all the time. And I was adapting this content at like 11 o'clock last night because I wanted to tweak it, fine tune it. We want to have this be relevant as possible. To you, okay, so we're going to learn stuff, and we're going to take what we've learned and we're going to keep applying it so you give us feedback. We have thick skin. We're okay. You know we want to make this better, and we know we always can Okay. And then we're going to close, and there is some time around lunch for folks who may have had trouble getting on the online community. We can help you out with that, or also stay a couple minutes later if you want. So, all right, so that's the day. So we're gonna start with a couple of questions, and if do people have their phones with them?
+
+Kim Snyder  8:56  
+Okay, so we're gonna
+
+Joshua Peskay  8:57  
+do something. This is completely optional. Yes, you do not feel like participating in this. You do not have to. There is no application to install on your phone. There is no personal information to give us or anything like that, and it's just a little interactive survey tool that lets us get information, and then we can all see what everybody in the room is thinking about different things, okay, but it's not going to reveal any of your personal information unless you decide to type it in. Okay, give us a
+
+Kim Snyder  9:33  
+bunch of PII I work in data privacy, so
+
+Kim Snyder  9:37  
+cyber security, we are mindful of those safety
+
+Joshua Peskay  9:40  
+things. And one thing I will say is that no promises, but in the last session, we've sometimes been known to, like, add quizzes to this application, and then people who win the quiz get money. So if you get better at using menti, you know you might have a better chance in that last session. All right, all right. So if everybody's good, let's go to our first one. This is just a warm up. All right, so for the next year, any time you leave your home here in New York City, or from just outside of New York City, wherever you came from, you are only no subway, no bus, no Uber, no Lyft, no taxi, no bikes. You can either take a grizzly bear or a giraffe or a gorilla or a giant tortoise or a goat. These are your options. Now, where are my grizzly bear? People? Why grizzly bear? I mean, nothing's really gonna stop you, right? Oh, great way to get to New York City on the jersey. Right through, right through Times Square at eight o'clock, when the theater, where my giraffe people at all, right? Why giraffe? We're here get a better view of everything.
+
+Speaker 1  10:57  
+Good view, very long strides, probably a little quicker,
+
+Joshua Peskay  11:01  
+okay, yeah, you can probably get around New York walk right over people, so the grizzly bear has to go through them. Yeah, all right, where's my gorilla? We got one gorilla. Yes, my gorilla. Ruthless. Okay, ruthless towards you. Everybody's assuming Becky that your mode of transportation is on your side here, which is good, yeah, absolutely. All right. Oh, we have some giant tortoise people. Where are you? All right, yes, why? Because I like to take my time when I travel. I'm a giant
+
+Joshua Peskay  11:40  
+All right. Stuff. All right, yes, by the
+
+Joshua Peskay  11:50  
+way, if you need to go up and you go faster than him,
+
+Joshua Peskay  11:59  
+yeah, all right, did anyone who wanted to say why they picked their animal not get a chance to talk?
+
+Joshua Peskay  12:06  
+Yes, you're taller.
+
+Joshua Peskay  12:12  
+Anyone else? All right, now we're under quote, unquote, real questions. All right, so what's one word that describes how you feel when you think about artificial intelligence. One word that describes how you feel when you think about artificial intelligence.
+
+Joshua Peskay  12:32  
+Excited, by the way I was, I was doing
+
+Joshua Peskay  12:38  
+a presentation for community banks in East Texas, in naganochus, Texas, of all places, for about 40 community banks down there and and the largest word for the first minute or so that I did this was antichrist. So it, yeah, my, I've been hired to come down there and try to, like, soften them to the idea of AI for all these
+
+Kim Snyder  13:09  
+they didn't budge. People did
+
+Joshua Peskay  13:11  
+not budge. All the other people,
+
+Joshua Peskay  13:15  
+all right, well, this is great, because this is the most optimistic group I've seen on the start of this which you know is bad for our outcomes, because we want to move you toward being more excited and
+
+Justin  13:29  
+curious, but they chose to be part of the show.
+
+Joshua Peskay  13:33  
+Fantastic. Yeah, great.
+
+Kim Snyder  13:35  
+You surprised how many courses
+
+Joshua Peskay  13:40  
+awful? Oh, yeah, that's good, because
+
+Joshua Peskay  13:44  
+you know the enemy. All right, I have used artificial intelligence every day, once or twice, not at all. So
+
+Joshua Peskay  14:00  
+all right, so if a not at all, person is brave enough to talk to us, all right, tell us. A, have you used AI at all if you haven't used it in the last week? And then B, given that you didn't use AI at all, what made you want to come and join this cohort, anyone, if you're brave, you're not brave, that's okay, yes, yeah,
+
+Joshua Peskay  14:31  
+you're an IT person, and AI annoys you.
+
+Unknown Speaker  14:35  
+Everything I have it pops up and
+
+Speaker 1  14:39  
+let's get in the middle of it. Okay, so I don't use it
+
+Joshua Peskay  14:43  
+every week, okay, but you thought I could come and be annoyed for four hours every
+
+Speaker 1  14:51  
+Friday. Ai initiative in my organization. Last year and a half, I actually working with my team on an AI initiative to help empower our participants. So that's why I don't use it, because I'm living it gotcha so I don't have to use everything. So I'm here to see how I can take it to the next step within the org. What am I missing? How do we pull it together tighter for the award, there's a lot of questions about how to use it, where you use it, and the biggest challenge I see is that we're focused on ourselves and staff, and I'm missing my participants, and that's annoying. Okay, so jumping to get more information there and thinking to get it.
+
+Joshua Peskay  15:38  
+Thank you so much. Did everybody hear that? I know everybody's okay. Okay, great. I'm sitting next to a little noise machine here, but I've got most All right, anyone else? Not at all? Yeah, yeah. I think I'm more typical of the not at all population
+
+Speaker 1  15:55  
+in that don't treat much at all. About AI, chat, GPT, here and there, and
+
+Joshua Peskay  16:04  
+in turn, the second question was about, why am I here? I mean, it's just obvious, like, I feel like I'm falling behind, and for my own sake and for my participants, job seekers, just completely missing the boat without USA beyond just asking chatgpt, UCW, thank you. Thank you brave people for telling for talking to us. Incredibly grateful. All right, did anyone wanted to say something on this not get a chance to who would like to say something about on this one right now?
+
+Speaker 1  16:39  
+Yeah, can I ask a question of those that do every day, yeah.
+
+Joshua Peskay  16:43  
+Why they do it every day? What they do? Who would like to answer for? If you answered, I use it every day. What is something you use it for every day?
+
+Speaker 2  16:54  
+Yes. So for me, I use Why don't chat? GPT. I use Gemini only because the work that we do with youth writing emails. I used to all the time do things myself, and I'm finding myself being like, I don't have the words like, I know what I want to say, but I can't articulate it properly sometimes. So the population, yeah, it makes it more organized my boss. So it just makes it easier, because my brain, as I'm speaking right now, I have only done it, and I just want to make sure I put it all in concise because I like to put everything out there information wise. But sometimes how I might articulate it is not understandable, so it's just easier to just like. And then when it is out there, I don't just set it as is, of course. I edit it, I mix things, I put things, I take things out, put things in. But then when I see it, I'm like, Oh, wow, that was so organized. Why put up my frames of myself like get a companion? Yeah? So yeah, just
+
+Speaker 3  17:49  
+we learned that we have a lot of information to give out the participant day to day, and as soon as they see more than three sentences, they stop reading. Yeah? But I still need information to get out. So it's about using, you know, AI to say, Okay, I need to say all of these, please, ages 14 to 1516, to 18, so depending on that, you know,
+
+Joshua Peskay  18:14  
+all right, we're getting a little bit on time. So I'm going to ask for concise responses. But I have checkered shirt here, then with the vest and then in the back. So yes,
+
+Joshua Peskay  18:24  
+checkers, just to add to what you were saying. So I use it primarily for brainstorming. Nice and loud, please, my voice
+
+Joshua Peskay  18:33  
+gives me a test, and I'm like, Okay, what does she mean? And I just put it in and it blurts out some some topics for me, also the staff that I manage. I like my emails with it. I want to be clear. I want to be understood. And I do the Edit part, because sometimes say, Okay, I don't sound like this. So let me just change this word.
+
+Joshua Peskay  18:51  
+This is not the recurring themes, like improving your ability to communicate with other people that you need to communicate with. I have something I need to say or understand or communicate out, and AI helps me get that to a first draft that I feel is better than I would get to on my own. And then I make it my own and send it. I think I've had a reasonable paraphrase on everybody. All right, right here, real quick. And then,
+
+Speaker 1  19:15  
+similar vein, I teach students how to do that. Some of them are English language learners, so it can translate a job description, it can help them to write a cover letter. It helps them to optimize their resumes. And then they can say things in a more professional way, even if it's a thank you note. I'm like, don't be afraid of Thank you.
+
+Joshua Peskay  19:34  
+And if anyone can't hear anything that one of the people say, let me know, and I can repeat it. And everybody do try to talk nicely loud. Yes, in the back, and then we'll
+
+Speaker 4  19:43  
+try to talk nicely loud. Can you hear me over there? My name is Carlton jobs. I work for the Eagle Academy Foundation, so I use it for a lot of things. Last night, I put capacity right? I use it for emails. I sent out 13 emails in an hour yesterday. I just took my notes from like, you know, my supervisors meetings, and I just, like, put everything into the task list, and as I can create the emails for those notes and just edit it from there, step it out. Also use something called gamma that allows us to, like, create, like, slide decks. Like, when I'm doing presentations, if I'm meeting with funders, I'm meeting with the board, I'm meeting with executive leaders, I could create a nice presentation for them. I use something called a notebook LM, that allows me to create something called a mind map, and a podcast, if you want to. But the mind map allows me to, like, do something. We create a partnership with NYPD, and we try to create these pipelines from middle school all the way to employment. And so I was able to, like, do deep research on jst, BT, and then take all that information and then put it on the notebook, and then creative mind map where I could just basically organize everything, so I can see all the middle school programs, all the high school programs, you know, the entry level employment. And created a five by four. So you're awesome.
+
+Joshua Peskay  20:53  
+I would like to come up and teach
+
+Joshua Peskay  20:59  
+us great tools. You mentioned some great functions of those tools. For those of you who were like, Whoa, that was a lot. You're all going to be able to see these tools, understand them. None of this requires coding, sophisticated technical skills. You know what? It requires curiosity and exploration and practice. That is it. He's obviously doing it, and then some. And thank you so
+
+Kim Snyder  21:22  
+much. And I might recruit you to help Josh next week, when I'm actually have to be out
+
+Kim Snyder  21:29  
+of town some of those things.
+
+Joshua Peskay  21:32  
+Okay, so, oh, change all right. Sorry about that, everybody.
+
+Joshua Peskay  21:47  
+All right, back into
+
+Kim Snyder  21:49  
+our slide. All right, so, um, I've said this already a little bit, but here's our, our kind of proposal. Here you are the experts in workforce development needs, okay? Our thing is we provide context around using AI, applying AI, teaching others to use AI, engaging your participants in using AI, right? And together, we're going to explore. And some of us have been on these explorations already, so that is kind of how these next four weeks will go. But we do rely on your expertise for the needs of the workforce people, and that is such an important thing as we're going to get it to talk a little bit about
+
+Joshua Peskay  22:36  
+jobs. Yeah, and I'm going to go through this a bit quickly, because it is we're already in time, in time, but I loved all that engagement. So I get asked a lot when I when I speak and when I talk to people about AI, what about jobs? Is it going to do the jobs? And I have a very Pat quote that I say every time, which is attributed to Yogi Berra, although he didn't say it, no one really knows who did. But the quote is this, predictions are hard, especially about the future. And so I would never, ever pretend to say I know what's going to happen in terms of jobs, however, and you all, again, are probably more expert in this than I could ever hope to be. But as I've taught AI over the last few years, I've been doing research on like, what happened during other kinds of technical revolutions or technical evolutions over time. So we have a few examples. So one is right here in lovely New York. Many of you may know this. Some of you may not, and here's nice trivia for you. Around the turn of the century, 1900s they were worried we're gonna have to abandon the city because we were covered in horse manure. And they had no idea. Literally, they were panicked. They're like, we don't know how we're gonna deal with the horse manure problem. There's too much manure in the streets. The jobs that people were doing were horseshoers, literally manure. Shovelers, manure. And then stable drivers, you know, stable miners, things like that within 20 years, okay, all those jobs were gone, or most of them, and now you were working in a Ford factory building, Model T's, you were working as a gas station attendant, you were working as a mechanic, you were working as a driver of a car, all right? And so it would have not been possible in the 1900s to know that that was happening, and yet that happened inside of 20 years. Okay, so that's the first one. Second one is and this one I bet most of you don't know. First ATM was introduced actually not far from the rockville Center in New York. In 1969 at that time, there were 300,000 bank tellers in the United States. 40 years later, in 2010 there were 400,000 MTM. Anyone want to guess how many bank tellers there were in 2010
+
+Joshua Peskay  24:48  
+How many people think more than 300,000
+
+Joshua Peskay  24:52  
+How many people think less than 300,000
+
+Joshua Peskay  24:56  
+600,000 bank tellers. What happened was it got less expensive to open branches. The amount of transactions, right? Because the tellers were needed, because so many people were doing deposits, withdrawals, because the primary thing they were doing was, here's my check, give me some cash, right? That all happened at the ATM. What the tellers were doing became more complex, because that was what people need to go to tellers for. So they actually did still need lots of tellers. And as they opened more branches, they needed more tellers. So again, even here in an audience of workforce development people, the intuition was the opposite of what actually happened. Predictions are hard, especially about the future. Last one switchboard operators. So 1920s around this started, okay, peak switchboard operators in post World War Two, all right. This was the first time in the United States workforce that women entered the US workforce en masse and full time employment as the switchboard operators. Then we got rotary phones. We got, I actually used rotary phones when I was a kid. And the whole thing, you talk with your friends and wind yourself around and everything, half of you have no idea what I'm talking about. That's okay. And and we got area codes, and so the switchboard job wasn't needed anymore, and so the women moved into administrative assistant jobs in corporate America, which actually had some degree of upward mobility, which the switchboard operator Jobs did not have, because now you're part of the corporate environment. So again, really hard to predict where this would have gone at the time. So now we just want to very quickly ask, Have any of you in your lifetime, right experienced job disruptions like this that kind of went against what you would have predicted, where some job went away, but a job that you couldn't have anticipated got created. Yeah, I
+
+Speaker 1  26:48  
+was thinking of an article I read about 23 years ago by some curmudgeonly dude who was saying, in five years, social media is not going to be a gig.
+
+Joshua Peskay  27:02  
+Predictions. Are hard.
+
+Joshua Peskay  27:05  
+So I think our hypothesis is that, just like these other things, all these Doom saying about AI will likely turn out to be changed. What will definitely happen is there will be displacement of current jobs, but jobs that very few of us could imagine today will get created. And the question is, how can we find our way to those jobs, and find our way to train people for those jobs? So that, I think, is the sort of key thing. All right? Kim, talk
+
+Kim Snyder  27:36  
+a little bit about, okay, so we just talked about transitions, right? And disruptions. So what's so, why is AI kind of different from all of this? Quickly, right? And tell you a little story about a lake. All right, so on this lake picture, it's the end of May, and we're seeing a lake, not a single lily pad to be seen anywhere on the surface of this lake. Then what happens? And then, like on June 1, a lily pad pops up. June 2, two of them. June 3, I see four of them. June 4, I see eight of them. What's happening? They're doubling every single day. The lily pads, right? So they're growing see every two days, and then on June 30, the lake is completely covered in the leaf heads. It's like, what lake? I can't see any water, right? So a question for you, if the lake is completely full on day 30, what day is it half full? The math people that right, the math people got
+
+Unknown Speaker  28:50  
+29 All right, all right, trickier question.
+
+Joshua Peskay  29:00  
+So back in the menti now, all right,
+
+Joshua Peskay  29:07  
+is the lake is the first day the lake is more than 1% covered in the lake pads.
+
+Joshua Peskay  29:13  
+So, like, what's the first day where you're, like, looking at over the lake? I
+
+Joshua Peskay  29:30  
+if you can do math, really, really fast, all
+
+Joshua Peskay  29:39  
+right, right. 24 answer it
+
+Kim Snyder  29:41  
+day 24 so that is to say, if on day 29 it's covered on day 24 it's 1% covered, right? If you asked me on day 24 Hey, Kim, do you have a lily pad problem at your lake? I'd say, No, it's fine. What are you talking about? A couple cares, right? But all of a sudden it's everywhere, a mere six days later, and I can't even get an award, all right? So how does that relate to AI? Right? AI was kind of like this. And I would hazard to say, like, What day do you think we are with? AI, there's no right or wrong answer, no math in the world, right, actually, but three day one, right? So what we're seeing, right? Is an incredible speed up, kind of like what happened on that lake, I venture to say around 24 ish, right? And you can even see it in these frogs keeping in the theme of lily pads, right? This is back in March, 2022 this is when Josh and I were considering teaching AI, right? He talked me into this. He
+
+Joshua Peskay  31:06  
+actually asked you to, just for people who can't read the words, to stand up and just point at the March 2022 frog for me. Sorry, there you go. Yeah. Okay, so
+
+Kim Snyder  31:19  
+yeah, and are you seeing a frog there? No, right? If I said, What is that, you'd say, I don't know, a blob, yeah. But then you see April, we're getting a little more frog. Like, got like couple eyes here, three, then July, kind of taking some head forward. November, 2022, what happened? A mere like, what, six months, six months later, that thing looks like a frog. And then we have like, so speeding it up, this is all within the space of like, you know, till March 2024, so two years, that thing went from the little guy in the upper left all the way to, I would dare say, the more real looking frog than the actual frog, which is the smaller square in the lower right in a period of two years. All right. That's another way to look at what we call exponential growth, okay, and that's one of the reasons why AI, I would say, is different than the manure crisis, you know, you know, is right. So in looking at these human benchmarks, and I always kind of take a pause here, I say human benchmarks, think SATs and what's more like kind of testing, it's less No, like we're not talking emotions here
+
+Joshua Peskay  32:41  
+disorient people for if you can't read it, because I know why you won't be able to read it. The red arrow is pointing at the Human Performance line, okay, all the other lines represent reading comprehension, speech recognition, image classification, multi task, language understanding, general problem solving, mathematics. Okay, so those are comparisons of the AI systems to human scales, and the lines are going up toward and then eventually, beyond that,
+
+Kim Snyder  33:10  
+human performance Go ahead, yeah, it was around 2011
+
+Kim Snyder  33:14  
+12, when big, huge changes, and you start to see the vertical like, like, there's, no, like doubling overnight type of thing, and that it was large, a lot of stuff around image recognition and at Google research, right? And so that kind of got us on a track where, then, you know, one of the things that makes AI growth so fast is more data and more computing power. Those things have continued, and it's not slowing down, and I dare say it has shocked the people who were developing it, like what happened
+
+Kim Snyder  33:55  
+so So that said,
+
+Kim Snyder  33:59  
+what happens to jobs, all right? And I think that's the challenge of kind of looking at, how do we help workforce participants? How do we help ourselves, help workforce people trying to enter today's workforce with this phenomenon of AI, right? That is moving at a speed that people have not seen, and that's why me, Josh was sent me a chat this morning, on the getting on the train, coming in about, like, something new in Microsoft, copilot, I'm like, what, you know, like, like, I'm no, I'm coming and teaching, like, and so, like, that is the speed, you know, and we you know, but that is why, again, I'm going to underscore this, and we're going to not leave this one alone. Learning and community is the way to go. So you all have, like, a peer group now, forming and learning together is the way. That's how we have gotten to where we are okay by every day, talking about kind of, oh, wow, in this, huh? So, all right, so I am curious. This is the mentee I listed some I'm sure the other category is going to fill up more. But what are your like this? This is the pick one. I'm so sorry, because I know it's like all of it, right? But when you think about this new technology, and you know, what are your concerns? What are your fears? What keeps you up at night? And
+
+Joshua Peskay  35:38  
+if you can't read on the screen, you should be able to read it on your phone to see which one. Yeah,
+
+Joshua Peskay  35:51  
+by the way, we are seeing some data about entry level jobs, particularly in technology fields, already getting a little bit harder to get marketing.
+
+Kim Snyder  36:02  
+Interested in some of the other,
+
+Kim Snyder  36:17  
+if anyone who's hit the other wants to my talk about England,
+
+Speaker 1  36:23  
+it is helpful to streamline things and want to just summarize, for people that are learning it takes a thought process out of it, because they'll just jump into that. But you're not It's not like you're really thinking of yourself, because I grew up with my mom saying, like, don't use the confidently. Use your brains. You have your brain, so you need to keep your wheels moving over AI, it takes the thought function out of it, so when you don't have access to it, you can't even think straight, because you're like,
+
+Kim Snyder  36:56  
+All right, y'all hear that answer, and we have another answer to that. We'll get to, yeah. That was
+
+Joshua Peskay  37:02  
+something, yeah, I'll repeat this. So she was saying the fear as an other of basically people losing the ability to think. I was literally, actually at a conference yesterday. Was having this conversation with someone we're like, you know, as a kid calculator, I was there with calculators in the classroom because I'm 106 years old and and you know that everybody was worried you'd lose your ability to do math, which I did, hasn't really hurt me that much in life, because I've always had a calculator in my pocket, right? I actually once knew how to read maps and use them to navigate roadways when I was driving. I would hate to have to do that now I can probably still remember it, but certainly my kids would be totally lost without GPS on their phones. I personally, I think I'm okay with these skills having been gone, but our lovely person here was saying, her mom said no calculator for you, because you need to exercise your brain. Right if you're just getting driven around everywhere, you're going to get lazy and weak, and you need to stay strong with your brain. So you need to use it for calculator. And she's worried that as people use it to write emails and do all these things, we're actually going to lose the ability to think clearly, and that would be a big loss. And I do worry about that as well.
+
+Justin  38:16  
+Yeah, actually, back in the day, when people used to tell stories verbally, people were afraid that writing would make people lose the ability to have, like, oration and all that stuff. And they were right, right, like, like, reading and writing has has really affected the ability for people to do that.
+
+Joshua Peskay  38:38  
+And then did I accurately say what you were trying to say I
+
+Kim Snyder  38:41  
+did in the environment, which is one that does come up, yep, and we will talk about that session three. We're going to spend a lot of time talking about risk and responsibility. So we will revisit that one
+
+Speaker 2  38:52  
+more here. So in a training that I actually did, Ariana baldemero, I work with Co Op careers alongside my two teenagers, and in a training we did actually yesterday, it was interesting, because a lot of our constituents are younger. Their college grads just graduated college, and so I actually think they are, they are taking on AI, like, like nothing that we are doing, like they are in it and using it all the time, especially to apply for jobs. And I think that one of the things that one of our program directors brought up was actually that one of their individuals, one of their constituents, had to learn how not to use it, because they were using it too much to the point that they were they thought they had hacked the system, and it's like, I'm auto applying for 100 jobs a day, and nothing's happening, like, I'm not getting anything. And one of our like, whole things is because we're like, you haven't networked, you don't know anybody there. And so part of us is actually showing them how not to use it for the wrong things, because it's actually not going to get you where you want to go.
+
+Kim Snyder  39:58  
+And it's the human thing, yeah, the networking. Okay, so one of the things that
+
+Joshua Peskay  40:04  
+I got your time check,
+
+Kim Snyder  40:07  
+we're probably, we're probably way behind time,
+
+Joshua Peskay  40:10  
+just barely, okay, so we can do like, two minutes. Okay, I think
+
+Joshua Peskay  40:19  
+I can't hear you at all
+
+Justin  40:20  
+I want to say that as well, because some of my participants, you know, when we're doing we're bringing this bridge, and they're trying to do their documents, they're just trying to run everything through AI, right? So I tell them how to integrate it as an assistant, but not as your brain, because they do lose that connection. And I used to be a recruiter for a corporate office right where I was hiring for MBA, and things of that nature. And these organizations have AI to Red Flag AI resumes and AI cover there. So it's actually, you know, doing a disjustice to use AI for that. So I'm like, hey, you know, write it word for word, how you would speak, and then just, you know, certain things that you can implement from Ai into that, because there are new systems being implemented to just block you from opportunities, because they want these organizations that you want to, you know, apply to things that nature want someone who uses their brain, yeah, you know, and when there's that disconnect, they can see it Now, because they have AI to catch the AI. You Yeah,
+
+Joshua Peskay  41:22  
+what's your name right here. Sorry,
+
+Joshua Peskay  41:26  
+what's your name right here. My name is Allison. Allison. So Allison, when she was talking about, you know, using it help write the emails, and then it helps her think, but then she's reviewing it and making sure that it's her sentiment and everything before it goes is a practice. I want to really encourage everybody to take Has anyone heard of the term either work slot or AI slot? Yeah, yeah, yeah. So that is a common thing. Now, if you don't know it, don't worry. We're going to talk about as we go through but you'll all know exactly what it is when we define it. Anyway, we had one more person over here. You want to say something,
+
+Speaker 1  42:00  
+yeah, I was in the other category. And it may be, like, my thoughts kind of encompass a lot of the other categories up there, but really, like, I think my biggest concern is that, you know, open, AI started as a nonprofit, and then quickly, like, shifted that model, and I fear that whole communities get left behind if we can't get in there now, like, I feel like this is our opportunity to get in there, make sure that participants, not just participants, but families and communities, whole communities, have access to and become savvy with the use of AI, or we're going to just see the same thing that we saw when all the tech bros Were just white men. You know what I'm saying? Like, that's what
+
+Justin  42:43  
+we're gonna end up with and so, so that's my biggest concern, awesome.
+
+Joshua Peskay  42:48  
+I'm not awesome, but,
+
+Joshua Peskay  42:54  
+yeah, okay, so let's talk a little bit about artificial intelligence. So we're going to watch a little video just to break down. This is someone who, and I had a pleasure to meet several years ago at a conference, a young prodigy named Tommy Bashi, who's done a lot of work with AI and machine learning. And he, in the presentation he did, he gave this great sort of explainer of how AI is actually working, which is still the best example we've seen, and he was gracious enough to make one for us, which was really kind of
+
+Kim Snyder  43:25  
+because he knew we were working with nonprofit organizations.
+
+Justin  43:33  
+You asked chat GPT, what's AI going to do in the future? Right? The way that chat GPT generates a response for you is actually really interesting. It's effectively just entirely statistical language modeling, given a sentence or given some sort of prefix, GPT is entire goal. Its entire objective is simply to take those words and predict, of all the tokens in its known vocabulary, the probability of any one of those tokens being the actual, genuine next token in the sequence. That's all that GPT is doing. What you're seeing right now is a genuine visualization of the way that GPT, specifically, GPT two would generate a response. It is simply taking words and predicting the probabilities of which word will come next
+
+Joshua Peskay  44:17  
+really quickly. I'm just going to pause at a certain point. You asked. Sorry.
+
+Unknown Speaker  44:22  
+Just that way. You know what I mean? Like, it's probability, almost kind of playing with fire, yeah.
+
+Joshua Peskay  44:31  
+And this is exactly the point I wanted to make. So she was the what was your what's your name over here, IKEA. Okay, so IKEA was saying it's like you're playing with fire, because it's like probabilities. I see you in the back. I'll get you in a minute. So notice that in the future, AI will be right. Is the most highly probable next word. But one of the really weird things, and we'll say this over and over, as we, as we, as we talk about AI, is it we have never any of us used what is referred to as a probabilistic technology before. So when you use Microsoft Excel, right? And you type, what is one plus one, it is going to equal two 1000 times out of 1000 not with AI, because look, one plus one equals two is definitely going to be the most likely thing, not always, all right, and that is not great when you're doing math or statistics. Or things like that. And probabilistic technology is really not intuitive to us, okay? And it is part of what is great about AI, but also it is very strange and a little bit scary and unpredictable about using it. One other quick thing, if anyone has ever heard of the term temperature in relation to AI, with some tools, you can set a temperature, okay, and what the temperature is doing. A lower temperature is saying, I want less volatility, less probability, so I'm sorry, less like, like changing in what it's going to do. So if I have a very low temperature, the next word is going to be B almost every time, maybe 999 times out of 1000 if I make it a very high temperature, it's going to almost evenly distribute among all these other possibilities. I'm creating a much more volatile system that will also be more creative, less predictable other things. So that's if you ever hear the term temperature that is all that means you're just setting how much variance you want in the model, as it's doing, extent, yes, your hand in the back. Sorry, no, I was just gonna say pretty much kind of like, what you're saying. It seems like, like this should be called PI instead of AI, more predictable. Yep, you're not really getting a full like if you ask a question, it's not going to give you the answer. It's going to give you like you said, like every word that will lead up to whatever it is assumed the answer will be most probable to me. So it's not really giving you, it's not searching the web for a full answer. It's just searching individual where is the most probable answer and and so much of what we're going to teach over the next four weeks determines that one of the things we're going to get into this whole framework we talked about, but the context right of what I'm saying is going to matter a lot. Right? How it's going to complete the sentence, for me, is going to depend a lot on the context I brought to the discussion with the AI, right? Because it that will change what it thinks is the next probable thing for my context that I'm asking, yes,
+
+Speaker 2  47:29  
+so, and maybe I'm just the only person who is not quite understanding. So what we're saying is, if I put in a prompt that is like,
+
+Joshua Peskay  47:40  
+by the way, I guarantee you're not the only person.
+
+Joshua Peskay  47:42  
+Okay, great. Dumb Questions are the ones you don't ask.
+
+Speaker 2  47:47  
+I'm like, I'm like, Hold on, I don't exactly know. So AI, obviously, like, a chat GBT, right? Has access to all this information on the internet, basically, right? Like, it's like, all the books and all the things that are on there, yeah. So if there are, you know, more books that say the sky is yellow, then the sky is blue, then the probability piece is going to say, hey, when you I ask, What color is the sky, it's going to say, more than likely the sky is yellow, right now. And then I'm looking at it, and I'm like, I can literally see that the sky is blue. I'm like, why is this thing so dumb? And it's just because there is less articles written that way. So then it's also based on, basically, we're saying how much we are accurate about what's in there.
+
+Joshua Peskay  48:35  
+Let me give you a great example of this to her example of the white male problem, right? So there's a great writer, Dr joy buolamwini, who talks about has a great book called unmasking AI that talks about a lot of the bias. And she has this term, Paramount data. There's an investment bank, I think, in New York that, like five years ago, did, made their own AI model right to help them select resumes for who they would hire. And guess what this model did. It it selected Ivy League rugby players who were white, like 99% of the time. Why do we think that might have happened in this predictive model? Because it got trained on the sky as yellow, because investment bankers are white guys who went to Ivy League universities and played rugby, because those were the first people that were hired at this investment bank. And people tend to hire people that are like them, so they hire a bunch of people. So when we train the data, it said, Wait, run declares from every universities are the people who we hire. Therefore that's we should hire. That problem exists. The data that the model is trained on is going to determine a lot what these probabilities are. Okay, which gets and you add context to that yourself, what you bring to the conversation. So we're all dealing with that all the time as we interact with these models. Okay, I want
+
+Speaker 3  49:51  
+to say that it has to do more how we train the model, because it's also we have to remember that is a genre, right? It's generic. So everything that we are looking every information that comes out when we do Google or research, or whatever AI is learning from those images. So the same exercise was done in terms of determine what is beauty, and really, as AI describe beauty and give us images of beauty, it was completely what is the main beauty time is the white, blonde, skinny, so no one necessarily programming or creating a model for that, but the fact that it's learning to advertising to whatever is out there, I think that's part of the danger when we need to be more creative about using it as a tool rather than do the work. For me,
+
+Joshua Peskay  50:38  
+absolutely, and we can think of it in many ways, like us, right? We all came in here with a particular set of experiences, a particular perspective in the way we view the world, particular skills that we have and skills that we don't have, and we're now going to apply that right to doing work going forward. But we have some ability to do different things. We're not all going to produce the same outputs, because we all have different skills and perspectives, but we can all do things differently depending on what knowledge we bring to it, what what information we bring, what effort and how we manage these biases and risks and things like that. Last one disagree
+
+Speaker 1  51:16  
+with her. AI is a program that was written somebody taught it back, right? It is learning. It was written to learn and pick it up. But the way it knows that is because someone wrote it that way. It didn't come up on its own, right? God didn't say seventh day. Here you go. Someone wrote code that said, this is beauty, and then it adds to it. It was written, and
+
+Joshua Peskay  51:48  
+I'm sorry I should have said beforehand, because this is an AI class, we're actually not allowed to disagree. We all have to be completely sycophantic.
+
+Unknown Speaker  52:02  
+Why it's like that.
+
+Joshua Peskay  52:03  
+But maybe that's the question, the reason that AI so she asked, Why is it like that? The short answer of why AI many AI systems can be slightly sycophantic. If you're not familiar with that word, it's like, oh my God, you're such a brilliant person. You're genius. Everything you do is, I absolutely know who you are. Sorry.
+
+Joshua Peskay  52:22  
+Aaron, that's right. Aaron, thank you.
+
+Joshua Peskay  52:29  
+So the reason it's like slightly sycophantic and always agree with you is because two things, one, the makers of these systems to your point, want you to use it more. They want you to engage with the system. And we like it when people tell us we're really smart, it tells you really smart because they just like, you know, other algorithms do things. It does that. The second reason is that we give it feedback. When it tells us we're really smart, we say, Oh, I like that. Yes, I agree. And so we reinforce that ourselves. So you actually have to work a little bit to get AI to push back on you, because by default, most of the systems will be somewhat sycophantic and just continue to agree
+
+Kim Snyder  53:15  
+with their ways to talk, to ask your questions, to not get in. I'm sorry. I was just gonna say she did this. She tried it out and said, How come you finish the sentence? Would likely not be it. That's a really sharp question,
+
+Joshua Peskay  53:31  
+and that is why. So it's partly what you said, that you program it that way, but partly it's us that we also force it because we like it, all right, so the change continues. Ai capabilities are going to continue to evolve. Ethan Malik, a wonderful writer on this topic, says, remember, today is the worst AI that you're ever going to use. That's not 1,000% true, because it's also what's referred to as a jagged edge that the capabilities go up, but not in like a straight line. And sometimes they it goes up in one way, it gets worse in another. So your AI system will actually seem worse on something one day than it was the previous day. But in general, it's going up. It's getting better and better and better. Okay, all right, so the world of the possible very quickly, like so many things we can do with AI, our friend in the back, and I'm sorry I forgot his name. Kind of went through, you know, mind maps and podcasts and, you know, I can generate emails. I can use it as a thought partner. I can use all those things, obviously. Now we can generate videos, you know, VEO and Sora, too. And these tools can generate extremely compelling videos. I can make audio. I can do, really, almost anything that you can do at a computer you can do with AI, and it's only getting better and better at most of these things, all right? So it really, really kind of depends on what you want to do and what problems you want to solve. And this gets back to a point Kim and I will make over and over and over again, right? Coming at this from the perspective of, oh my God, I've got this amazing tool. What should I do with it? How should I take advantage of it? Is the wrong question. Start from what are the problems that we have that are most important for us to solve? Now let me see how I can use these tools to solve those problems. Start with the problems. Don't start with the possibilities. So be overwhelmed if you start with the possibilities. All right, the current landscape has literally changed this morning, because any copilot users here, so copilot, I don't know if it's reached your desk yet, it had a major upgrade, like this morning, but it's rolling out over the next week. They have a voice agent now that's really good that you can have natural language conversations with. They have a tool like notebook LM now so that you can make podcasts and you buy maps and other stuff like that. They call it notebook, which is very nice in Microsoft, actually call it something useful, because most of the time they name things horrible.
+
+Kim Snyder  56:01  
+And it will soon be showing up, like in your apps, if it's not already there, like, even if you don't have the, you know, extra add on
+
+Joshua Peskay  56:09  
+and again, feel free to take pictures. Feel free to take notes. And we do everything, but you get all the slides, you get everything. So much
+
+Kim Snyder  56:20  
+back to camp. All right, without it's not work grounded, which is actually safer from the data governance. We'll get into that more, but yes, so interestingly, when we asked you when you were applying a bunch of questions about which tools are using. 90% of people said that chat GPT was the tool that you're using the most, right? And is that a Work Chat GPT account like one that your your organization has purchased like chat GPT enterprise or chat GPT teams personal, right? And you may not be sure I can just use it on my work computer so it doesn't work. So, all right, so we're seeing, you know, there's a strong lean toward people using personal right chat, GPT, and this is no shame, no blame, okay, even though I'm data privacy person, but we just taught a class to TechSoup for a TechSoup had like 240 registrants, same kind of thing, okay, actually more so, like 85% of people. So that is to say that a lot of people are using their own accounts. So let's talk about that for a moment, especially as you think about because I kind of, you know one of the goals I'm assuming, and you can is that your organization's kind of sent you here, and when you go back, you will help them with AI adoption on some level. Correct is that the correct assumption? Okay, so these are good things to know when you're wearing that hat, like helping our organization adapt, Session Four will focus very much on that, okay, organizational readiness, because a lot of organizations are not ready. Okay, huge numbers, and also in corporate America, all right, so, all right, there's a fair number that have chat GPT established, but I'm seeing Google workspace and Microsoft are kind of coming in at the, you know, head of the race here. The reason for that right is that you either have Microsoft 365 as your enterprise environment that you do all your work in kick docs and SharePoint and all that stuff, or you have Google workspace, and it seems like there's a few More Microsoft people, but yeah, so and some organizations have then done the chat GPT team or enterprise, but that tends to be fewer who is from one of those organizations that's done like, where the organization paid for chat GPT? Oh, yeah, okay, all right, because a lot of them aren't, because organizations are very behind the curve here, like, I don't know if you have any executive directors in the room, any EDS, okay, so anyway, I think you know, just knowing that these tools are baked into some of these platforms that you already use and don't cost extra, you didn't have to make a business case for something like chat, GPT or Claude, that's just a normal thing. So,
+
+Kim Snyder  1:00:18  
+okay, so why it matters that using organizational enterprise accounts. And we can buzz through some of this, and there's, you will have all these slides, and there's kind of a lot of words on these, okay, in the enterprise models, okay, you have the same security that you have when you're using say copilot in your Microsoft 365 or Gemini in your Google workspace, you have the same kind of protection of what you put into your prompts, the fact that your prompts do not go to further Train AI. Okay, so remember, AI learns continuously learning on many free systems or personal systems. Well, actually, today you can now turn off data training if you're using your own personal chat, GPT, but you would need to know to do that. Okay? And many people don't.
+
+Justin  1:01:19  
+I only did it because I only did it because I was, I only did it two weeks ago.
+
+Kim Snyder  1:01:24  
+So that's most people don't realize, like, Oh, you mean I have the free one. You mean I can turn it, I can turn it off, okay? But what that essentially means is that you're the data you put in is going out there, so all of a sudden it matters what you put in, right? Whereas if you use your organization's systems, then it's staying within the enterprise. So if you're going to be using copilot in when logged into your work account, what your interaction with the AI is essentially no different than a document that you put in SharePoint, okay? And so you have those same data protections, and that's an important thing for everyone here, just because you might be working with something or helping a participant with a resume, and what kind of personal information are they putting on their resume, right? But also helping participants be aware of this for when they go into the workplace. That's why, like being good at AI, this is doesn't necessarily mean, okay, I'm going to use this personal tool on my phone. I'm going to get my work done for you that won't necessarily win you any points at your new job. Okay, so, all right, so that's, this is kind of what's the your prompt data is at risk for training AI. And essentially, if you put personal information in that that is data exposure. You're exposing data to a source that shouldn't have it, right? And it's important. So that's, that's the kind of, the sum total of it. You know, Josh and I for a long time at our former place of work, and they eventually learned we paid for accounts. Now we would turn off privacy and cyber security. We would turn off the training. But it is not uncommon, because if an organization is going to be like, slower than molasses at getting up and running with AI, and everyone's using AI, and participants are asking about AI, and they're like, What are we doing here? Right then, right? Who can blame someone?
+
+Joshua Peskay  1:03:48  
+So the analogy that I use a lot Kim and I do a lot of work with organizations around governance of technology and cyber security and data privacy, and the term that I've used, which goes back to the beginning of cloud computing, when you could just set up your own dropbox account like at work. Some of you will remember this. Many of you are too young for this, but some of you are like, you know, it used to be, you had to go to the office to work, and they didn't really provide remote access, right? But, you know, I could just set up my own dropbox account and sync all of my server files to Dropbox, and now I can work from home. That's something that's called shadow. It okay? And we have shadow AI, which is the same idea, okay? And I describe this to organizations this way, water is going to go downhill, okay? You can direct it. You can say, I'd like you to go here and not over there, and put in a little effort. But if you try to block it, it will find a way around. And if you do nothing, it's going to go in lots of places. And I will say about AI that thinking about it like water works in many respects, we really, really like water. It's really great to have a boiling cup of water to make some tea. It is really bad to have a boiling bathtub full of water. It is really nice to have a warm bath of water in my bathtub. It is really not great to have that same warm water in my living room, right, and flooding my apartment going down. Water is great when it's where we want it, in the way that we want it, and under our kind of management and control, but when it gets out of that, it becomes a big problem in a hurry. Ai, is so much like that in every way. All
+
+Kim Snyder  1:05:36  
+right, Session Four, by the way, at the organizational kind of side of things, we're going to talk about policy and things you can bring back to your organizations, you will all be the designated drivers, and you know what that car needs? One. Okay, so I don't know how we're doing with time.
+
+Joshua Peskay  1:06:01  
+What's the situation with lunch? Is it getting delivered at a particular
+
+Justin  1:06:05  
+getting delivered and but we should plan to start eating around like, one o'clock. Oh, one
+
+Joshua Peskay  1:06:09  
+o'clock. Oh, we had it for noon. Okay, oh, yeah. Well, it's
+
+Justin  1:06:12  
+coming from around 1230 1215 1230 we were thinking we would do the last hour
+
+Joshua Peskay  1:06:17  
+being lunch, but, oh, okay, no, we were actually gonna have a break early in that. So we'll see. We'll figure it out. Okay, we do like a short break earlier too. Not a problem, okay, all good. All right,
+
+Kim Snyder  1:06:30  
+all right. So we
+
+Joshua Peskay  1:06:32  
+can connect people. I think it's good. What I would recommend is we do a break, yeah, then we do the Agile ball game, because the Agile ball game is going to take us a little bit, and then we'll come back, and if lunch isn't ready by the end of all that, we'll move into our activity. So let me set up the next about hour for everybody, because it's going to be complicated, but fine. All right. So first of all, if you need to charge your laptop, this is a great time, and you can go plug it into any desk out there. We have the charging area over here. If you need to unplug things here to get a charge, we prefer you go out to some desk out here and just plug your laptop in and let it charge. And that'll be fine. Come here right this second, though, we're going to give everybody a 10 minute break right after I finish this, and then we'll come back and do that as a ball game. You can go plug in your laptop. Now we're going to try something in here that's a little complicated. We have to play. I was thinking we tried it in here. I have an idea we're going to see, and if it doesn't work, then we'll move out there. But it'd be fun if we're all in the same place, because it'll be loud, I think. All right, so we're we have these bags of balls, and we're going to play a game that's going to require each of your tables to throw balls around to each other. So you're going to have a little catch, but it's a competitive catch, okay? And it's going to, well, we'll set up the concept, but we have to set up the room a little bit. So what I would like is for this table, when you come back from your break, or before you go, you're going to push all your chairs and your table this way as far as you can to give yourself as much room on that side as you can. You're going to do the opposite. You're going to push it that way, this way, that way, that way. And we're trying to make space so that you can kind of stand in a circle as your table, you each have about anywhere from six to eight people at your table. So you're going to try to give yourself enough space to have a circle. Okay, everybody understand your instructions. Very complicated stuff, but we're all professionals, literally.
+
+Joshua Peskay  1:08:30  
+Okay, so you're going this way, so this table,
+
+Joshua Peskay  1:08:38  
+you're going that way, you're going that way. You're going that way, and to the last table this way. Okay, all right. Everybody's got 10 minutes. Take a break while your laptop is in charge. Move your Table wait
+
+Unknown Speaker  1:09:40  
+I, fantastic, excellent,
+
+Unknown Speaker  1:10:00  
+I haven't stopped in The
+
+Joshua Peskay  1:10:12  
+hospital. Day,
+
+Joshua Peskay  1:10:40  
+now, Taking chairs outside.
+
+Joshua Peskay  1:11:02  
+You the chairs fold up, and I do
+
+Joshua Peskay  1:11:21  
+have The instructions,
+
+Joshua Peskay  1:11:27  
+but take your break. Enjoy yourselves. I'll
+
+Joshua Peskay  1:11:48  
+let's see, am I still recording?
+
+Joshua Peskay  1:11:53  
+I am fantastic.
+
+Joshua Peskay  1:11:56  
+I might as well just leave it on. We can always remove stuff doing
+
+Justin  1:12:16  
+fine. Has anyone not shared their name? Okay?
+
+Unknown Speaker  1:12:52  
+Work you
+
+Unknown Speaker  1:13:10  
+it's We talk About 200%
+
+Kim Snyder  1:14:32  
+box And
+
+Unknown Speaker  1:14:57  
+it In the report, your
+
+Unknown Speaker  1:15:30  
+locations, yeah, under browser,
+
+Speaker 2  1:15:40  
+drive everybody else.
+
+Joshua Peskay  1:16:05  
+Yeah, all right, so, let me Read the board. Yeah.
+
+Joshua Peskay  1:16:37  
+I have I'm so sorry. I remembered you the second I saw your face, and I kept trying to place it. I kept trying to place it. And I was hoping I remember before I asked
+
+Joshua Peskay  1:16:58  
+You, I knew I knew it. I was thinking this,
+
+Kim Snyder  1:17:20  
+so you deserve
+
+Joshua Peskay  1:17:53  
+yourself. Oh, I didn't know that. Oh, that's that. Oh, that's a cool turn.
+
+Joshua Peskay  1:18:27  
+Just people on everything. And I actually make them in a technology context, because one seems like it's technology, but they're just like these hyperbolic people at the front like these hyper competent people at nonprofits that jst Should get done, super friendly, super confident, working hard. They're
+
+Joshua Peskay  1:19:07  
+not true, how
+
+Joshua Peskay  1:19:34  
+if there is A need for the students you have
+
+Justin  1:19:59  
+it's People up again.
+
+Justin  1:20:12  
+I was thinking, all right, I to take versions, you guys are
+
+Joshua Peskay  1:20:33  
+gonna have to do a demo. So Justin, you send me the ball.
+
+Joshua Peskay  1:20:53  
+Your everybody
+
+Joshua Peskay  1:20:56  
+before it goes processing bomb you
+
+Joshua Peskay  1:21:10  
+also
+
+Joshua Peskay  1:21:14  
+has to go through the air at least a little bit, and
+
+Justin  1:21:18  
+you can't go the person next to you. So pretty much every time I would have to
+
+Speaker 1  1:21:38  
+give him and Then somebody,
+
+Justin  1:21:42  
+it has to go to every person I
+
+Unknown Speaker  1:22:08  
+I think
+
+Justin  1:22:16  
+everybody has to do Everybody
+
+Justin  1:22:29  
+has to get exactly wait to make
+
+Kim Snyder  1:22:40  
+sure. Trying
+
+Joshua Peskay  1:22:46  
+to process anybody. So the big thing is out of
+
+Joshua Peskay  1:22:57  
+Box printing or whatever. The
+
+Unknown Speaker  1:23:19  
+way it works.
+
+Joshua Peskay  1:23:53  
+College, so I'm going to be teaming start with down here. You guys give yourselves a name.
+
+Joshua Peskay  1:24:13  
+Conversation, Yeah, over
+
+Unknown Speaker  1:24:40  
+you go bye. Must be
+
+Joshua Peskay  1:25:03  
+fabulous, okay, all right, these rules are complicated, so everybody needs to listen. There was
+
+Joshua Peskay  1:25:22  
+no one, oh, because I can't
+
+Joshua Peskay  1:25:26  
+Okay, so we're going to do a little demo for you all have two bags at your table, one is empty and paper, and the other is full of colored balls and is a Fresh Direct bag. All right, so if everybody, hopefully, you can see it a little bit. Yeah, the object, okay, is to process as many balls as you can as a team in two minutes. So what are the rules of processing? Okay? The first rule is only one person is allowed to take balls out of the Fresh Direct bag, so I am that person. Okay, we're going to be a team actually. Can you help us as well? Okay, so the five of us are a team, okay, I am also the person who has to put them back into the paper bag. Okay, so only one person can take balls out and only one person falls in, and that's the same person, okay, yeah, well,
+
+Justin  1:26:29  
+you can go through every single person back to the original person, who then puts in the bag. However, it cannot go to the person to their left or right you have or basically they have to. It has to go to every person, but it has to you can't hand it to the person to your left or
+
+Joshua Peskay  1:26:49  
+right. So that was a successful everyone touched it. It's back to me. We just processed one ball. Okay, successfully.
+
+Joshua Peskay  1:26:58  
+If I dropped the ball,
+
+Joshua Peskay  1:27:04  
+stays on the ground. You cannot process it until the end of the round. Then you can when the next round goes we're gonna have three rounds in total.
+
+Joshua Peskay  1:27:13  
+Okay, that is it. You may not hand it off.
+
+Unknown Speaker  1:27:39  
+You can hear me clap once.
+
+Kim Snyder  1:27:50  
+All right, so we're gonna do three rounds of this, two rounds of as many balls as two minutes
+
+Kim Snyder  1:27:58  
+for getting the ball grabbed, and then you'll have a minute as a team. You and two and two. Yep.
+
+Kim Snyder  1:28:07  
+Okay, so two minutes to set them all around, then two minutes to strategize.
+
+Kim Snyder  1:28:14  
+How can we come closer next time
+
+Joshua Peskay  1:28:21  
+as a team? Plan? Two minutes to pass balls, saying that you couldn't Okay, two minutes to plan, two minutes to pass balls, two minutes to plan, and then one last round. Now the last thing is, here's the Scoring System before each round, after your two minute planning session, you're going to give us an estimate of how many balls you think you will successfully pass in that round. We're going to write it down on the board.
+
+Joshua Peskay  1:28:53  
+Then we're going to come and check your actuals, okay, the amount of balls that you process minus the difference between your estimate and your actuals is your score. It's a little tricky on math, so I'll explain it as an example. If our team over here estimated that they would pass 10 balls, that gives them 10 points. If they estimated that they would pass 15 balls. The difference is five. We subtract five from 10, and their score for that round is five points. If they estimated they were going to get 50 balls, and they passed 10 balls, their score is minus 40, actually minus 30. I'm sorry, okay, because there's difference minus third score. Okay, a little bit complicated, but you want to get as many balls as you can. But you also want to estimate, actually, you know accurately. Okay, yes,
+
+Joshua Peskay  1:30:01  
+40. So the question is, we estimate 10, we do 40 balls. Your score for 40 balls is 40. Your difference was 30. You estimated 10, but you did 40. So we take 40 minus 30, and your score would actually be 10. Okay,
+
+Joshua Peskay  1:30:32  
+all right, okay, so. The same. Who
+
+Justin  1:30:54  
+is going to be doing? The Show, yeah,
+
+Joshua Peskay  1:31:37  
+we're going To go
+
+Joshua Peskay  1:31:52  
+October, Me,
+
+Joshua Peskay  1:32:42  
+we Are Yes, not estimation. The Catch is at the difference between the amount that you do and your estimate is subtracted from your score. So if I estimate 10 and I do 12, My score is 12 by two and my score.
+
+Joshua Peskay  1:33:56  
+Someone
+
+Joshua Peskay  1:34:02  
+else, our estimate? Yes, everybody back.
+
+Joshua Peskay  1:34:20  
+Egos, the difference between
+
+Kim Snyder  1:34:40  
+subtracts. Difference will be subtracted estimate
+
+Joshua Peskay  1:34:52  
+for the granola bars. Come on. Oh, come on. 15 estimates from the hot 10 go and from the fabulous
+
+Joshua Peskay  1:35:20  
+Oh, Here we go.
+
+Kim Snyder  1:35:47  
+Like, 4321, go. Even this
+
+Joshua Peskay  1:36:20  
+is yeah, eagles involved must prove in the air,
+
+Joshua Peskay  1:36:36  
+don't be cheating eagles,
+
+Joshua Peskay  1:36:42  
+I know any Philadelphia Fans are like,
+
+Unknown Speaker  1:36:52  
+hello, Afternoon. I
+
+Kim Snyder  1:37:31  
+it Don't come 872,
+
+Joshua Peskay  1:38:18  
+way the egos you were cheating and you only got four jagged
+
+Joshua Peskay  1:38:51  
+great. So after round one, so now you all have two minutes to strategize for round two. I would like your estimate right when we start. Okay, so when we get done with the two minutes, two minutes to strategize as a team Round two. Drive. Just like
+
+Justin  1:40:20  
+Start. It Is we
+
+Kim Snyder  1:41:00  
+Nine estimates,
+
+Joshua Peskay  1:41:28  
+all Right, 15,
+
+Joshua Peskay  1:41:38  
+go.
+
+Joshua Peskay  1:41:48  
+16 On Your Marks. Don't cheat again. Hey,
+
+Speaker 4  1:42:14  
+eight, Oh, sorry, 53726147, 531265,
+
+Justin  1:43:08  
+up, you know?
+
+Joshua Peskay  1:43:20  
+Oh. 30 seconds, left, one more.
+
+Joshua Peskay  1:43:42  
+One more, one More. The one
+
+Joshua Peskay  1:44:22  
+drop in a strategy.
+
+Joshua Peskay  1:44:28  
+Who set a target?
+
+Joshua Peskay  1:44:33  
+If I was their boss, I would set very ambitious targets.
+
+Unknown Speaker  1:44:42  
+No, they wouldn't.
+
+Joshua Peskay  1:44:48  
+There 13, and how about the Hawks 13 and how about the granola bars 18? All right, I know, right. All right. Right? All right. The storms went up. The estimates got a lot better. Interesting, okay, just because it was not totally clear last time, you now have two minutes to plan your third and final round. All right, afterwards, we need An estimate. We'll Do a Destiny.
+
+Speaker 2  1:46:17  
+It Understand
+
+Joshua Peskay  1:47:13  
+You one I do thank You. All right, egos.
+
+Joshua Peskay  1:48:02  
+17, 20, hot 20.
+
+Joshua Peskay  1:48:06  
+Yeah, greatest of all time. 19, the fabulous
+
+Joshua Peskay  1:48:18  
+20. Okay, good luck, everybody.
+
+Joshua Peskay  1:48:31  
+Go shit.
+
+Joshua Peskay  1:48:50  
+Oh, shit, the way
+
+Unknown Speaker  1:48:56  
+we used to don't way We used
+
+Joshua Peskay  1:49:12  
+to my goodness, I Yeah, talk to you.
+
+Joshua Peskay  1:49:40  
+Friday, 40 seconds left.
+
+Joshua Peskay  1:50:02  
+30 seconds
+
+Joshua Peskay  1:50:12  
+left, 90 seconds left, 10 10,
+
+Joshua Peskay  1:50:26  
+765432, 100
+
+Joshua Peskay  1:50:48  
+All right, let's count it up. Eagles, your estimate was 17. What was Your action? Oh,
+
+Joshua Peskay  1:51:12  
+fabulous 22
+
+Joshua Peskay  1:51:16  
+hawks and team
+
+Joshua Peskay  1:51:36  
+there's just add up each round, the sum of their score for each round, and then whoever got the highest score,
+
+Joshua Peskay  1:51:48  
+we cannot, we can use by phone. That's okay.
+
+Joshua Peskay  1:51:59  
+100, yeah, for meeting targets, here you go. Kim
+
+Joshua Peskay  1:52:17  
+AI, course, okay, this is something, by the way, has anyone played the Agile ball game before today?
+
+Joshua Peskay  1:52:34  
+Methodology, which to contextualize the tradition management is what's called waterfall 29 minus 29 so 24 give a huge thing of requirements off to the developer. They would go off for a year and develop like some application or a product, and then come back and say, here's the thing, and that's a waterfall project, okay? All the planning is front loaded, then all the work comes in the middle, and then we deliver a product at the end. Okay? What agile, which started in like the 90s, as software became much more and more part of the work, is the idea. Well, it doesn't make a lot of sense to wait that long to get feedback from people, because we're doing all this work, and maybe it isn't what people need. So the earlier we can get feedback, the more we can iterate and improve and go through these iterative cycles of improvement, okay, and giving feedback and getting improvement. So the ball game was a way of teaching this idea of iterative cycles. Okay, it's how you can kind of understand and improve and get better at estimating what you can do, and also get better at working as a team to do something, to deliver a product or to create a process. So having gone through this in the context of what we are teaching and what we're thinking, why would we make you do this? Other than that, it's really fun for us to watch. Why would we want you to do this? Who would like to there's no wrong answers here. Yeah, please. Learning from mistakes, learning from mistakes and self correcting. Great. I think
+
+Speaker 3  1:54:21  
+estimating time, you know, versus, you know, your total, you know, outcomes and things like that, yeah, yes, being able to see the value when people
+
+Joshua Peskay  1:54:32  
+add to one whole project, excellent. Yeah, yeah, we were just seeing trade like the AI is the task that we were being trained on,
+
+Joshua Peskay  1:54:46  
+meta activity, turning you all into little machine learning,
+
+Kim Snyder  1:54:55  
+but the algorithms all improved.
+
+Joshua Peskay  1:54:59  
+Who is our winning team? So the granola bars, it looks
+
+Kim Snyder  1:55:01  
+like, well, the granola bars they you know, if we were to do a most improved,
+
+Joshua Peskay  1:55:06  
+yeah, who was the most improved? I'd say the Eagles. The Eagles,
+
+Joshua Peskay  1:55:11  
+nice, okay, yeah, the
+
+Joshua Peskay  1:55:17  
+Yeah, we were gonna declare the winner. We don't have any prizes for this, I'm sorry, but was actually the most improved team. Go Eagles. I'm from Philly. So you went from four to 18, which is pretty great. That's the greatest increase. And you also way overestimated your abilities the first round, and then much more accurately estimated your abilities as it went on. So great job on that the team that did the best overall was the granola bars and then the goat, the greatest of all time hitting exactly their goals, 818, and 19, single time they correctly intuited a little bit of a flaw in our scoring system. Would you like to share the flaw that you figured out
+
+Kim Snyder  1:56:11  
+talking if even because there were certain people that if you did better than your amount, you still got, for example, the girl
+
+Speaker 2  1:56:18  
+bars they said they were going to do 1518, they still got 15. So at the end that you do more your points, you're not gonna get the points you do. So we stop.
+
+Joshua Peskay  1:56:32  
+This was a bad incentive system.
+
+Joshua Peskay  1:56:36  
+There was no incentive to overcome, like,
+
+Speaker 3  1:56:40  
+if I do, you know, a fitting the game, I will say, I will subtract any balls in the floor. I will add it like a line.
+
+Kim Snyder  1:56:48  
+Well, there is, there was that that's actually won the rules, but we found that too punitive.
+
+Joshua Peskay  1:56:59  
+All right. Other ideas of why we would do this, yeah, estimated zero count. If you estimated zero, then I think the way it works is that you could only have
+
+Kim Snyder  1:57:11  
+zero. The way
+
+Joshua Peskay  1:57:16  
+it was structured was that you want to estimate as high as you can hit exactly, right? Because that's going to give you the best score. So, but if you over, if you overshoot your estimate, it's very punitive. Why again? Would we have you do this? Yeah,
+
+Kim Snyder  1:57:31  
+it gets you used to the idea of successive approximation, which is kind of like
+
+Joshua Peskay  1:57:36  
+successive approximation. I'm not familiar with that term. It's
+
+Kim Snyder  1:57:39  
+an instructional design term Addie was how they used to do it, which was more waterfall, okay? And successive approximation is a more agile model. It's called the Successive Approximation Model. You create a course, you try it out on some people, and you go back and you iterate, yeah, yeah. That's yeah. You try to get to perfect by by using it instead of thinking about Yeah, progressive elaboration, right? Yes. So you you and you plus, as you know more, you can do more, right? So as you practice, you're better at Yeah, you iterate on
+
+Unknown Speaker  1:58:21  
+it. Thank. So
+
+Speaker 4  1:58:25  
+you talk about the Agile Model, right? You get a fast answer, you know? So we got it take from brains, or it's take from information from everybody, from different sources. And so we thought 15, but we only got four, because we have different strategies. So coming in with a fast model, you're gonna get some inaccuracies, right? If you think about how we just talk about generate AI, and what it looked like throughout the years, you know, time goes on, it gets better, it gets faster. You get more accurate with the data. And so that's what we did, and that's how I that's how I connected. So what happened?
+
+Joshua Peskay  1:58:57  
+Yeah, yeah. Piggyback off of that, yeah? Like, absolutely. I think it's kind of like a metaphor of the training models, as, like someone's mentioned over there, like you would train it, and then like you have a result. Based off of that result, you'll change your chain of thought approach, or something like that. We'll do
+
+Joshua Peskay  1:59:21  
+another iteration training with the data that you've had before, so on and so forth.
+
+Joshua Peskay  1:59:27  
+So, yeah, trying to look real quick.
+
+Joshua Peskay  1:59:34  
+Another thing I will say is not, oh, there was one team only the fabulous reduced their estimate after the first round. But everybody else, after doing a round, thought, Okay, I think we can do more the next round now that we understand a little bit how to operate, right? But one team said, Oh, we way overshot the first time, so we need to walk it back a little bit. And then you went higher than your first time destiny as
+
+Speaker 3  2:00:04  
+you learn more, yeah, back on the eagle said it's kind of the system and the information that we put into the system. So originally, we have a system that we designed, and the information that we was kind of wrong on the second time around, that system got disrupted by a million different things, pass the ball and whatever, but the system was no longer the same parameter, so we have to readjust. So I see that when we are learning to you, Gen AI, that whatever we put in is shifting whether you get garbage in because what you are putting in is completely nonsense, or it's tuning better, which we did on the third round, you know, figuring out like, okay, but let's say less numbers. We figure the same rule out, like, Okay, we say more and we put less. So why even so? Just tuning in and allowing our system to learn from our input. That was our Quick,
+
+Joshua Peskay  2:01:07  
+quick question. This is like the most leading question of all time. If in between rounds during the strategy sessions, we had said you all have to go each person on the team has to go to a different room. You're allowed to strategize, but just by yourself, and then you come back and you start the next round, do you think we would have gotten improvements? No, okay, so when you're working on AI by yourself, not talking to any of your colleagues about what you're doing or how you're doing it, how do you think you're doing as an organization, right? So yes, it
+
+Speaker 2  2:01:43  
+was along those lines, I think, like at the end of the day, we were still humans trying to manage a process. So it was also, how did we interact? How did we hear feedback from each other? How were we working across one another? And, like, even the beginning strategies of like, whose voice is kind of creating the strategy, and who's sitting back and maybe has an idea, like, you're it's still, we're all still risk averse, and who isn't. Yeah, we're getting to know each other's abilities. Like, it's it took, it's still, at the end of the day, was humans working? I bet,
+
+Joshua Peskay  2:02:18  
+I bet there were teams where someone was like, Let's do 40. It's one. It's like, no, by the way, that's me and Kim. I'm like, I'm like, well, they're 50 kids. Like, how about 15? A team working together gets better no matter what, just by being together, I almost agree. Well, right, don't necessarily get better. Nothing reasonably well should get better with practice and feedback.
+
+Joshua Peskay  2:02:59  
+Yes, on
+
+Joshua Peskay  2:03:04  
+Quiet, quiet. There's actually, like, a learning lesson in that. Like, I don't know if y'all realize, like, the whole apple intelligence thing was delayed a lot, because the way Apple develops their software is they just, or, you know, hardware is they actually go into like, a cave and, like, they just kind of come out with the product. You can't do that with AI and like, therefore, like, their intelligence system kept getting delayed over and over again. So far as I know, it's still delayed. When you see it recently, it's not exactly, chat, GPT, right? Exactly? Yeah. You all right, let's This was awesome. Y'all are great sports. I hope you enjoyed that. Hopefully the ideas are clear to you, like iteration, right? Understanding what you can do with AI is going to be largely dependent on trying to do things and seeing what it can accomplish, you will get better at estimating what you can do with AI. The more you do stuff with AI, and the more you do it with each other, the better you'll get at it, and the better you'll get at estimating it. So hopefully that gets let's put all the tables back and we're going to do another like 20 minutes until lunch gets here. Then we'll give everybody a lunch back. Okay?
+
+Joshua Peskay  2:04:24  
+Oh, if you can just hand me the balls in whatever way works for you. Okay, just pass the bags back. Take
+
+Joshua Peskay  2:04:40  
+your time. No rush, anybody?
+
+Joshua Peskay  2:04:53  
+Yeah, oh, and you will want Your laptop as A charge when you
+
+Joshua Peskay  2:05:50  
+Oh, where's my phone? Oh, right, here we're still recording.
+
+Joshua Peskay  2:05:59  
+Oh, I hit my limit. Okay.
+
+Joshua Peskay  2:06:08  
+It'll keep recording, but I won't be able to listen to it until I upgrade, which I'll do later. Oh,
+
+Joshua Peskay  2:06:25  
+talent.
+
+Speaker 2  2:06:34  
+So say more. I'm the Senior Director of Talent with My name first, hi
+
+Speaker 2  2:06:42  
+Margaret. Donald Rene first,
+
+Speaker 1  2:07:09  
+I know even learning, ACS version,
+
+Kim Snyder  2:07:40  
+because we have them on
+
+Unknown Speaker  2:07:51  
+ACS, we have linked here on services.
+
+Unknown Speaker  2:08:07  
+So we just opened it up. Yeah,
+
+Unknown Speaker  2:08:20  
+you said better,
+
+Speaker 2  2:08:48  
+I realized that they really have some deal with
+
+Unknown Speaker  2:09:02  
+researchers.
+
+Joshua Peskay  2:09:14  
+Five To say, mentioned Ariana I used to wear it for a charter school network. Is coming soon, and then we will get to lunch.
+
+Kim Snyder  2:10:00  
+So prompting AI. So this is probably, some people probably okay. This is what we're going to be doing all like morning for four hours. Whatever we do, this is an important aspect of learning to use AI and improvement. We've talked about this in a lot of different ways. People have mentioned it. You can move along. I'm going to kind of get to, I'm going to go through the slides, because you do have them in the community real quickly, because I want you to see it in action. All right. So this is the question, how do you get AI to do all this stuff, right? How many people have heard or even felt like this is like such generic junk that I get out of AI, like, what's all the fuss? Why do people bother? And you may have, I've heard that from people I heard all the time, right? Like, oh, I can't really use this. It's just generic, right? Well, there's a reason for that, and that has a lot to do with how we ask it to do things and how much context you give it. Okay, I think we've seen some examples of like emails that are targeting certain audiences, things like that. These are all these concepts, but a lot of people, and including some of your participants, because I imagine some of you are either currently or soon, in the position to help some of these folks use AI, yeah, yeah. Okay. So you get like, oh, but this is just junk, or I just gonna have it write this, like term paper. That's junk. Okay, so the reason this happens with most kind of mistakes, right? But think about your AI assistant as an intern that's not going to say no, okay, and has consumed so much knowledge they can kind of pull it from anywhere, but they know nothing about your needs, right? So they come walking in the office, and if you say, make an agenda for our 12 O'Clock team meeting, that's like for what? Huh, right. So it's so very vague, requests help me improve this resume. Well, how should I use more flowery language? No, right? So you know, vague, lacking context. So say you are sending that resume or helping someone prepare a resume for someone that you know is a real kind of details. Employer at the other end, that's an important piece of context for when you're doing that job, right? Because it can do whatever you want, just like that intern that will never say no is not going to say, Hey, Kim, you've asked me this 20 different times, right? Let's all get into it all right? Or what if I don't tell it what I like, how I need it formatted? What if I didn't know that I could ask it to format something? Okay, that's another one some people don't realize, like, you know, like, oh, I need, I need to have an outline, and I need it to be much more like high level. Will tell it a high level outline that doesn't go more than two levels deep, all right, when I write bullet points, and just so you know, I'll be completely up front, right? I will never write another bullet point again without the help of AI, because it's actually better if I give it the right kinds of instructions at turning my complex idea and someone else was talking about the email, right? So this paragraph, turn it into three short bullet points that are each one no more than 10 words, right? And then the iteration. We just experienced the power of iteration, expecting it to be like perfect the first time, I will say, the more time you put into prompting up front, the less iterations you're going to have to do. And for folks who I'm going to go off on a tangent, but for folks who bring up the question, Why should I learn AI, it's bad for the environment, I'd say the more you understand this, the less times you have to use it to get the same output. So you're using it less and taxing the systems less, unless you're gonna not use it at all, right? But so these are kind of the common things that happen. You will see it in your colleagues. You will see it in I see it in myself sometimes, like, I didn't tell it what I wanted, or the way I told it was so roundabout, or I gave it an instruction that canceled each other out. Like, right? So I'll say, like, be really clear on this, but only use a working you know? It's like, wait, they cancel each other out, and then it has a hard time giving me what I want, just like that intern, right? So that's often what happens. And then, okay? But the thing is, yeah, it's not magical. There's not like some formula, it's practice. It's all in the prompts. And there have been times and where Josh and I have actually said this to classes. This is earlier on in our AI teaching. Oh, the AI is going to know how to prompt better than I do, just like it writes both. That is still not true. Actually, maybe it'll be true one day, but I don't know. The last I knew this thing could not it was probabilistic. Statistics. Could not read my mind in terms of what I needed, right? So, yeah, so quality prompts, there is an argument for and there is actually a method to it.
+
+Joshua Peskay  2:16:02  
+So, Ethan, Malik, who I mentioned before, who's a professor at Wharton and has been writing about AI, sort of from the beginning, is has said like, even if artificial intelligence stopped progressing at all today, and we were all just stuck with all the tools in here today, we would see, most likely, another decade or so of really significant innovation, just as we continue to learn the capabilities of the tools we have. And I'm going to express that in the context of prompting with the sort of suggestion and challenge that prompts are a form of software development, and that there is a meaningful extent to which the limit of what you can do with prompts is really just your own imagination and skills and practice, for example, Two kinds of prompts that were significant kind of unlocks, to me are role play prompts and interview prompts. So a role play prompt in the context of work, for us professionals, you could design a prompt, and we may, in fact, do that in this session today or in the coming weeks, that is an interviewer that you would just let your folks that work with you copy and paste into an AI of their choice, and it says, I'm going to interview you for this type of job, and you are going to respond to my interview questions. And any time you want, you can say, Stop, give me feedback, and I will give you feedback on how you did in responding to that job. And with a lot of the current AIS like chatgpt, you can do that in a voice mode where it is a literal audio interview, where they are literally talking, and the degree to it. You could do that today just by writing a prompt that guides someone through that something in my work, I have to gather what are called business requirements all the time. So I have to go to like a finance person and say, I need all the requirements for your new finance system. I've created a whole bunch of interview prompts where it says you're going to interview this person and ask them all these questions, and then create a set of business requirements to give to me. And then I hand that prop to the person and say, I'm here on time. Just paste this into whatever you had to use. Answer all the questions. If you get bored, just go away, come back, finishing questions at the end, it's going to output this thing. Send that to me. And I do that all the time now, and it's unbelievable, like, it's so and there, I'm sure, an infinite other number of uses that many of you will think of as we go through the session, that you wouldn't have thought, like, Oh, that. Wait, I can do that front. Yes. Okay, so huge skill. Then, so when we say it's like, the biggest ROI skill, we'd really
+
+Kim Snyder  2:18:59  
+be sorry. Yeah, no, no. So this is and that starts to get into it. You can see the creativity, and you start to think differently. And that's why, you know, those things that we couldn't imagine, right? Like, you know, that's part of this, you know, not like, When could you do that before in speaking English? Like while Josh said this was like software development, right? So your creativity is kind of your limit. It's also in English, so you actually don't do any coding, right? And so people will say, Oh, I don't know, AI, Oh, it's too technical. Most of it's actually not technical. It's a conversation. And so how clearly can you ask? And you know what? Sometimes I'll be working with AI, and I will figure out what it is I'm trying to get it's like part of my own learning process to think something through. And so I, too, I find that helpful. So we're going to start with kind of basic and structured. And I do think this is kind of the best way to learn these things, is just to see them in action. And basically meeting notes is often the generic example. A lot of you probably have interviews and things you do with people, and you get their consent person, but to record it, but then, then you have this kind of treasure trove of information. So your common meeting, that used to be an arduous thing. Remember when you went to meetings and took notes and then had to, like, figure out the tasks, and I invariably missed something, right? Even though I was, like, always focusing on was my notes, I probably missed half of what they said. But all right, but now I can just go turn the thing on, much like the doctor's phone is moving here, and it's capturing everything, and it's capturing all the nuances and the things that I could lose in between, right? And then I can it's a matter of my prompting to get what I want out of that, or what I need to then do next. So and craft is basically a formula for these are the things that kind of help the AI help you better so context, you give it the situation. This is a meeting that I had with someone who's getting ready to interview for a job, okay? Or, you know, a new or a new intake interview, right? Of someone who wants to apply for some jobs, the role. What expertise should I possess? I should be a workforce development person in the area of you know, you name it, right. What do you want done, right? So what is the action that the AI is going to take, right?
+
+Joshua Peskay  2:21:59  
+So can I pause yet for a moment. I want everybody to think back to that convey video with the next word prediction. And when I was talking about that is informed by the context right that surrounds it, what is the most likely next word? These are the things that are directing that right? And so when we say this prompting is a skill, that's how you move the probability more towards the thing you need and want, as opposed to some generic thing or something that's worse than what you don't want.
+
+Kim Snyder  2:22:32  
+No, that's so you know, what is the format that I want it to produce? Right? Do I want it to produce a list of action items that came out of that meeting. Do I want that this to produce a list of follow ups that I talked to this new participant about, right? And the target, who's the audience? Is it me? Is it something I'm making for my the person, my manager, right? So you give it this kind of it's giving it like a lot of dimensions that it wouldn't otherwise have.
+
+Joshua Peskay  2:23:06  
+Quick question. This is a a prompting framework that is called craft. There are other ones. I'm curious as to whether anyone in the other has used a prompting framework like craft before, and if so, which one it was, if you know, or if this is the first time anyone's being exposed to like a prompting framework, so to speak. In a sense, we use this prompting framework. We will have veterans when we're talking about interviews. The star result, star, star situation, cash action, result, yeah, very similar frameworks, Yeah, same thing, yep, yep, and none of them are inherently better or worse than others. Kim and I like this a lot. It works very well. We're going to introduce you to other tools we've built that allow you to use this very easily, but there are other frameworks that you can also use. So just wanted to see, but yeah, Star another. You
+
+Kim Snyder  2:24:03  
+had used one another framework. No, no. You were asking if you ever use you never heard of it before. Okay.
+
+Unknown Speaker  2:24:13  
+We use create,
+
+Speaker 2  2:24:16  
+create, yeah. What does it stand for? Great question. I was Googling contact. Role, no, it's character request, example, adjustments, type of output, extras,
+
+Joshua Peskay  2:24:32  
+that's it. Love it, yeah, and again, try to perform practice, iterate, right? There's not one way to like, win the Agile ball game, right? Figure out what works for you,
+
+Kim Snyder  2:24:45  
+and Microsoft likes clear some reason that keeps coming up.
+
+Joshua Peskay  2:24:53  
+This isn't the only the be all and all frameworks that is, you know, we like it, but there are other ones who don't feel like you have to use. Perhaps, if you like other ones, you like Star, you like queer, whatever.
+
+Kim Snyder  2:25:06  
+This slide full of facts is standing
+
+Kim Snyder  2:25:13  
+between these people. Okay, so let's just say that instead of Oh, AI just gives these results. Why do you bother? Someone's going to sit down and say, How do I apply these kinds of structured frameworks? And, yes, that is some of the stuff we'll be doing in between sessions. So, Josh, this
+
+Joshua Peskay  2:25:32  
+is you. Ah, okay, so why don't we do this?
+
+Joshua Peskay  2:25:38  
+Let's, is that our food Justin, yes, okay,
+
+Joshua Peskay  2:25:44  
+I'm just coordinating. How much time do you think you need? All right, so we'll do our first one. So I'm going to show you a meta prompt, and then I'm going to want you to use it. Do I need to jump out of your account? So let's, let's go look at what a meta prompt is, and let's share it. Where do I direct them? Kim, for
+
+Kim Snyder  2:26:06  
+I have the metaproc script is actually in the community. It's in
+
+Joshua Peskay  2:26:10  
+the community. Okay, so I'll share this with everybody here, and I'll make sure that everybody can get to it right now. So just bear with me for a moment. So this is a metaprompt, and there's a couple of different ways to use this. Okay, so the first way to use this is if you, if you how many people here have a free or paid chat GPT account that you can use right now,
+
+Joshua Peskay  2:26:34  
+a lot of you, okay, so for that,
+
+Joshua Peskay  2:26:37  
+so for that group of you, that's okay, if you can use chatgpt, okay, I'm gonna grab a link to
+
+Joshua Peskay  2:27:00  
+this shorten the URL, so they all have an easy URL
+
+Joshua Peskay  2:27:04  
+to grab. See, that's the that's close to my prompt. So that Bitly, dot four, seven, lowercase o, uppercase RG, number four, lowercase s, should take you in chat, GPT to the meta prompt that I have made and shared with everybody. Okay? So you can grab a picture of that. I don't know if I have the ability to branch anymore. I might have one that does that, okay, but if we paste it, people probably still need that up on the screen, right. It should take you right into craft maker, craft prompt, maker one. Oh, okay. So what that will do is you write in any crappy old prompt, and it'll say, and then just say, Make this prompt better. So let me give you a demonstration. They would have a prop that they would like help, leaking better, any volunteer, any property, any kind out of your personal work. Yes, it took me. I was, you know what? Forget about it. So I have think
+
+Speaker 3  2:28:16  
+about it. I have three hungry names in one spreadsheet, right? And then I have 310 names in the other script. I wanted to see which one were not involved a spreadsheet, and it
+
+Joshua Peskay  2:28:38  
+was a mess. They make this prompt better.
+
+Joshua Peskay  2:28:44  
+Okay, and now I'm going to, by the way, I'm hitting shift. I'm just holding down shift on my keyboard and hitting the enter key to make new lines without actually sending
+
+Joshua Peskay  2:29:02  
+I know that's like without sending the truck.
+
+Joshua Peskay  2:29:10  
+I know. I know. Now I'm going
+
+Joshua Peskay  2:29:16  
+to talk to my computer for a little bit. I have two spreadsheets, and I need you to compare them and tell me exactly what are the differences between these two spreadsheets, and give me exactly what the difference is in names in one spreadsheet and names in a different one. Okay, so it's going to put that prompt in there. There it is. Okay, I'm hit enter, and my craft maker is going to make this into a better prompt. So if you were looking at this, you know, craft and being like, oh, that's all fine and good, but that's a lot of work to have to, like, do these five things for every prompt I want to do. Like, do I really have to do all that? No use what's called a meta prompt. What? This is a prompt that makes prompts have it saved, like as a GPT, or as a top pilot agent or as a Gemini gem, right? And depending on what platform you're in, and now you can just use it any time you want, and there is your prompt. And so now you would upload your two spreadsheets and use this prompt, and it should do the job for you quite well. Okay, so if you don't have chat, GPT, all right, I'm going to make a bitly out of this for everybody.
+
+Kim Snyder  2:30:35  
+Okay, these are in the community under Resources,
+
+Joshua Peskay  2:30:41  
+yeah, so, but not everybody is joining the community. Oh, look, I can make a QR code. That's pretty cool. So this one, I can even make a QR code. Look at that, okay, so people can just scan that, and it'll take you to that metaprompt document that I just shared, and then you can copy and paste it into whatever AI tool you use, shift, enter, Oh, it doesn't work. Okay, I'm sorry about that.
+
+Joshua Peskay  2:31:22  
+Every sorry about that. Everybody, there we go. Sorry, everybody's
+
+Joshua Peskay  2:31:31  
+that working now? Excellent. Okay, so what we'd like everybody to do is try to use the meta prompt that we just shared with you to make some prompt that you need for something better, and then use that prompt to try to do the thing and see how it does. So we're going through one iterative cycle,
+
+Joshua Peskay  2:31:58  
+right? One say, let me make a really good prompt using
+
+Joshua Peskay  2:32:05  
+this tool, and let's see how it works. And while we're doing all that, everybody can grab lunch, come back, eat and work, and we can do all that at the same time, I have to share, like, a half an hour for everybody to go get food and do this task and eat all at the same time. Okay? And we can come around and help you. So any questions you have, we need help. We'll come around. It's a question for the whole group. Go ahead, yeah, if we're in chat. GPT, so the one on the left, okay, is going to be the one to my document. So if you don't have chat GPT, okay, you're going to use the one on the left. If you do have chat GPT, then I'm going to bring up the one on the right. One.
+
+Kim Snyder  2:33:07  
+It may be able to get rid of one of them. You see what the it would be different emails.
+
+Kim Snyder  2:33:15  
+So one is aging,
+
+Joshua Peskay  2:33:18  
+right? So on the right
+
+Joshua Peskay  2:33:21  
+is the chat GBT way. On the left is, that is the link to the document itself. All right, everybody, good, so you're putting in
+
+Joshua Peskay  2:33:39  
+you're confused, okay? So I'm going to
+
+Joshua Peskay  2:33:46  
+walk through two examples very quickly, first with chat GPT, then with the Google Doc. Okay, so everybody, if you're going to use chat GPT, you're going to scan this QR code and you're going to the chat GPT that I made, which is that prompt maker. Okay, so let me go here. You're trying to use that link to get to this page. You should see this. Okay, so now, once you're there, you're going to think of some prompt that you need for your work. So she needed to compare two spreadsheets. Let's say I want a so I'm going to start with make this better, make this prompt better, and now I'm just going to talk to my computer for a bit. You are going to be a role play coach, helping people prepare for entry level job interviews. You will ask the person what kind of job they are interviewing for, and then you will role play the interviewer and the user will be the person who is being interviewed. You will interview them for the job they have described until such time as they say, stop, and then you will give them feedback on how they did on the interview. Okay, so I put that in kind of a mediocre prompt, and this is going to now turn that into a much better prompt. Okay? With you so far. Okay, so you're just trying to make a good and you can do this if you want. That's fine. Okay, now, once I have this, I'm going to copy the prompt that it made. Whole thing is the finish. Come on.
+
+Joshua Peskay  2:35:45  
+Session. All right, so I'm taking that prompt and I am dropping it into a new session,
+
+Kim Snyder  2:35:55  
+and you will see sometimes that after it gives you the crack prompt, the one he just dropped it. You may have also seen it said, final enhanced prompt. I often use this first one, the final enhanced one is a shortened version. Again, it's a try, like, try it out, but I tend to out of force of habit, maybe, maybe I should iterate on myself a little bit here and try that a little bit more often.
+
+Joshua Peskay  2:36:23  
+Sorry, I miss switching it to auto. I had it set to throw and it's going to be very
+
+Speaker 2  2:36:27  
+slow. Have you seen wildly different results? I guess that's the like, try it out part. Like, I wonder if you do the long version versus the shorter
+
+Kim Snyder  2:36:34  
+version. You know that? I mean, this has been something that it's been doing for a while, but I'll tell you this is, we're in chat GPT, right? Chat GPT five came out probably about a month ago or more six weeks chat GPT five people got really angry. They seemed to take longer. It was thinking more, and it was like it seemed less intuitive. What it turned out was chat GPT five wanted more precise instructions, and if it didn't have precise instructions, someone said it's like a high speed motor boat that has a big rudder if you don't give it. It wants to get to its destination. It wants to get you that prompt, right? It was the latest version, the most improved, supposedly, right? And you know, and if you don't give it instructions, it's going to go its own way. Its rudder is going to go wherever. You know, probabilistic statistics that day sends it. So you have to give it those instructions. So by default, I lean more toward kind of more information as opposed to less, especially with five. Okay, chat, GPT. Five is also when folks who are using copilot. When you go into copilot, you'll see an option, use. It's in the upper right near kind of where your profile is. It'll say, like, use chat GPT five. So it allows you to do that if they Microsoft doesn't toggle that on automatically, because why? More expensive for them? Um, but some more expensive for you, but you can use that. It also tends to take more time. It's the high speed, more powered motor boat that wants to get you to where it thinks your destination
+
+Joshua Peskay  2:38:35  
+is, almost at the point where I'm getting this working. Sorry, it's taken
+
+Joshua Peskay  2:38:41  
+me do this.
+
+Joshua Peskay  2:38:43  
+It keeps wanting to remake the prompt for me. This is the iteration thing. Instead of actually starting,
+
+Joshua Peskay  2:38:52  
+just start interview mode like me. Please. It
+
+Joshua Peskay  2:39:08  
+Okay. Now
+
+Kim Snyder  2:39:18  
+we're working absolutely let's jump right in. So imagine you're interviewing for, let's say, an entry level role in the nonprofit tech space. Since that's kind of familiar territory, we'll keep it conversational and real. If you ever want to pause or switch to feedback, just say the word stop. All right, let's begin. First question to start us off. Can you tell me a little bit about yourself and what drew you to this kind of role?
+
+Joshua Peskay  2:39:42  
+Yes, I'm six years old, and I would like to sell ice cream.
+
+Kim Snyder  2:39:47  
+Well, that certainly adds a twist. I'm going to go ahead and treat that as a playful curve ball, in the spirit of a thought experiment, let's say you're a six year old entrepreneur who's got an early start in the ice cream business. Of course, in reality, we know this is just for fun, and we're exploring a scenario. So tell me, as our imaginative young ice cream Zeller, what's your favorite part about the idea of serving ice cream to people? Let's run with it and have some fun.
+
+Joshua Peskay  2:40:12  
+I love having happy customers.
+
+Kim Snyder  2:40:16  
+That's a perfect answer, and it actually shows a lot of the same spirit that makes people great in any job, absolutely. Let's switch into coaching mode and break it down a bit. Strengths. You did a lovely job jumping into the scenario with a playful spirit. That kind of adaptability is actually a strength in any interview. You also honed in on something universal, the idea of having happy customers, even in a pretend scenario, that's the solid core message. It shows you can find the heart of what's
+
+Joshua Peskay  2:40:45  
+okay, so in just a few minutes, using the prop maker, sorry for their little hiccups there, right? Able to put that in because chat GPT has a really nice voice mode, which, by the way, copilot now also has, as of today, that can be an interview that you can set people up with and they can do audio like that, or they can do it and type in if they want to do it in the chat box, yeah, okay.
+
+Kim Snyder  2:41:08  
+Only I do it a little differently. I don't let them forge ahead. In the prompt, it says, stop after my answer and give me feedback and an example of a good answer. Okay, then it will say, okay, and it gives them feedback. Here's what you did well, and it's very encouraging. And then it gives them something to hang their hat on. Oh, this is what they mean. This is what a good answer sounds.
+
+Joshua Peskay  2:41:33  
+Remember at the beginning when we said, you all are the experts in this? Right? Exactly, right. You know, much better, right? I'm doing one version. You know, your audience much better than we do, and what skills they need to learn the ways to do that. So absolutely right, yeah, do it in a different way. So, so that was the did that in any way help you? No, I have to
+
+Speaker 1  2:41:56  
+use this one. I'm not allowed to use chat GPT on my work computer. Oh,
+
+Joshua Peskay  2:42:00  
+so you have to use the Google grab one. So let me go. So for those of you ready to get lunch, you don't want to see the Google grab one, go ahead and start getting your lunch. I'm going to show the Google Drive version now. Okay, this
+
+Speaker 2  2:42:14  
+is Gemini. I haven't seen Jedi yet.
+
+Joshua Peskay  2:42:21  
+I think said the Google phone Google is Gemini, that's okay. So if you want to go to
+
+Speaker 5  2:42:39  
+this URL, she's at all businesses.
+
+Speaker 2  2:43:00  
+Describe, we got into it by applying.
+
+Speaker 2  2:43:09  
+My brain doesn't have further intervention.
+
+Speaker 2  2:43:14  
+But I was gonna say, I see projects, and I love them. Big reason I love it is so,
+
+Speaker 2  2:43:28  
+for instance, I have people instead of, like, a chat well more so that, because I have multiple trainings, working on things like the four day planning, a lot of times, I need it to just, like, keep the same tone of information. Weekend files already in here. And so this is the program, like overall it will go about the co op. So now what I need to say to high level.
+
+Speaker 2  2:44:08  
+Third training is going to be about what I want. Help me think through, like, Give me
+
+Unknown Speaker  2:44:15  
+what the outline so much more organized than me. Like, doing some chat over, like,
+
+Speaker 2  2:44:20  
+exactly, because I found that, like, I was repeating myself a lot, and I was having to to that point about character content, and there was just things that I want the thing to remember. The other thing I use it for is, like,
+
+Speaker 1  2:44:35  
+all those trainings, it's like quite a complex type of training.
+
+Speaker 2  2:44:45  
+Yeah, yeah. So it's multiple different layers of training. We're 50% through it. So the other thing I used it for was I quit everything, all of the different trainings, because we run like,
+
+Speaker 2  2:45:06  
+them results. And actually, I want to see what about this. Like, tell me what you think is going well, going better. Where are we hitting our marks with what we plan to do versus what we actually did?
+
+Speaker 2  2:45:35  
+Probably do better and to their point, I the first round of it is really nice, but Be harsher. Second,
+
+Unknown Speaker  2:45:52  
+because you have access to
+
+Unknown Speaker  2:46:00  
+chat. Alex, you put in the request after our AI
+
+Speaker 2  2:46:06  
+workshop, yeah, yeah, yeah. And it came through so nice. It's been very helpful.
+
+Unknown Speaker  2:46:11  
+Yeah, it's awesome. So something, it
+
+Speaker 1  2:46:13  
+created me a second story.
+
+Unknown Speaker  2:46:23  
+You created me a second.
+
+Speaker 1  2:46:30  
+This would be great, because it'd be convenient staff members,
+
+Kim Snyder  2:46:41  
+given that
+
+Joshua Peskay  2:46:49  
+still the better context You can give it the better prompt,
+
+Speaker 5  2:46:58  
+shift, time out, not.
+
+Joshua Peskay  2:47:14  
+Oh, where I knew Amy Greenwood, how's she doing? Oh, I know my life is my friend's
+
+Joshua Peskay  2:47:38  
+life. Oh, wow, that goes way back. I haven't talked about that in Gavin de Becker,
+
+Joshua Peskay  2:47:48  
+yeah, that was back early cybersecurity awareness training people like, trust their guts. Like, it feels wrong, listen.
+
+Joshua Peskay  2:48:01  
+So yeah, I just wanted to build I just wanted to she'll be all right. I it'll be,
+
+Joshua Peskay  2:48:31  
+all right, all right. Well, everybody's grabbing lunch and doing stuff. We
+
+Joshua Peskay  2:48:38  
+have to go oh, one that's up there. The
+
+Justin  2:48:54  
+other one that he said, If you don't have chat, GPT, one that.
+
+Unknown Speaker  2:49:14  
+He said, If you don't have chat GPT, thank you. Yeah.
+
+Kim Snyder  2:49:33  
+First job you know, thing.
+
+Unknown Speaker  2:49:48  
+All right?
+
+Speaker 1  2:50:14  
+Okay, don't just give us something. Yeah, do something. Know we can
+
+Unknown Speaker  2:50:29  
+take our knowledge and teach you so we can give
+
+Unknown Speaker  2:50:40  
+They went on right,
+
+Speaker 1  2:50:47  
+and that Really thing is understanding.
+
+Justin  2:51:13  
+It one
+
+Speaker 1  2:51:27  
+Yeah, where's The
+
+Speaker 1  2:51:56  
+it's very Tough when
+
+Speaker 1  2:52:02  
+because Oh,
+
+Unknown Speaker  2:52:52  
+jst The
+
+Unknown Speaker  2:53:09  
+humans can
+
+Speaker 3  2:53:32  
+you know Before you even go To you
+
+Joshua Peskay  2:53:51  
+check boilers, I mean, we
+
+Joshua Peskay  2:54:22  
+I mean, We work from the same Time.
+
+Joshua Peskay  2:54:40  
+Little society,
+
+Joshua Peskay  2:54:46  
+but not you.
+
+Joshua Peskay  2:55:00  
+Not MTM at the moment.
+
+Joshua Peskay  2:55:18  
+Now, MTM, great as a whole,
+
+Unknown Speaker  2:56:10  
+screaming, thank you for the debris.
+
+Kim Snyder  2:56:15  
+The question was, can we try to forge on the room? People
+
+Speaker 2  2:56:24  
+as the number one thing that can prevent learning in
+
+Kim Snyder  2:56:30  
+schools is kids not having breakfast. So the kids coming into your program, they will have
+
+Joshua Peskay  2:56:41  
+we work with college
+
+Speaker 2  2:56:44  
+grads or Yeah, so we work with undergrads. Anyone who's graduated from a four year university don't
+
+Unknown Speaker  2:56:50  
+have to be in one of our movements
+
+Speaker 2  2:56:54  
+in New York, Chicago, Miami, LA or San Francisco. We typically work with the Destiny system and like students that are Pell Grant recipients or low income first gen grad, there's no age cap on on a program. So like, if you get your Bachelor's at 40, like this, it doesn't preclude you. You just have to be underemployed or unemployed to meet those other criteria. And right now we do essentially, like a fellowship program that is four nights a week for about a 16 week period, and then we do an extended kind of addition to the program where if you were not able to kind of get full time employee within that period, you continue, but at like a two days per night, and particularly, you're working on applying for jobs and how to best kind of write your resumes and your cover letters and your interviewing skills and doing all of that to get to that person job. Now
+
+Kim Snyder  2:57:57  
+are they specific types of like industries that you focus on and
+
+Speaker 1  2:58:01  
+the machines that you have three different trends,
+
+Speaker 2  2:58:08  
+or digital marketing, yeah, but we're expanding. I know that we're looking into, like the clean energy space more recently. So a bit of this too is Like, to your point of
+
+Kim Snyder  2:58:33  
+adapting there, AI. So these are some of those areas,
+
+Speaker 2  2:58:46  
+highly, yeah, yeah.
+
+Speaker 2  2:58:49  
+And so it's why our board one is very like, wants us to AI adapt. So we already have aI curriculum, but it's like going into our programming and use of how to use AI, but we're trying to make it pretty industry specific. So like, what AI would you be using in a digital marketing role, in a data analytics role, in a financial services role, and then also, because those industries you know are a lot of them are cutting employees, even as recently as, I think this week, they announced 1000s of which is wild to do some people right before the holidays. I don't, I don't, I don't know why I would ever think they would care about that. Wow. And so we are kind of looking into what it looks like to expand into industries that are expanding, such as clean energy, space, insurance, the healthcare sector in Florida, I think especially and so, because we just used to do a financial services track. We were originally da MTM, and then added financial services because it was expanding. So when you expand our tracks, we have a few working optimizing what it means. Yeah, like, what
+
+Speaker 2  3:00:27  
+are we going to do five years from now? Another group is, like, what we're going to do now?
+
+Speaker 1  3:00:34  
+And we do, like, interviews and like, for example, that was asking, when you're thinking about, interestingly enough, a
+
+Kim Snyder  3:00:58  
+lot of using it in the way that we circle the way that we thought. So we thought it would be like, Oh,
+
+Speaker 1  3:01:06  
+I use AI to determine whether but actually do is like they're happening. Just
+
+Kim Snyder  3:01:22  
+totally rely totally okay. So they're not asking, like, what AI are you using? Yeah, yeah. It's kind of like
+
+Kim Snyder  3:01:37  
+when things went people had to learn like, oh yeah,
+
+Kim Snyder  3:01:43  
+there's, there's value in having it digitally, but it was a different way of working. Yes, so,
+
+Kim Snyder  3:02:00  
+thank You. I don't
+
+Speaker 1  3:02:22  
+know keep so what I did
+
+Unknown Speaker  3:02:33  
+was make
+
+Unknown Speaker  3:02:39  
+this product.
+
+Joshua Peskay  3:02:47  
+Shoes, information easier, what it was for
+
+Speaker 1  3:03:00  
+it was, and it was saying things like, oh, make sure that we make it,
+
+Kim Snyder  3:03:10  
+make the language not Jarvey, make it not
+
+Speaker 1  3:03:13  
+as Gen not as confusing. And then I was looking at, like, the role, so like, if you're telling chat, like, hey, I need you to be this as
+
+Speaker 2  3:03:26  
+I'm crafting this. Like, partner, Hello, I'm 33 Yeah, like 15 years ago.
+
+Joshua Peskay  3:03:37  
+So I thought this was pretty dope, because now I I'm gonna pick it back up. We're gonna take it home for everybody go ahead and continue eating.
+
+Joshua Peskay  3:03:48  
+And so we walked through kind of these approaches to prompting, and hopefully, I know everybody got a chance to practice, but I hope that you try to use this meta prompt that we shared with you, or make your own meta prompt. Because I would say, on average, for myself, I use the meta prompt that I built for myself 10 to 20 times a day, all the time, all the time, because when I need to do something I have just learned that I can just go start asking an AI and spend the next hour saying, no, no, that's not the way I want it. No, no, that's not the way I want it. Or I just take five minutes to make a good prompt first, and then I only have to iterate maybe for five or 10 minutes before I get what I want. So it's a little longer, like so many things in life, it's a little longer up front, well worth it in the end, in the sense of saving your time. And I've just learned that over and over. So you have a basic prompt, which is just make an agenda for me for some meeting. We all understand something and not be helpful. I have a structured prompt which is doing some version of graph yourself, which can work, but you have to work a little bit. You have to write it and give it the context, and then you have meta prompting. And there are a lot of meta things that we will teach you with AI, which is using AI to do a thing that you're then going to do with AI, right? So you're using that to kind of help you with the first step. So anytime you're doing that, that's a meta use, okay? And meta prompting is one of the most basic forms that you'll have. Another example of a meta prompt that I use. It's a little more sophisticated. Carleton, you're gonna like this, though, all right? Is what's called a PRP. So if you get to the point where you start trying to do what's called vibe coding, meaning building, and I know many of you are like, I'm never going to do that, you are because it's actually pretty easy and pretty fun, where you make applications by just describing the application that you want. Okay, that instructions for the Agile ball game was actually a vibe coded application that I made this morning in like a minute.
+
+Joshua Peskay  3:06:08  
+So do I have it up here? So as an example, let me just show you what vibe code is.
+
+Joshua Peskay  3:06:19  
+So yeah, this is a web application
+
+Joshua Peskay  3:06:23  
+that I just made because it's a nice way to just display the information, and it actually has functionality where it has the timer. I didn't actually use that today and everything, but that was built by me just describing it to an ad this morning, saying, hey, I need an application to this. Kim assigns me stuff
+
+Kim Snyder  3:06:46  
+but it's coming.
+
+Joshua Peskay  3:06:54  
+Describing what you want
+
+Joshua Peskay  3:06:57  
+is actually quite hard, okay, and actually requires a lot of skills. And people who are like product developers have whole careers at this, and they are very good at creating something called a product requirement document, or a PRG, which is the description of everything the application needs to do. What are all the features? What are the functions? What should it look like? I know, I know, but I'm just giving another meta example. So, another meta example, okay, is I created a prompt that asks me all the questions it needs to ask me to create a product requirements document for me for an application. And that's how I can build applications this quickly, because I go through the PRD and ask you the questions, and it makes me this document, and then I hand that over to vibration. It's another meta use case. I just want to get you guys used to this idea of meta use cases, of having ad help you better define the thing you're trying
+
+Speaker 1  3:08:03  
+to do. How would we how do we do that? Like, do we say, Help
+
+Kim Snyder  3:08:11  
+me, essentially, yeah, stay tuned for that.
+
+Kim Snyder  3:08:18  
+I did ask him at 1130 on the night owl. It's a really bird. So I was like, I really, I'm too tired to make instructions for this album, ball game. You can see why, right? And, and so, bang. He five coded it. Stay tuned for by coding. It's still here. Okay?
+
+Joshua Peskay  3:08:37  
+So meta prompting, okay, useful, useful skills. We gave you one example, the meta craft prompt that helps make you prompt, but you can use it for lots of other kinds of things. Meta idea, okay,
+
+Unknown Speaker  3:08:50  
+why did that go there?
+
+Joshua Peskay  3:08:53  
+Oh, okay, so now we're going to talk about this framework called context. Okay. This is core to everything that we're teaching over the next four weeks. So if you are having your post on sleepy time, try to shake it out of it. Do whatever you got to do. This part is incredibly important. Okay, so many mistakes get made, right? We do all kinds of things of like leading to solutions. So your executive director, he says, We need a chat box, right? That is a solution, not a problem. Okay, so an effective way to use Okay, AI is through a relatively simple framework, which is very much what we've been teaching this whole time, and we will continue to so the C is for context, which we talked about, what's the information that we bring? Think of it in two ways. The first way that you think of context is, what is the information that AI needs from me in order to help me with this task? The second thing is, how can I give that information to AI and not give it a bunch of stuff it doesn't mean. So for example, if I want to make a little report following today's meeting, which I'm going to do, I hopefully will have a good transcript for my little AI thing over there that is wonderful context, a bunch of unstructured language that I can hand to the AI and say this is something that will help me make a report for what happened. So it's both that's useful information, everything we talked about today, but if I didn't have a transcript, I don't really have a good way of giving that information to the AI. So sometimes you have to think backwards to how can I make sure I collect this context so that I have it right? That's context. Or do we have slides for each of these? No, we just have context more. All right, so we'll come I'll go through it very quickly. Now, as we stand So context is that objective problem we're trying to solve? What is it I'm trying to accomplish here? Okay, method. Now that we have these two things. How do we think is this just something I can do, just an AI chat bot? Do I need to make a slide deck and so I need some other tool? Do I need to have it be voice activated? So that's, what are the methods? And that's a combination of both what I'm trying to do and what skills and tools I have, because I can't use tools and skills I don't have unless I can get them or get access. Then we go to performance. Most of us just start there at the performance part. You go to your chat bot and you say, hey, help me write this report. Right? You don't do these first three things, and again, that's why the outputs aren't as good. Assessments, review and refine what happened and then share, we learn and improve. This is the Agile ball game, right? In a sense, right? You're going through those same steps, through that around and around the loop. You get better and better and better and better. Okay, it's not a complicated process. It's so easy not to do and then you will get frustrated more often than not. All right,
+
+Kim Snyder  3:12:07  
+no, someone is going to be asked to do the chat bot, I promise you. Before the end of our four weeks, someone is going to come to you and say, we make a tap out for our website. And the first one you wouldn't get a
+
+Joshua Peskay  3:12:19  
+prize. Yeah, yeah. And in context, in some ways, I think in analogy, it's not perfect, and you've never done a meal kit. I apologize, but if any of you are demoing these meal kits, where they shipped you the ingredients and the instructions, right, if they do a good job, it's actually a very good example of how you would get a good output, right. They're giving you the con, the ingredients that you need, right, and non ingredients you don't need, right? So when you order a meal kit, they don't, if you're making pasta, they don't also send you four pounds of chocolate that's sitting in the box. What do I do with the chocolate? Like, why do I even have that right? So the same way, don't give like, AI, all the documents that you have to solve the problem that you're working on, right? And everything's the right size. It's measured, it's labeled, and then the instructions are clear. So the likelihood, if you give me the thing on the left that I will produce a decent spaghetti carbonara is much higher than if you give me the box on the right, which has what looked to be taco shells labeled as eggs and also jar and it's labeled his egg grapes that are labeled as paying shut up and then mystery saucy. So so you're also thinking of like, how do I make this available? And this is, this is honestly hard for many organizations, because it means taking the stuff that is in a silo, right in Aaron's head, or in Allison's, you know, personal drive where no one else can access it. And saying, how do we make this available to the organization, so that we have that context when we do conversation? These systems are getting better at Google, Microsoft in particular, will kind of let you have access to your Google Drive and your and your OneDrive, but that's not perfect either, because that's like, if you give the meal kit, like, access to the whole kitchen a lot of stuff there that isn't relevant to what you're doing at that moment. So it's better, but not perfect. And also, if it's just in Aaron's head or just in Allison's OneDrive not shared with anybody. It's not helping anybody else, Mike, except for them, right? And that's not going to work. That's the share any questions about anything. And the reason that that part's harder is because that is a cultural change within your organization of getting information where it needs to be, so that it is accessible for everyone to use with AI in ways that will make it valuable for them. And if you don't have that context, it makes everybody's job a lot harder. Yes,
+
+Speaker 2  3:14:51  
+so I've been using projects a lot in chat. GBT, so is that kind of like what you're saying? So instead of it having access to all the files. It's like, Hey, I'm specifically working on building a PD for this. Here's like the the two PDS I've already done. Here's the plan and all that. So then it can limit itself to this is what the context of Jackson chat,
+
+Joshua Peskay  3:15:16  
+GPT, notebooks in notebook, LM in Google. Copilot just added notebooks as well. Claude also has projects, but it doesn't sound like many flawed here, but exactly Okay, and projects you can't, I don't think share with other people and with chat GBT, you can share them. Okay, I'm not sure.
+
+Speaker 2  3:15:43  
+I do not know yet, but I'm sure if that's not here, it will be by tomorrow. Yeah, no
+
+Joshua Peskay  3:15:51  
+other or any other questions of any kind, you
+
+Kim Snyder  3:15:55  
+can share them. You can share projects
+
+Kim Snyder  3:15:58  
+again, literally, like breaking news. We are not experts, right? News.
+
+Joshua Peskay  3:16:03  
+We are not experts, okay. So in thinking about okay, so in thinking about what are good opportunities for things to address with AI, think about things that take up time. We are human centered organizations. The way I try to think of this is there are a lot of tasks that we don't enjoy very much that are not really providing additional value to the people we serve. But I have to do right? I have to write up notes, I have to write a report, I have to do this data analysis, or whatever it is. So any aspect that takes up time is repeatable and you don't particularly enjoy doing or think that your humanness adds a whole lot of value to it. Right? Those are good opportunities to say, can I get AI to do this in a way that requires less time of need and or improves the quality of it so that it's at a higher quality, more consistently, ideally both, if I can do both of those things, even better. Okay, so if Allison says I need to write 15 emails a day, and currently it takes me 20 minutes to write a decent email, because I don't feel I'm not a great writer, and I have a hard time getting from my head to the way that you take and enjoy doing that, but I can use AI, and now, in five minutes, I can write a really good email, and it still feels like it's me, and I still feel like I'm writing communications because I'm reading these before I send them out. Great. I've just saved a bunch of time doing things that I don't enjoy, and made a better output any opportunity to load those things. Huge win. Okay, and that's that's the easiest way to find opportunities that are low hanging fruit and easy. React any questions on any of that?
+
+Kim Snyder  3:18:07  
+Did I even argue too, that if I can do a first draft that gets me 70% of the way there, the time that blank page syndrome would have taken up to like, produce something, then I can actually spend time improving it, and then it's better overall than if I had, like, done it myself from scratch.
+
+Joshua Peskay  3:18:36  
+Kim came up with this
+
+Joshua Peskay  3:18:39  
+framework for identifying tasks. And again, if anyone has a better one, or comes up with a different one that they like, this is not the be all, end all, although I think it's really great, I will be Kim Fanta AI, too. That's brilliant. And so trace is time, so it takes up a lot of hours, or it's repetitive. I have to do it a lot accuracy, because I have to do it a lot, and I don't like it. I make mistakes. It's complex and involves a lot of different pieces, and it takes a lot of emotional toll on me, because it is exhausting, and I don't enjoy any other things. So you give yourself 01, or two points, depending on how strongly you feel. It matches that. And anything that's like eight or 10, eight to 10 points, that's a good starting point. Okay, so that's a nice, easy Okay, so as you kind of go through between now and next week, as we're starting to think about, you know, things you can practically apply in your organization, and ways to apply some of the skills that we're learning here. These are ways to find some of those opportunities in your organization. So we think of a meeting. I think everybody can relate to meetings. So we all do them a lot. They're often very poorly planned. They're poorly run. No one takes notes. And then two months later, we have the same meeting, and we're like, did we have this meeting already? Didn't we make a decision about that? Wait, and I need to learn, like, other names. Yeah. Aaron, did you have an assignment in that meeting? Man, a month ago, I don't remember. Is that? I don't know anyway. So if we had an AI note taker to meetings, which lots of people have now, we have a transcript of that by then having automation that says, let's pull out all the tasks that were assigned to Aaron, Kim and Josh. Let's make sure they know when they're due. Let's make sure they know what success looks like for the task, so that's described really clearly to them. That's a nice win, and that saves time of me looking at my really bad notes that I took during the meeting and trying to do that myself, which just being a half an hour after meeting. And I did poorly anyway, all right? And by the way, I don't like telling Ernie as much work to do, so I didn't have just an emotional pulling. Okay? So there are all these things that we can do to improve this process, applying AI in different ways at different points, right? One way is to get the context in the first place and get the transcript. Another way is now that we have the context, how do we turn that into the actions that we need? By using AI to analyze that trend, that transcript that we got, and then create things out of it. And by doing that, we make this a much easier process. And by the way, as someone who's been using these for a long time, I find that when the note takers are here, I am actually much more present in meetings, because I am not worried about capturing takeaways, about getting notes, about giving other things? Because I that's once I trust that that's being taken care of here, talking there and talking to him, fully present for me, which is nice. Any questions on that, I think that's the easiest one for folks to relate to. It's like meaning,
+
+Kim Snyder  3:22:02  
+all right, so we have kind of a get up and move the energy, because you are the experts. Okay, post it notes on each table. We want to shape as many of our examples and content and little doodads that we make and five coded things that could be helpful to the kinds of needs and things that you have. Again, we're trying to we are very iterative. We adapt our curriculum, very audience specific, okay, so we're kind of like an AI. We need to put in context that way. So this is just to take, like, how are we doing? Time wise, we have 30
+
+Kim Snyder  3:22:47  
+minutes left. Okay, so take that. There's three posted,
+
+Kim Snyder  3:22:53  
+large, evil paper, things
+
+Kim Snyder  3:22:57  
+we are interested in learning what you're hearing in the field from participants, what are they asking about? AI, and some of you may have more for one than the other. What are you hearing? What questions are you hearing, or what kind of statements around what are employers asking you about AI like we had a conversation briefly at lunch about how, how people ask about AI skills is quite different. It's not What tool do you use? But how do you collaborate with it? Right? That's an employer question, right? That they're asking that they want participants to be able to answer. So in helping people get jobs, then you have to help people kind of think through these answers and have meaningful answers to give, right? So what are employers asking and what at your organizations? So each of you are here, I assume no one works for an organization of one. So you're not just here on your own, but your organization set you here for some reason, right? What are your organizations asking regarding AI, and it's just post it note. Kind of ideas just take a couple of I'd say, Let's spend the next so organizations, employers, participants, okay, and it may is, I totally anticipate it's going to vary quite a lot between people who work with young people who are just entering the workforce, people who work with older adults, who are, you know, maybe have left the workforce, people who work with people going into health related fields, like, don't touch that stuff, right? So what are you hearing? Because it just, we want to shape this for you. And I'm kind of interested to see like because these are conversations that need to be, that are being had, and we need to be able to help participants and our organizations to really participate. So take a few minutes, five
+
+Joshua Peskay  3:25:19  
+minutes, to
+
+Joshua Peskay  3:25:21  
+write stuff down and put them up on the board, yeah,
+
+Joshua Peskay  3:25:27  
+the person that's closest to that wall, and
+
+Joshua Peskay  3:25:35  
+just write down, post its and then put them up whenever you're writing, okay, And from
+
+Kim Snyder  3:25:39  
+wherever your organization, I
+
+Justin  3:26:07  
+like projects, like how to better organize my chat, instead of like exactly so like something as simple, like that helps me organize a little bit better. And it already
+
+Unknown Speaker  3:26:26  
+learned we wouldn't have that opportunity if it wasn't for for This, right? We're a different, you know, Team for like,
+
+Speaker 2  3:27:07  
+this practices,
+
+Joshua Peskay  3:27:48  
+yeah, I just that one's a hard one.
+
+Speaker 2  3:28:08  
+Places in the organization, and I think
+
+Speaker 2  3:28:22  
+everybody's being think about our professional development and anxiety. So is that important? What is that design
+
+Unknown Speaker  3:28:40  
+like? Is it right?
+
+Speaker 2  3:28:46  
+That's The same. This
+
+Speaker 2  3:29:12  
+part And that is what
+
+Speaker 2  3:29:48  
+clear, like, right, like, Everybody is organization, just to be like, One question.
+
+Speaker 2  3:30:13  
+Here, and I know that true because we're building it
+
+Speaker 2  3:30:29  
+into we're building it into programming. The expectation is the other door. But whereas we are building The way of learning.
+
+Joshua Peskay  3:30:59  
+Yeah, I need more time, or you can get enough post its for us to go and talk about them
+
+Joshua Peskay  3:31:25  
+more time, raise your hand.
+
+Joshua Peskay  3:31:33  
+When outside of the captain's training,
+
+Unknown Speaker  3:31:41  
+We're talking about like No
+
+Unknown Speaker  3:31:51  
+our organization. It sucks.
+
+Speaker 5  3:32:29  
+Job, out. Whoa, you can
+
+Kim Snyder  3:33:34  
+hear me. Oh, no, Interesting. That said I am going. I that now that I started this journey of four weeks and beyond, part second, that these questions, like whatever participants and employers and organizations asking about AI were,
+
+Kim Snyder  3:33:59  
+like, different patients asking about AI where you didn't hear them before. Do you think there's value in continuing? Because I think we can all learn from each other based on what each other are getting, okay, from the field. Do you feel like there's value in our online
+
+Kim Snyder  3:34:22  
+community? Okay, is how we get prepared someone's going to be asked that Zinger question, right? That someone else is going to have kind of wrestled so, so that
+
+Kim Snyder  3:34:38  
+gets me to the learning community. So Josh and I compass. The last part of
+
+Kim Snyder  3:34:46  
+Compass is share. And we really, we said this a bunch
+
+Kim Snyder  3:34:51  
+of times, but I really cannot, like, I can't over emphasize this, unlike other things like Excel and all kinds of textile it's learned that watching best other peers and colleagues. And you know, so we, one of the reasons we left table, informed me at the moment, was to be able to do cohort based learning, okay, around AI. And so this community, the circle community that should have gotten an invite too many of you have joined, is actually this is the launch of that Okay, so we kind of started our thing in July. So anyway, so welcome to this first iteration, and it will continue to kind of evolve. But I just want to give you a quick tour of where you can find things easily. It is so important to ask questions, and if you feel stuck on anything, if you feel stuck on anything that was going on that you go back here or try and you're like, What were they talking about?
+
+Kim Snyder  3:36:02  
+Right? Ask someone. A, someone else is asking,
+
+Kim Snyder  3:36:10  
+and B, we don't want you to have to feel stuck, right.
+
+Kim Snyder  3:36:14  
+So this is ongoing dialog in between like now and textbook. So in this community, there's like, you know, say hello. There is announcement where, if like, the location, I think in the next week, might still be in question, so we will announce any so that's kind of like, important stuff. Resources are where we're posting things like, different kinds of this is, this was actually a resource that came from wpti, right for workforce. So that's in here. So is a notebook, LM, Google notebook, video summary of that. And I think in the actual thing itself, we will be posting various resources. And there are a couple little bits and bobs that I added in here, and we will continue to add to that. We will add things like these blogs that we keep mentioning. These writers, Ethan Wallach, like where you go and follow his writing on substack. He's really been good. Deb stillegros is someone who writes specifically around AI for nonprofits. Okay, so we're going to give you those resources in here. We are going to have office hours, so Wednesdays between four and five, we are going to just be there. So it's a zoom link. You can RSVP. You can bring a question. You cannot bring a question. You can lurk and see what other people are asking. That's fine, right? But it's just a chance to connect and ask questions. You can bring a colleague from your organization if someone else is, like, stuck on something
+
+Joshua Peskay  3:37:58  
+so and as a quick aside, a few of you have come up to us on the breaks and asked about hiring us for your organization, which is great and lovely, and we certainly appreciate it. But what I would say is that you know this cohort, use us and use us without having to hire us as much as you can. And do that first, because you got it here, and we're happy to help you as much as we can, and each of you will also help each other. So put questions in the community. Ask for help with projects, you know? So do that first, by all means.
+
+Kim Snyder  3:38:33  
+Yeah, absolutely. So discussion Q and A is where you can put stuff like he was talking about bipoding. Kim said he's rushing it too much. What is he talking about? The doctor until week three.
+
+Kim Snyder  3:38:50  
+So I will answer the question.
+
+Kim Snyder  3:38:54  
+All right. Each session, we're going to have both the resources and a review. I will post the slides because iterative Kim and Josh, right, two slides aren't done until like during the session. So your slide, the slides for this will be here soon this afternoon, and know that in each weekly session there are going to be links and templates that we asked. So when he kept saying, Go to get the meta prompt thing that's, these are all in here. So under resources are the various resources. If you haven't been saying, Hey, Kim, you were yammering about some resource that isn't in here. Discussion, tell me and say, Where is this thing? We'll add it, right? And section one review is just an opportunity to go over some of the topics. You could also nothing to stop you from sitting a colleague down who's not in this workshop, and saying, Here you take this and you know this will help you understand some basic concepts and give you a little self check. We just taught a very fast pace. It's so funny, because I work with AI to plan the curriculum and stuff. It's actually good thought partner, right? And when I was talking about the next session, the AI even said, kind of the equivalent of Holy crap. You tried to cover that in an hour. People were lost, right? And so we it's great that we have enough time together to, you know, spend some time and mull over this stuff, and in between the sessions too, and the community doesn't have to close down when this stops. So, all right, so if you have any trouble getting into it, let me know, and
+
+Joshua Peskay  3:40:48  
+we'll make sure you get it's like a little bit of friction. I know it's like another thing. And who wants another thing but it? I will say that if you don't want to engage with it, that's fine, but if you do engage with it, it gives you an opportunity to get a lot more value out of this cohort right, and also provide value to other people in the cohort by answering questions. And you know, if anyone's ever heard of like the watch one, do one, teach one, model, Kim and I, over our 30 years have both come very, very, very clearly to the belief that in order for us to do our jobs well, we have to learn and do and teach all the time, and that our own skills and knowledge increase more at each of those levels, which will sound intuitive to but not intuitive that we learn more from teaching you than you are learning from being taught by us. Okay, that may not be intuitive to you. I find that true over and over and over again. When I learn something, I go to here, when I do it I get to hear and when I have to teach it, that's when I really learn it, to teach each other, like I don't know how to teach it, yeah, that's the point,
+
+Joshua Peskay  3:42:10  
+because someone you know, and then
+
+Joshua Peskay  3:42:15  
+you learn how to explain it. So all right, there's benefit for you there in many ways.
+
+Kim Snyder  3:42:20  
+Okay, so what themes Did you say?
+
+Joshua Peskay  3:42:23  
+Oh, my goodness gracious. So it's very interesting. What Does anyone here have a theory? Because I had no intuition that any of them would be more dominant than the others. But what are participants asking? Has eight posters on it? What are employees asking has like, six and then I can't count as high as what are organizations that's like, how many the goat got in the Agile ball game? And I'm curious, if anyone wants to tell me why that one is so much fuller. Yes, I'm
+
+Speaker 1  3:42:59  
+assuming at least each team has at least one director, and directors tend
+
+Justin  3:43:05  
+to be more, you know, big picture kind of thinking,
+
+Joshua Peskay  3:43:07  
+so maybe Okay, a lot of directors. Okay, here and then Carlton, yes,
+
+Speaker 2  3:43:13  
+I think all organizations are grappling with like, whether or not AI is going to help them save money, especially in the nonprofit world. Truthfully, like, I think they're grappling with what roles are going to stay, what roles aren't, how are things going to shift? And, you know, sometimes they're coding it is just like we need to do more. AI from the CEO and board, and, yeah, what they're actually talking about is,
+
+Speaker 4  3:43:43  
+honestly, I think this one is filled more because when we brought here from our organization, for a reason, so the conversations in our organization has been about AI recently, so I think that's why that's filled up. You know, I'll be honest. I had two for that one over there. I just didn't want to get up. It was about time
+
+Joshua Peskay  3:44:02  
+to talk to just further away. I don't
+
+Speaker 4  3:44:09  
+know everybody room. How many people are employers here, or how many people are like or train or support youth in employment? So there's some this should be a little larger, but I think it's more about where the conversations are, okay, okay,
+
+Speaker 3  3:44:28  
+our participants, they're not asking exactly how to USA. I They very don't how to scroll. Yes, they know how to scroll Instagram. It's over. They don't know how to use the knowledge.
+
+Speaker 4  3:44:39  
+I'm with you because I'm like, what? Why are they really saying about you out I'm telling them how to use it. Yeah, they don't really
+
+Speaker 3  3:44:48  
+had, like, a heated conversation with one of my niece, because she's very against AI, you know, AI, you know, you're mentioning the devil to her, you know. And she had to kind of summarize like 80 pages in one day. And I say
+
+Speaker 3  3:45:11  
+about, you know, you know, a lot of people are saying like, Oh, AI is gonna take over jobs. Are like, No, you want to lose your job if you don't know how to use AI.
+
+Speaker 2  3:45:20  
+I probably participants are the opposite. They don't not asking because they doing it. They're better than we are. Oh yeah, they're using it.
+
+Unknown Speaker  3:45:32  
+They're College. They're right after college.
+
+Speaker 2  3:45:36  
+Yeah, they're like, they're like 22 to like 28 or like, I think it's like, our average, or maybe 30. Yeah, right there we started this
+
+Speaker 1  3:45:45  
+whole thing. Why? And I had said, main reason for me being here is because,
+
+Joshua Peskay  3:45:52  
+okay, let's ask. No one's asking, right?
+
+Speaker 1  3:45:56  
+They're trying to figure out, how do I use it in the business? How do we serve it, right? And no one is trying to figure out to the people that we serve
+
+Speaker 4  3:46:08  
+also believe that, like, because they might see, I think, in, like, in education, right, AI has kind of been seen as, like, a bad thing. It's like cheating. It's like Twitter, yeah, and so like, even in use of AI, they're not gonna, you know, say that you know, because they think there's a stigma around using it as well. So, yeah, sometimes it is prompting them. Sometimes they don't even
+
+Joshua Peskay  3:46:31  
+know how to use it. I will give you very I see awesome. I'll give everybody a very, what I find to be an incredibly useful framing for those kinds of concerns around AI that I'll give my wife credit for. When I was talking to conference, like two years ago, around AI, she actually answered an audience question, and I thought it was brilliant, and it was it's this idea of process and product which is a way to think about things. So let me explain a high school essay has almost zero value as a product. No one's paying money for a high school essay. You're never going to look at it again after it gets its grade. 100% of the value is in the process of I have an assignment, I have to think about it. I have to think about how I organize it, I learned how to write. I then get feedback from a human being who is trained to do that and gives me feedback. And therefore I've developed a skill. So if I replace that with AI, and I write the essay with AI, and the teacher grades it with AI, why do the thing? Because all of the value was in the process. At the other end of the spectrum is a tax return to me, and if you enjoy doing your tax returns, my apologies. The output, the product of a completed and accurate tax return is all that matters. All the value is in that. So if I could automate it entirely and never have to think about it, I would feel great about it, and I would not feel like I've lost any of my humanity. I would feel like I've regained time that I didn't want to do. Most things are in between these extremes, but thinking about making sure I don't lose the value of the process in creating the product is to me where you navigate those questions of cheating, and you know, am I losing my ability to think, or am I helping my ability to think? I have found that framing to be really, really helpful. I wrote an article about that where I use those two examples we can share in the community, so I don't know if that helps Allison, very patient,
+
+Speaker 2  3:48:46  
+jump on that as well. Just like this checks and balance. I think it's this idea of, we think of AI is going to take away jobs. I think the first thing that popped up, and I can't think about this whole entire session, was the thing about the bank tellers and this and that, I'm like, that's real, like, we can't assume that everything's gonna be gone just because, like we think because AI is gonna take people's jobs. But time and time again, there's been videos of AI just testing different things, like, Can AI take a bar, can a job? Can AI take any and at the end of the day, time and time again, it's shown that it can do something, but it will never really do it all, because there's a thinking process. There's a human process to it that an AI can only, like we said before, AI can only give when it's when it's given. Can only give back what it's given. So if, if a high school world was like, write me an essay about the creation of America, and it's only going to give you what's in data, but it's not going to give you the human aspect of real I don't know. So I think it's just like, we can't think so much. It's gonna take everybody's job. It's just more. It's gonna do something, but it's not gonna do everything, and we still have to
+
+Joshua Peskay  3:49:48  
+do the work. I will get to just one second. I want to actually, no, I'll go to you first.
+
+Speaker 3  3:49:54  
+Back to the question of why organization? I think different stages of it. I think some organizations feel that they are already behind just by hearing how much the boss around it is and the fact that they are not using it. There is this sense of urgency of being a dinosaur kind of thing. And then the question continue of, how do we get there? And rather than, how do we get there from the place of this is what I need to get, x, y and p is what is the training that I need to do right now to get me there. And that, to me, is such a detrimental way of looking at it, because AI is not going to make you a better organization. You don't know exactly what you want from it. It's just not going to do anything, if anything, might confuse you even more. So I think that that place being behind not understanding how or what you want to use with it is create a lot of anxiety. I would say, Yeah, you know, organizational anxiety kind of thing. And then the piece of because there is the cheating aspect of this, right? Someone in my office the other day said this person is all just AI email. And I thought to myself,
+
+Kim Snyder  3:51:13  
+good for her, because what about it? How about choosing AI as a personal assistant? Not like cheating?
+
+Joshua Peskay  3:51:22  
+I think in its ideal form, that's where I am helping amplify your efforts in a positive way.
+
+Speaker 1  3:51:30  
+My sister uses it as like her presence. She She works in methods, but when she has her practice, so I gotta go over there and she'll say something here, a man having a conversation. It doesn't sound computerized, or it sounds like someone generally having a conversation. I'm looking I'm like, crazy, but actually like, and she's like, Yeah, so you know, like a regular conversation. I'm like, that sounds like none of my nephews. Who the hell is she random? Hasn't it like my nephew will come like, this is all day.
+
+Joshua Peskay  3:52:09  
+Hang on one sec, just because we were getting 10 on time. These are all amazing. Y'all are absolutely amazing. I want to respond, What? What? The major thing up there, and the message I'm hearing over and over again around your organizations, and why Development Center is like this, they have a lot of ways, but like, we need to figure out this AI thing we need to use AI. What is it? How's it gonna save us money? How is it gonna make us a better organization? How's it gonna allow us to serve more people? Like, you know? What do we do with this? AI, which part of it is, again, part of it feels like a hammer looking for nails, right? There's this thing how to use it, which we've talked about, is the wrong approach. Okay, what I will say to everybody is worried here behind or worried, how do we do this to AI, and this is going to be an unsatisfactory answer for your executives. I'm sorry, the best that Kim and I know, all right, of how I would say this today, right here on October 31 2025 is this cohort is the best thing I know, and the what you do with it, engaging in circle, going back and doing experiments of some kind, using the things we taught in your organization with your colleagues in the context of your work, trying to solve problems at your organization, right? And coming back and saying, Hey, I tried to do this to the back. That is going to be the best that you can do right now. Right is just figure out what problems can this solve for us. How can I get better at identifying these problems and then solving them and knowing what AI can help us with and what it really can't help us with right now? And the way you're going to learn that and share with the organization is by this cohort and then doing the work in between the sessions. I don't know anything better than
+
+Kim Snyder  3:53:59  
+that. I would just, I think Andrea made the WPT. I would just add, I think the reason we brought meet them on here is like, for that exact thing, is that we hope you will identify things that are happening, whether it's like, we want to automate retention lists. So we wanted to, like, the very simplest things that take up so much time. And in you guys will be sort of the guinea pigs to help us. Like, do that with other you make so 10, five of you may do different things, but then you can learn from each other to do some of those processes. And we know all the processes that take up all the time because we've run workforce programs and done it. But like, we're hoping you will help us think about like,
+
+Justin  3:54:37  
+how do you help? AI, and yet, your your your projects are essentially case studies, yes,
+
+Joshua Peskay  3:54:45  
+yes, you get the last word. So I wanted
+
+Speaker 3  3:54:48  
+to just end up, first of all, thank you so much for creating this community. I hope that you know, we take the most out of the next few weeks. One of the reasons that I sign off for this course is because I'm seeing, like, a pattern happening that because we work with young people, we have to find jobs for them. There is less supervisors available. So the employees, they want, the interns, but they don't have the money to pay someone to supervise, you know, participants, so they're not taking as many as in the past. And I'm trying to see, like, how can AI can create, you know, some of these, you know, internship experience, you know, we workplace challenge, you know, whatever we can create. Because, like, I noticed in the last two years, a lot of young people, they say, Well, I want to be more job because they have a second job because they are now sole provider for the family. So I'm like, what kind of remote jobs I can give you barely have, you know, work experience. You know, for me, working remote is even harder. You know, not working in person. So I'm glad that you know that these you know, it was right on time when you guys said the application.
+
+Joshua Peskay  3:55:58  
+All right. So for this week, we taught you a framework for prompting, using craft to get better at prompting. Prompting, still the best skill gives you so many different things you can do. We gave you a meta prompt right that you can use as text, or you can use the GPT that we share try making prompts to solve problems and seeing if you get better. We taught you about iterative cycles and working with people to do don't just try once and say how that didn't work, like iterate and get better. Okay? We showed you trying to think of the next thing that we did, the circle community, right? And getting into circle, coming to the office hours on Wednesday, bringing a problem trace right, identifying opportunities for things to do in your organization. So you have a lot of different things that you could go work on right, to try to practice, to try to identify opportunities in your organization, and then get yourself into circle, get yourself familiar with it, enough to be able to navigate and access the resources and get value there. So I think that's plenty of homework for all of you.
+
+Kim Snyder  3:57:09  
+There is. So we're interested section four will revisit this a little bit deeper, but just in general, about that whole thing with what are your organizations providing? In terms of AI like, some organizations don't like, don't have any policy, and don't give an actual tool or any guidance. Okay? So we kind of want to know that. So there is a like a spreadsheet that we encourage you to download and keep as an inventory of AI tools. And you may have more than one, like you may get gamma, for example. We heard about that. That's an AI tool. So you may have a few of them. It's always good to keep an inventory of these, because, you know what? They become part of your in the compass world, they become part of your method. How can I use this? What do we what we already have? We're not big on buying a bunch of tools that like for the state of buying tools
+
+Joshua Peskay  3:58:04  
+so and all I have to say is, y'all are freaking awesome, and I am so happy that we have this opportunity, and I can't wait for the next three
+
+Justin  3:58:14  
+weeks with you all. Sorry. So next week we don't have this space. I'm working on getting a space. We'll have it by early next week. You'll get the information. We'll be back in this space on
+
+Joshua Peskay  3:58:28  
+people want to come out to Queens because my apartment. Thank you. All right.
+
+Joshua Peskay  3:58:40  
+All right, thank you all have a great rest of your week.
+
+Kim Snyder  3:58:47  
+Happy Friday. Happy.
+
+Transcribed by https://otter.ai
