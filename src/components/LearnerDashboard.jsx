@@ -427,18 +427,10 @@ const LearnerDashboard = ({ setActiveView }) => {
         <div className="text-center py-8">
           <Rocket className="mx-auto mb-4" size={48} />
           <h2 className="text-3xl font-bold mb-4">Ready for Session 3?</h2>
-          <p className="text-lg mb-6 max-w-2xl mx-auto">
-            Join us on November 14 for Risk, Responsibility & Ethics where we'll tackle AI bias,
+          <p className="text-lg max-w-2xl mx-auto">
+            Join us on <strong>November 14</strong> for Risk, Responsibility & Ethics where we'll tackle AI bias,
             data privacy, and organizational policy development.
           </p>
-          <div className="flex justify-center space-x-4">
-            <button className="bg-white text-navy px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all">
-              Add to Calendar
-            </button>
-            <button className="bg-warmYellow text-navy px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
-              Invite a Colleague
-            </button>
-          </div>
         </div>
       </div>
     </div>
