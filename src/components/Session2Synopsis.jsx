@@ -527,44 +527,6 @@ const Session2Synopsis = ({ onBack }) => {
         </div>
       </div>
 
-      {/* Standout Quotes */}
-      <div className="card mb-8">
-        <h2 className="text-2xl font-bold text-navy mb-4 flex items-center">
-          <MessageSquare className="mr-2 text-warmYellow" size={28} />
-          Standout Quotes & Moments
-        </h2>
-
-        <div className="space-y-4">
-          <blockquote className="border-l-4 border-turquoise pl-4 py-2 bg-beige rounded-r">
-            <p className="text-gray-700 italic mb-2">
-              "I think you said that like somebody at some point was going to ask this... so maybe I'm the first one."
-            </p>
-            <footer className="text-sm text-gray-600">
-              - <strong>Ariana</strong>, asking the exact question Josh predicted about GPTs vs. chatbots
-            </footer>
-          </blockquote>
-
-          <blockquote className="border-l-4 border-turquoise pl-4 py-2 bg-beige rounded-r">
-            <p className="text-gray-700 italic mb-2">
-              "Describing what you're seeing on the paper is hard, because it's not like, oh, draw a head,
-              and everyone's head shape is not the same, you know what I mean?"
-            </p>
-            <footer className="text-sm text-gray-600">
-              - <strong>Participant reflection</strong> on the drawing activity, connecting to prompt engineering
-            </footer>
-          </blockquote>
-
-          <blockquote className="border-l-4 border-warmYellow pl-4 py-2 bg-beige rounded-r">
-            <p className="text-gray-700 italic mb-2">
-              "I think Notebook LM is an incredible AI product that just no one talks about."
-            </p>
-            <footer className="text-sm text-gray-600">
-              - <strong>Joshua</strong>, on Google's hidden gem
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-
       {/* Looking Ahead */}
       <div className="card bg-gradient-to-r from-turquoise to-navy text-white">
         <h2 className="text-2xl font-bold mb-4">Looking Ahead to Session 3</h2>
