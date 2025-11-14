@@ -361,9 +361,9 @@ const Session3Synopsis = ({ onBack }) => {
           </div>
 
           <div className="bg-warmYellow/20 p-4 rounded-lg border-l-4 border-warmYellow">
-            <h3 className="text-lg font-bold text-navy mb-2">The Demo: Work Rocks!</h3>
+            <h3 className="text-lg font-bold text-navy mb-2">The Demo: WorkRox!</h3>
             <p className="text-sm text-gray-700 mb-2">
-              Kim live-coded career pathway apps for the fictional "Work Rocks!" organization featuring three entry-level
+              Kim live-coded career pathway apps for the fictional "WorkRox!" organization featuring three entry-level
               positions: Geologists, Professional Yodelers, and Horticulturists.
             </p>
             <p className="text-sm text-gray-700 mb-2">
