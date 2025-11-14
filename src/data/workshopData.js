@@ -3,7 +3,7 @@
 
 export const workshopMetrics = {
   totalParticipants: 30,
-  sessionsCompleted: 2,
+  sessionsCompleted: 3,
   totalSessions: 4,
   officeHours: 'Wednesdays, 4-5 PM Eastern',
   sessions: [
@@ -24,15 +24,15 @@ export const workshopMetrics = {
     {
       number: 3,
       date: 'November 14, 2025',
-      location: 'TBD',
-      title: 'Risk, Responsibility & Ethics',
-      status: 'upcoming'
+      location: 'New York City',
+      title: 'Responsible AI Practices & Vibe Coding',
+      status: 'completed'
     },
     {
       number: 4,
       date: 'November 21, 2025',
-      location: 'TBD',
-      title: 'Organizational Readiness & Implementation',
+      location: 'Civic Hall, NYC',
+      title: 'Shark Tank: AI Project Pitches',
       status: 'upcoming'
     }
   ]
@@ -343,6 +343,183 @@ export const session2Insights = {
     'Use Notebook LM for policy documents to avoid hallucinations',
     'Review rigor should match task complexity'
   ]
+};
+
+// Session 3 Data
+export const session3Metrics = {
+  date: 'November 14, 2025',
+  location: 'New York City',
+  facilitators: ['Joshua Peskay', 'Kim Snyder'],
+  keyActivities: [
+    '$20 Auction (Moloch Trap Exercise)',
+    'Giraffe Neck Quiz (Anchoring Bias)',
+    'Circles of Control/Influence/Concern Framework',
+    'AI Trolley Problems Interactive Tool',
+    'Murder Mystery Attention Exercise',
+    'Vibe Coding Hackathon'
+  ],
+  toolsDemonstrated: [
+    'Nonprofit AI Trolley Problem',
+    'EcoAIQ (Carbon Footprint Calculator)',
+    'Bolt.new (Vibe Coding Platform)',
+    'Lovable.dev (Vibe Coding Platform)',
+    'Replit (Vibe Coding Platform)',
+    'Product Requirements Document (PRD) Generator'
+  ],
+  frameworks: [
+    'Circles of Control, Influence & Concern',
+    'The Big Three AI Risks (Accuracy, Bias, Privacy)',
+    'Green/Yellow/Red Light Application Categories',
+    '5-Slide Pitch Deck Framework',
+    'Stateless Application Design'
+  ],
+  applicationsBuilt: 11
+};
+
+export const session3Applications = [
+  {
+    id: 1,
+    name: 'Coloring App',
+    url: 'https://coloring.lovable.app',
+    platform: 'Lovable',
+    creator: 'Participant',
+    description: 'Interactive coloring application'
+  },
+  {
+    id: 2,
+    name: 'SCEP Job Seeker Screening',
+    url: 'https://scep-job-seeker-scre-hctg.bolt.host',
+    platform: 'Bolt',
+    creator: 'Participant',
+    description: 'Distinguishes employment seekers from social engagement seekers'
+  },
+  {
+    id: 3,
+    name: 'Clear Your Plan',
+    url: 'https://clear-your-plan.lovable.app',
+    platform: 'Lovable',
+    creator: 'Participant',
+    description: 'Planning and goal-setting tool'
+  },
+  {
+    id: 4,
+    name: 'Pathfinder Compass',
+    url: 'https://pathfinder-compass-32.lovable.app',
+    platform: 'Lovable',
+    creator: 'Participant',
+    description: 'Career navigation application'
+  },
+  {
+    id: 5,
+    name: 'Thought Tangle Tracker',
+    url: 'https://thought-tangle-tracker.lovable.app',
+    platform: 'Lovable',
+    creator: 'Participant',
+    description: 'Mental clarity and organization tool'
+  },
+  {
+    id: 6,
+    name: 'Alumni Job & Event Center',
+    url: 'https://alumni-job-and-event-c5yf.bolt.host',
+    platform: 'Bolt',
+    creator: 'Participant',
+    description: 'Alumni engagement and job board application'
+  },
+  {
+    id: 7,
+    name: 'Beacon Center',
+    url: 'https://beacon-center.lovable.app',
+    platform: 'Lovable',
+    creator: 'Participant',
+    description: 'Resource center application'
+  },
+  {
+    id: 8,
+    name: 'Get-a-J0b',
+    url: 'https://get-a-j0b.lovable.app',
+    platform: 'Lovable',
+    creator: 'Participant',
+    description: 'Job search assistance tool'
+  },
+  {
+    id: 9,
+    name: 'Skincare Routine Personalizer',
+    url: 'https://skincare-routine-per-djqc.bolt.host',
+    platform: 'Bolt',
+    creator: 'Ariana Baldomero',
+    description: 'Personalized skincare recommendation app with AM/PM routines',
+    featured: true
+  },
+  {
+    id: 10,
+    name: 'AI Job Sculptor',
+    url: 'https://ai-job-sculptor.lovable.app',
+    platform: 'Lovable',
+    creator: 'Participant',
+    description: 'Career path sculpting and planning tool'
+  },
+  {
+    id: 11,
+    name: 'Rox Quick Shortlist',
+    url: 'https://rox-quick-shortlist.lovable.app',
+    platform: 'Lovable',
+    creator: 'Participant',
+    description: 'Rapid candidate shortlisting application'
+  }
+];
+
+export const session3Insights = {
+  mainThemes: [
+    'Responsible AI Implementation',
+    'Cognitive Biases and AI',
+    'Ethical Decision-Making Frameworks',
+    'Data Privacy and Security',
+    'Vibe Coding and Rapid Prototyping',
+    'Stateless Application Design'
+  ],
+  cognitiveBiases: [
+    {
+      bias: 'Anchoring Bias',
+      example: 'Giraffe neck quiz - phone number influenced guesses',
+      lesson: 'Irrelevant data can unconsciously shape our estimates and AI prompts'
+    },
+    {
+      bias: 'Sunk Cost Fallacy',
+      example: '$20 auction - participants kept bidding to avoid losing invested money',
+      lesson: 'Organizations can get trapped continuing AI projects based on investment, not value'
+    },
+    {
+      bias: 'Confirmation Bias',
+      example: 'Murder mystery - only seeing what we\'re told to look for',
+      lesson: 'AI amplifies our tendency to seek information confirming existing beliefs'
+    },
+    {
+      bias: 'Availability Heuristic',
+      example: 'Discussed sharks vs cows (cows are 20x more deadly)',
+      lesson: 'We overestimate risks we hear about frequently, underestimate actual dangers'
+    }
+  ],
+  bigThreeRisks: [
+    {
+      risk: 'Accuracy (Hallucinations)',
+      severity: 'Critical',
+      inControl: true,
+      mitigation: 'Always review AI outputs; implement "you are responsible" policies'
+    },
+    {
+      risk: 'Bias (Pale-Male Data)',
+      severity: 'High',
+      inControl: true,
+      mitigation: 'Test with diverse data; question vendor training sources; follow Dr. Joy Buolamwini'
+    },
+    {
+      risk: 'Privacy (Data Training)',
+      severity: 'Critical',
+      inControl: true,
+      mitigation: 'Use enterprise accounts only; never input PII or strategic data'
+    }
+  ],
+  keyTakeaway: '11 functional applications built in one hour, demonstrating both the power and the responsibility of vibe coding. Participants learned that with these capabilities comes the obligation to build ethically, securely, and sustainably.'
 };
 
 export const chartColors = {

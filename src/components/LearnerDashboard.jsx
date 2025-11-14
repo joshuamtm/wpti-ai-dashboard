@@ -65,36 +65,48 @@ const LearnerDashboard = ({ setActiveView }) => {
     },
     {
       number: 3,
-      title: 'Risk, Responsibility & Ethics',
-      status: 'upcoming',
+      title: 'Responsible AI Practices & Vibe Coding',
+      status: 'completed',
       date: 'November 14, 2025',
       topics: [
-        'AI bias and fairness considerations',
-        'Environmental impact of AI',
-        'Participant data protection',
-        'AI detection and authenticity',
-        'Organizational policy development'
+        'Cognitive biases (Anchoring, Sunk Cost, Confirmation)',
+        'Circles of Control, Influence & Concern framework',
+        'The Big Three AI Risks (Accuracy, Bias, Privacy)',
+        'AI Trolley Problems and ethical decision-making',
+        'Vibe coding with Bolt, Lovable, and Replit',
+        'Product Requirements Documents (PRDs)',
+        'Stateless application design principles'
       ],
       keyTakeaways: [
-        'Coming after Session 3...'
+        '11 functional applications built in one hour',
+        'Focus energy on what you can control and influence',
+        'Accuracy, bias, privacy are within your control',
+        'Always review AI outputs - "you are responsible"',
+        'AI amplifies our cognitive biases',
+        'Ask AI: "What am I missing?" to counter bias',
+        'Build stateless apps only - no sensitive data storage',
+        'Free apps are like free puppies - need ongoing care'
       ],
       actionItems: [
         'Review your organization\'s AI policy',
-        'Create a "safe to use AI" decision tree',
-        'Discuss ethics with your team'
+        'Try the Nonprofit AI Trolley Problem tool',
+        'Build a simple app using the PRD prompt',
+        'Test colleagues\' applications and provide feedback',
+        'Develop a 5-slide pitch for Shark Tank (Session 4)'
       ]
     },
     {
       number: 4,
-      title: 'Organizational Readiness & Implementation',
+      title: 'Shark Tank: AI Project Pitches',
       status: 'upcoming',
       date: 'November 21, 2025',
       topics: [
-        'Building AI literacy programs',
-        'Training participants effectively',
-        'Change management strategies',
-        'Platform selection and rollout',
-        'Measuring impact and outcomes'
+        'AI project pitches (Shark Tank format)',
+        '5-slide pitch deck framework',
+        'Green/Yellow/Red light feedback from sharks',
+        'Organizational AI policy discussion',
+        'Implementation readiness assessment',
+        'Building sustainable AI programs'
       ],
       keyTakeaways: [
         'Coming after Session 4...'
@@ -224,6 +236,22 @@ const LearnerDashboard = ({ setActiveView }) => {
             <ExternalLink size={24} className="text-white/80 flex-shrink-0" />
           </div>
         </div>
+
+        {/* Session 3 Synopsis */}
+        <div className="card bg-gradient-to-r from-navy to-turquoise text-white hover:shadow-xl transition-all cursor-pointer" onClick={() => setActiveView('synopsis3')}>
+          <div className="flex items-start justify-between">
+            <div className="flex items-start">
+              <Shield className="mr-3 flex-shrink-0" size={40} />
+              <div>
+                <h2 className="text-xl font-bold mb-1">Session 3 Synopsis</h2>
+                <p className="text-sm text-turquoise-100">
+                  Ethics, cognitive biases, trolley problems & 11 vibe-coded apps
+                </p>
+              </div>
+            </div>
+            <ExternalLink size={24} className="text-turquoise-200 flex-shrink-0" />
+          </div>
+        </div>
       </div>
 
       {/* Progress Overview */}
@@ -231,15 +259,15 @@ const LearnerDashboard = ({ setActiveView }) => {
         <div className="flex items-center justify-between mb-6">
           <div>
             <h2 className="text-2xl font-bold mb-1">Overall Progress</h2>
-            <p className="text-turquoise-100">Sessions 1-2 of 4 Complete</p>
+            <p className="text-turquoise-100">Sessions 1-3 of 4 Complete</p>
           </div>
           <div className="text-right">
-            <div className="text-4xl font-bold">50%</div>
+            <div className="text-4xl font-bold">75%</div>
             <p className="text-sm text-turquoise-100">of series complete</p>
           </div>
         </div>
         <div className="w-full bg-white/20 rounded-full h-4">
-          <div className="bg-warmYellow h-4 rounded-full transition-all duration-500" style={{ width: '50%' }}></div>
+          <div className="bg-warmYellow h-4 rounded-full transition-all duration-500" style={{ width: '75%' }}></div>
         </div>
       </div>
 

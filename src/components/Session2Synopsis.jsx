@@ -544,7 +544,7 @@ const Session2Synopsis = ({ onBack }) => {
           <div className="flex items-start">
             <CheckCircle className="mr-3 mt-1 text-turquoise flex-shrink-0" size={20} />
             <p className="text-gray-700">
-              <strong>Augmentation > Automation:</strong> Most value comes from H4/H3 partnership, not full automation
+              <strong>Augmentation &gt; Automation:</strong> Most value comes from H4/H3 partnership, not full automation
             </p>
           </div>
 
