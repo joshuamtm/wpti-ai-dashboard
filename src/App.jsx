@@ -93,12 +93,13 @@ function App() {
                 <strong>Tools used:</strong> React 18, Vite, Tailwind CSS, Recharts for interactive visualizations
               </p>
               <p>
-                <strong>Data sources:</strong> Session 1 polling data (34 participants), transcript analysis,
-                Wharton AI Adoption Report (800 enterprises), MIT State of AI in Business Report (300+ implementations)
+                <strong>Data sources:</strong> Sessions 1-3 polling data and transcript analysis (34 participants),
+                11 vibe-coded applications from Session 3, Wharton AI Adoption Report (800 enterprises),
+                MIT State of AI in Business Report (300+ implementations)
               </p>
               <p>
-                <strong>Updates:</strong> This dashboard is updated after each training session with new insights,
-                progress metrics, and learner feedback.
+                <strong>Latest update:</strong> Session 3 (November 14, 2025) - Responsible AI Practices, cognitive biases,
+                AI Trolley Problems, and vibe coding hackathon results added.
               </p>
             </div>
           </div>

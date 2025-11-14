@@ -460,10 +460,13 @@ const LearnerDashboard = ({ setActiveView }) => {
       <div className="card bg-gradient-to-r from-turquoise to-navy text-white">
         <div className="text-center py-8">
           <Rocket className="mx-auto mb-4" size={48} />
-          <h2 className="text-3xl font-bold mb-4">Ready for Session 3?</h2>
-          <p className="text-lg max-w-2xl mx-auto">
-            Join us on <strong>November 14</strong> for Risk, Responsibility & Ethics where we'll tackle AI bias,
-            data privacy, and organizational policy development.
+          <h2 className="text-3xl font-bold mb-4">Ready for Session 4: Shark Tank?</h2>
+          <p className="text-lg max-w-2xl mx-auto mb-4">
+            Join us on <strong>November 21</strong> at Civic Hall for our final session! Pitch your AI projects to our panel of sharks,
+            get green/yellow/red light feedback, and discuss organizational AI policy and implementation strategies.
+          </p>
+          <p className="text-sm text-turquoise-100">
+            Bring your 5-slide pitch deck and prepare for 2 minutes of glory (and 5 minutes of tough questions)!
           </p>
         </div>
       </div>

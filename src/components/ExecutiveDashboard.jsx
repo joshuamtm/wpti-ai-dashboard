@@ -47,16 +47,24 @@ const ExecutiveDashboard = () => {
           WPTI AI Training Workshop - Executive Summary
         </h1>
         <p className="text-gray-600 text-lg">
-          Session 1: AI Basics & Workforce Disruption | {workshopMetrics.sessionDate} | {workshopMetrics.location}
+          4-Session AI Learning Lab | {workshopMetrics.totalParticipants} Participants | Sessions 1-3 Complete (75%)
         </p>
-        <div className="mt-4 flex items-center space-x-6">
+        <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="flex items-center">
-            <Users className="text-turquoise mr-2" size={20} />
-            <span className="text-sm font-medium">{workshopMetrics.totalParticipants} Participants</span>
+            <CheckCircle className="text-success mr-2" size={20} />
+            <span className="text-sm font-medium">Session 1: AI Basics</span>
           </div>
           <div className="flex items-center">
             <CheckCircle className="text-success mr-2" size={20} />
-            <span className="text-sm font-medium">Data Collected & Analyzed</span>
+            <span className="text-sm font-medium">Session 2: Prompting</span>
+          </div>
+          <div className="flex items-center">
+            <CheckCircle className="text-success mr-2" size={20} />
+            <span className="text-sm font-medium">Session 3: Ethics & Vibe Coding</span>
+          </div>
+          <div className="flex items-center">
+            <Clock className="text-gray-400 mr-2" size={20} />
+            <span className="text-sm font-medium text-gray-500">Session 4: Nov 21</span>
           </div>
         </div>
       </div>
@@ -329,7 +337,7 @@ const ExecutiveDashboard = () => {
               Download Full Report
             </button>
             <button className="bg-turquoise text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all border-2 border-white">
-              View Session 2 Plan
+              Session 4: Shark Tank (Nov 21)
             </button>
           </div>
         </div>

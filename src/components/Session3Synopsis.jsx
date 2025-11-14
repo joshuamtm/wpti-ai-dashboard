@@ -99,7 +99,15 @@ const Session3Synopsis = ({ onBack }) => {
             <h3 className="text-xl font-bold text-navy mb-2">The $20 Auction (Moloch Trap)</h3>
             <p className="text-gray-700 leading-relaxed mb-3">
               Joshua auctioned a $20 bill with a twist: the top TWO bidders both pay, but only the highest bidder gets the money.
-              The bidding escalated past $30, with participants caught in what's called a <strong>Moloch trap</strong>.
+              The bidding escalated past $30, with participants caught in what's called a{' '}
+              <a
+                href="https://www.sustainabilitybynumbers.com/p/moloch-trap"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-turquoise hover:text-navy font-bold underline"
+              >
+                Moloch trap
+              </a>.
             </p>
             <div className="bg-turquoise/10 p-4 rounded-lg border border-turquoise">
               <p className="text-sm font-semibold text-navy mb-2">Why This Matters for AI</p>

@@ -580,21 +580,23 @@ const Session2Synopsis = ({ onBack }) => {
 
       {/* Looking Ahead */}
       <div className="card bg-gradient-to-r from-turquoise to-navy text-white">
-        <h2 className="text-2xl font-bold mb-4">Looking Ahead to Session 3</h2>
-        <p className="mb-4 text-turquoise-100">
-          Session 3 (November 14, 2025) will focus on <strong>Risk, Responsibility & Ethics</strong>:
-        </p>
-        <ul className="list-disc list-inside space-y-2 text-turquoise-100 mb-4">
-          <li>AI bias and fairness considerations</li>
-          <li>Environmental impact of AI</li>
-          <li>Participant data protection</li>
-          <li>AI detection and authenticity</li>
-          <li>Organizational policy development</li>
-        </ul>
+        <h2 className="text-2xl font-bold mb-4">Sessions 3 & 4: The Journey Continues</h2>
+        <div className="mb-4">
+          <h3 className="text-xl font-bold mb-2 text-warmYellow">✅ Session 3 Complete (November 14, 2025)</h3>
+          <p className="text-sm text-turquoise-100 mb-2">
+            Responsible AI Practices, cognitive biases, AI Trolley Problems, and vibe coding—where participants built 11 applications in one hour!
+          </p>
+        </div>
         <div className="bg-white/10 p-4 rounded-lg">
-          <p className="text-sm">
-            <strong>Recommended Preparation:</strong> Review your organization's current AI policy (if any)
-            and think about ethical questions that concern you most
+          <h3 className="text-xl font-bold mb-2">→ Next Up: Session 4 Shark Tank (November 21, 2025)</h3>
+          <ul className="list-disc list-inside space-y-2 text-turquoise-100 mb-3">
+            <li>AI project pitches with 5-slide deck framework</li>
+            <li>Green/Yellow/Red light feedback from sharks</li>
+            <li>Organizational AI policy discussion</li>
+            <li>Implementation readiness assessment</li>
+          </ul>
+          <p className="text-sm font-semibold">
+            Bring your pitch deck and prepare for 2 minutes of glory!
           </p>
         </div>
       </div>
