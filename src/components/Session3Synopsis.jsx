@@ -85,13 +85,31 @@ const Session3Synopsis = ({ onBack }) => {
               Participants were asked: How many bones are in a giraffe's neck? After providing the last two digits of their phone number,
               they made guesses ranging wildly from the correct answer of <strong>7 bones</strong>.
             </p>
-            <div className="bg-beige p-4 rounded-lg">
+            <div className="bg-beige p-4 rounded-lg mb-3">
+              <p className="text-sm font-semibold text-navy mb-2">The Results: Wildly Incorrect, But Self-Aware</p>
+              <p className="text-sm text-gray-700 mb-3">
+                The estimates were <strong>spectacularly wrong</strong>—participants' guesses ranged from single digits to over 100,
+                with an average error of 48 bones. But here's the fascinating insight: the group demonstrated strong{' '}
+                <strong>meta-cognition</strong>. They weren't overconfident—participants knew they were guessing and rated their
+                confidence accordingly. This self-awareness about uncertainty is crucial when working with AI.
+              </p>
               <p className="text-sm font-semibold text-navy mb-2">The Lesson: Anchoring Bias</p>
               <p className="text-sm text-gray-700">
                 This exercise demonstrated <strong>anchoring bias</strong>—how an irrelevant number (phone digits) can unconsciously
-                influence our estimates. On average, participants were off by 48 bones, essentially random guessing. This same cognitive
-                error affects AI training data and our interactions with AI systems.
+                influence our estimates. Even knowing it was irrelevant, participants' guesses clustered around their phone number "anchors."
+                This same cognitive error affects AI training data and our interactions with AI systems.
               </p>
+            </div>
+            <div className="text-center">
+              <a
+                href="https://giraffe-dash.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-warmYellow hover:bg-navy text-navy hover:text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
+              >
+                <ExternalLink className="mr-2" size={20} />
+                View Interactive Giraffe Dashboard
+              </a>
             </div>
           </div>
 
