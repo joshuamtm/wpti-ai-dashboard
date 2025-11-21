@@ -97,24 +97,32 @@ const LearnerDashboard = ({ setActiveView }) => {
     },
     {
       number: 4,
-      title: 'Shark Tank: AI Project Pitches',
-      status: 'upcoming',
+      title: 'Forging the Future: AI Adoption Strategy Challenge',
+      status: 'completed',
       date: 'November 21, 2025',
       topics: [
-        'AI project pitches (Shark Tank format)',
-        '5-slide pitch deck framework',
-        'Green/Yellow/Red light feedback from sharks',
-        'Organizational AI policy discussion',
-        'Implementation readiness assessment',
-        'Building sustainable AI programs'
+        'Cross-organizational team strategy building',
+        'Five organizational AI adoption scenarios',
+        '90-day implementation playbooks',
+        'Immediate Actions, Policy, Training, Sustainability',
+        'Permissive with Guardrails approach',
+        'Co-creation and psychological safety'
       ],
       keyTakeaways: [
-        'Coming after Session 4...'
+        '5 organizational scenarios: Wild West, Locked Down, Patchwork Policy, Ready to Formalize, Post-Crisis',
+        'Governance is foundational - establish formal AI task forces',
+        'Start by listening - conduct surveys and appreciative inquiry',
+        'Co-creation drives adoption - involve staff in policy drafting',
+        'Aim for "permissive with guardrails" not outright bans',
+        'Sustainability requires structure - quarterly reviews and permanent governance',
+        'Build trust at human pace through psychological safety'
       ],
       actionItems: [
-        'Draft your AI adoption plan',
-        'Identify organizational champions',
-        'Create participant training materials'
+        'Identify which organizational scenario matches your reality',
+        'Form or join your organization\'s AI task force',
+        'Conduct an AI pulse check survey with staff',
+        'Draft permissive AI policies with clear guardrails',
+        'Establish quarterly policy review cadence'
       ]
     }
   ]
@@ -195,7 +203,7 @@ const LearnerDashboard = ({ setActiveView }) => {
           Your AI Learning Journey
         </h1>
         <p className="text-gray-600 text-lg mb-2">
-          WPTI AI Training Workshop | 4-Session Series | Track Your Progress
+          WPTI AI Training Workshop | 4-Session Series Complete!
         </p>
         <p className="text-turquoise font-semibold flex items-center">
           <Clock className="mr-2" size={18} />
@@ -252,6 +260,22 @@ const LearnerDashboard = ({ setActiveView }) => {
             <ExternalLink size={24} className="text-turquoise-200 flex-shrink-0" />
           </div>
         </div>
+
+        {/* Session 4 Synopsis */}
+        <div className="card bg-gradient-to-r from-warmYellow to-navy text-white hover:shadow-xl transition-all cursor-pointer" onClick={() => setActiveView('synopsis4')}>
+          <div className="flex items-start justify-between">
+            <div className="flex items-start">
+              <Target className="mr-3 flex-shrink-0" size={40} />
+              <div>
+                <h2 className="text-xl font-bold mb-1">Session 4 Synopsis</h2>
+                <p className="text-sm text-white/90">
+                  AI adoption strategies, 5 organizational scenarios & 90-day playbooks
+                </p>
+              </div>
+            </div>
+            <ExternalLink size={24} className="text-white/80 flex-shrink-0" />
+          </div>
+        </div>
       </div>
 
       {/* Progress Overview */}
@@ -259,15 +283,15 @@ const LearnerDashboard = ({ setActiveView }) => {
         <div className="flex items-center justify-between mb-6">
           <div>
             <h2 className="text-2xl font-bold mb-1">Overall Progress</h2>
-            <p className="text-turquoise-100">Sessions 1-3 of 4 Complete</p>
+            <p className="text-turquoise-100">All 4 Sessions Complete! 🎉</p>
           </div>
           <div className="text-right">
-            <div className="text-4xl font-bold">75%</div>
+            <div className="text-4xl font-bold">100%</div>
             <p className="text-sm text-turquoise-100">of series complete</p>
           </div>
         </div>
         <div className="w-full bg-white/20 rounded-full h-4">
-          <div className="bg-warmYellow h-4 rounded-full transition-all duration-500" style={{ width: '75%' }}></div>
+          <div className="bg-warmYellow h-4 rounded-full transition-all duration-500" style={{ width: '100%' }}></div>
         </div>
       </div>
 
@@ -460,14 +484,25 @@ const LearnerDashboard = ({ setActiveView }) => {
       <div className="card bg-gradient-to-r from-turquoise to-navy text-white">
         <div className="text-center py-8">
           <Rocket className="mx-auto mb-4" size={48} />
-          <h2 className="text-3xl font-bold mb-4">Ready for Session 4: Shark Tank?</h2>
+          <h2 className="text-3xl font-bold mb-4">Congratulations! Series Complete!</h2>
           <p className="text-lg max-w-2xl mx-auto mb-4">
-            Join us on <strong>November 21</strong> at Civic Hall for our final session! Pitch your AI projects to our panel of sharks,
-            get green/yellow/red light feedback, and discuss organizational AI policy and implementation strategies.
+            You've completed all 4 sessions of the WPTI AI Learning Lab. You now have the foundational knowledge,
+            practical skills, and strategic frameworks to lead AI adoption in your workforce development organization.
           </p>
-          <p className="text-sm text-turquoise-100">
-            Bring your 5-slide pitch deck and prepare for 2 minutes of glory (and 5 minutes of tough questions)!
+          <p className="text-sm text-turquoise-100 mb-4">
+            Continue practicing, join the community for ongoing support, and don't hesitate to reach out during Wednesday office hours!
           </p>
+          <div className="flex justify-center gap-4">
+            <a
+              href="https://app.circle.so/wpti-ai-learning-lab"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-warmYellow hover:bg-white text-navy px-6 py-3 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
+            >
+              <MessageSquare className="mr-2" size={18} />
+              Join Community
+            </a>
+          </div>
         </div>
       </div>
     </div>

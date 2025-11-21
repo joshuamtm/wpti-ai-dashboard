@@ -5,6 +5,7 @@ import ResearchContext from './components/ResearchContext'
 import Session1Synopsis from './components/Session1Synopsis'
 import Session2Synopsis from './components/Session2Synopsis'
 import Session3Synopsis from './components/Session3Synopsis'
+import Session4Synopsis from './components/Session4Synopsis'
 import { Users, Briefcase, Brain } from 'lucide-react'
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-4">
               <h1 className="text-xl font-bold text-white">WPTI AI Training Dashboard</h1>
-              <span className="text-turquoise text-sm font-medium">Sessions 1-3 Complete | 4-Session Series</span>
+              <span className="text-turquoise text-sm font-medium">All 4 Sessions Complete! 🎉</span>
             </div>
 
             <div className="flex space-x-2 bg-navy/50 rounded-lg p-1">
@@ -68,6 +69,7 @@ function App() {
         {activeView === 'synopsis1' && <Session1Synopsis onBack={() => setActiveView('learner')} />}
         {activeView === 'synopsis2' && <Session2Synopsis onBack={() => setActiveView('learner')} />}
         {activeView === 'synopsis3' && <Session3Synopsis onBack={() => setActiveView('learner')} />}
+        {activeView === 'synopsis4' && <Session4Synopsis onBack={() => setActiveView('learner')} />}
       </main>
 
       {/* Footer */}
@@ -93,13 +95,13 @@ function App() {
                 <strong>Tools used:</strong> React 18, Vite, Tailwind CSS, Recharts for interactive visualizations
               </p>
               <p>
-                <strong>Data sources:</strong> Sessions 1-3 polling data and transcript analysis (34 participants),
-                11 vibe-coded applications from Session 3, Wharton AI Adoption Report (800 enterprises),
+                <strong>Data sources:</strong> Sessions 1-4 polling data and transcript analysis (34 participants),
+                11 vibe-coded applications from Session 3, AI adoption playbooks from Session 4, Wharton AI Adoption Report (800 enterprises),
                 MIT State of AI in Business Report (300+ implementations)
               </p>
               <p>
-                <strong>Latest update:</strong> Session 3 (November 14, 2025) - Responsible AI Practices, cognitive biases,
-                AI Trolley Problems, and vibe coding hackathon results added.
+                <strong>Latest update:</strong> Session 4 (November 21, 2025) - "Forging the Future" AI Adoption Strategy Challenge,
+                5 organizational scenarios, 90-day playbooks, and strategic frameworks for responsible AI implementation.
               </p>
             </div>
           </div>
