@@ -3,7 +3,8 @@ import {
   Calendar, Users, Target, Lightbulb, BookOpen, Award,
   TrendingUp, MessageSquare, ArrowLeft, CheckCircle,
   Compass, Lock, Map, Building, AlertCircle, Shield,
-  Layers, Heart, User, Ear, HandHeart, RefreshCw
+  Layers, Heart, User, Ear, HandHeart, RefreshCw, Download,
+  FileText, Presentation
 } from 'lucide-react'
 
 const Session4Synopsis = ({ onBack }) => {
@@ -697,6 +698,46 @@ const Session4Synopsis = ({ onBack }) => {
               <strong>Human-Paced Change:</strong> Build trust through psychological safety, gentle pauses, and protected innovation time
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* Downloadable Resources */}
+      <div className="card mb-8 border-l-4 border-warmYellow">
+        <h2 className="text-2xl font-bold text-navy mb-4 flex items-center">
+          <Download className="mr-2 text-warmYellow" size={28} />
+          Session 4 Resources
+        </h2>
+
+        <p className="text-gray-700 mb-4">
+          Download the complete materials from today's session:
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <a
+            href="/Forging_the_Future.pdf"
+            download
+            className="flex items-center p-4 bg-gradient-to-r from-turquoise/10 to-navy/10 rounded-lg border-2 border-turquoise/30 hover:border-turquoise transition-all group"
+          >
+            <FileText className="mr-3 text-turquoise group-hover:scale-110 transition-transform" size={32} />
+            <div className="flex-1">
+              <h3 className="font-bold text-navy">Forging the Future</h3>
+              <p className="text-sm text-gray-600">Complete AI Adoption Playbooks PDF</p>
+            </div>
+            <Download className="text-turquoise" size={20} />
+          </a>
+
+          <a
+            href="/Shark_Tank_Format.pdf"
+            download
+            className="flex items-center p-4 bg-gradient-to-r from-warmYellow/10 to-navy/10 rounded-lg border-2 border-warmYellow/30 hover:border-warmYellow transition-all group"
+          >
+            <Presentation className="mr-3 text-warmYellow group-hover:scale-110 transition-transform" size={32} />
+            <div className="flex-1">
+              <h3 className="font-bold text-navy">Shark Tank Format</h3>
+              <p className="text-sm text-gray-600">Project Rating System & Guidelines</p>
+            </div>
+            <Download className="text-warmYellow" size={20} />
+          </a>
         </div>
       </div>
 
