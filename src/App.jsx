@@ -6,59 +6,91 @@ import Session1Synopsis from './components/Session1Synopsis'
 import Session2Synopsis from './components/Session2Synopsis'
 import Session3Synopsis from './components/Session3Synopsis'
 import Session4Synopsis from './components/Session4Synopsis'
-import { Users, Briefcase, Brain } from 'lucide-react'
+import { Users, Briefcase, Brain, Menu, X } from 'lucide-react'
 
 function App() {
   const [activeView, setActiveView] = useState('learner')
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const navItems = [
+    { id: 'executive', label: 'Executive View', icon: Briefcase },
+    { id: 'learner', label: 'Learner View', icon: Users },
+    { id: 'research', label: 'Research', icon: Brain },
+  ]
+
+  const handleNavClick = (viewId) => {
+    setActiveView(viewId)
+    setIsMobileMenuOpen(false)
+  }
 
   return (
     <div className="min-h-screen bg-beige">
       {/* Navigation Toggle */}
-      <div className="bg-navy text-white shadow-lg sticky top-0 z-50">
+      <div className="bg-navy text-white shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-4">
               <h1 className="text-xl font-bold text-white">WPTI AI Training Dashboard</h1>
-              <span className="text-turquoise text-sm font-medium">All 4 Sessions Complete! 🎉</span>
+              <span className="hidden md:inline text-turquoise-dark text-sm font-medium">All 4 Sessions Complete! 🎉</span>
             </div>
 
-            <div className="flex space-x-2 bg-navy/50 rounded-lg p-1">
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex space-x-8 h-full">
+              {navItems.map((item) => {
+                const Icon = item.icon
+                const isActive = activeView === item.id
+                return (
+                  <button
+                    key={item.id}
+                    onClick={() => handleNavClick(item.id)}
+                    className={`flex items-center space-x-2 px-1 h-full border-b-4 transition-all ${isActive
+                        ? 'border-turquoise text-white'
+                        : 'border-transparent text-gray-300 hover:text-white hover:border-gray-500'
+                      }`}
+                  >
+                    <Icon size={18} />
+                    <span className="font-medium">{item.label}</span>
+                  </button>
+                )
+              })}
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden">
               <button
-                onClick={() => setActiveView('executive')}
-                className={`flex items-center space-x-2 px-4 py-2 rounded-md transition-all ${
-                  activeView === 'executive'
-                    ? 'bg-turquoise text-white'
-                    : 'text-gray-300 hover:text-white'
-                }`}
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="text-gray-300 hover:text-white p-2"
               >
-                <Briefcase size={18} />
-                <span>Executive View</span>
-              </button>
-              <button
-                onClick={() => setActiveView('learner')}
-                className={`flex items-center space-x-2 px-4 py-2 rounded-md transition-all ${
-                  activeView === 'learner'
-                    ? 'bg-turquoise text-white'
-                    : 'text-gray-300 hover:text-white'
-                }`}
-              >
-                <Users size={18} />
-                <span>Learner View</span>
-              </button>
-              <button
-                onClick={() => setActiveView('research')}
-                className={`flex items-center space-x-2 px-4 py-2 rounded-md transition-all ${
-                  activeView === 'research'
-                    ? 'bg-turquoise text-white'
-                    : 'text-gray-300 hover:text-white'
-                }`}
-              >
-                <Brain size={18} />
-                <span>Research</span>
+                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
             </div>
           </div>
         </div>
+
+        {/* Mobile Navigation Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-navy border-t border-gray-700">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              {navItems.map((item) => {
+                const Icon = item.icon
+                const isActive = activeView === item.id
+                return (
+                  <button
+                    key={item.id}
+                    onClick={() => handleNavClick(item.id)}
+                    className={`flex items-center space-x-3 w-full px-3 py-3 rounded-md text-base font-medium ${isActive
+                        ? 'bg-turquoise text-white'
+                        : 'text-gray-300 hover:bg-navy-dark hover:text-white'
+                      }`}
+                  >
+                    <Icon size={20} />
+                    <span>{item.label}</span>
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Dashboard Content */}

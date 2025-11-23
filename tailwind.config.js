@@ -10,6 +10,7 @@ export default {
         // MTM Brand Colors
         navy: '#2B5F8E',        // Primary brand color
         turquoise: '#4AB5C4',   // Accent color (the "O" in moment)
+        'turquoise-dark': '#3A95A0', // Accessible text color
         warmYellow: '#F5D574',  // Complementary accent
         beige: '#F5E6D3',       // Background/neutral
 

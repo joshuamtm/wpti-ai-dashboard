@@ -8,6 +8,8 @@ import {
   TrendingUp, AlertTriangle, Users, Shield, Target,
   CheckCircle, Clock, Zap, Heart, GitBranch, Building2
 } from 'lucide-react'
+import MetricCard from './MetricCard'
+import SectionHeader from './SectionHeader'
 import {
   workshopMetrics,
   aiUsageFrequency,
@@ -71,22 +73,20 @@ const ExecutiveDashboard = () => {
 
       {/* Key Findings Grid */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-navy mb-4">Key Findings</h2>
+        <SectionHeader title="Key Findings" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {keyFindings.map((finding) => {
             const Icon = getIconComponent(finding.icon)
             return (
-              <div
+              <MetricCard
                 key={finding.id}
-                className={`card border-2 ${getImpactColor(finding.impact)} hover:shadow-xl transition-all`}
-              >
-                <div className="flex items-start justify-between mb-3">
-                  <Icon size={24} className="text-current" />
-                  <span className="text-2xl font-bold">{finding.metric}</span>
-                </div>
-                <h3 className="text-lg font-bold mb-2">{finding.title}</h3>
-                <p className="text-sm">{finding.description}</p>
-              </div>
+                title={finding.title}
+                value={finding.metric}
+                icon={Icon}
+                color="white"
+                description={finding.description}
+                className={`border-2 ${getImpactColor(finding.impact)} hover:shadow-xl transition-all`}
+              />
             )
           })}
         </div>
@@ -207,7 +207,7 @@ const ExecutiveDashboard = () => {
 
       {/* Kirkpatrick Evaluation */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-navy mb-4">Kirkpatrick Training Evaluation</h2>
+        <SectionHeader title="Kirkpatrick Training Evaluation" />
         <div className="card">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {kirkpatrickScores.map((level, index) => (
@@ -253,7 +253,7 @@ const ExecutiveDashboard = () => {
 
       {/* Theme Distribution */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-navy mb-4">Stakeholder Concern Distribution</h2>
+        <SectionHeader title="Stakeholder Concern Distribution" />
         <div className="card">
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={themeDistribution}>
@@ -272,32 +272,30 @@ const ExecutiveDashboard = () => {
 
       {/* Recommendations */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-navy mb-4">Action Plan & Recommendations</h2>
+        <SectionHeader title="Action Plan & Recommendations" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {recommendations.map((rec, index) => (
             <div
               key={index}
-              className={`card border-l-4 ${
-                rec.priority === 'URGENT'
-                  ? 'border-red-500'
-                  : rec.priority === 'HIGH'
+              className={`card border-l-4 ${rec.priority === 'URGENT'
+                ? 'border-red-500'
+                : rec.priority === 'HIGH'
                   ? 'border-orange-500'
                   : rec.priority === 'MEDIUM'
-                  ? 'border-yellow-500'
-                  : 'border-blue-500'
-              }`}
+                    ? 'border-yellow-500'
+                    : 'border-blue-500'
+                }`}
             >
               <div className="flex items-center justify-between mb-3">
                 <span
-                  className={`px-3 py-1 rounded-full text-xs font-bold ${
-                    rec.priority === 'URGENT'
-                      ? 'bg-red-100 text-red-800'
-                      : rec.priority === 'HIGH'
+                  className={`px-3 py-1 rounded-full text-xs font-bold ${rec.priority === 'URGENT'
+                    ? 'bg-red-100 text-red-800'
+                    : rec.priority === 'HIGH'
                       ? 'bg-orange-100 text-orange-800'
                       : rec.priority === 'MEDIUM'
-                      ? 'bg-yellow-100 text-yellow-800'
-                      : 'bg-blue-100 text-blue-800'
-                  }`}
+                        ? 'bg-yellow-100 text-yellow-800'
+                        : 'bg-blue-100 text-blue-800'
+                    }`}
                 >
                   {rec.priority}
                 </span>

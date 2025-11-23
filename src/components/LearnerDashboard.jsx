@@ -4,6 +4,7 @@ import {
   Users, MessageSquare, Download, ExternalLink, Shield,
   TrendingUp, Zap, Heart, Brain, Rocket, AlertCircle, Clock, FileText
 } from 'lucide-react'
+import SectionHeader from './SectionHeader'
 
 const LearnerDashboard = ({ setActiveView }) => {
   const [activeSession, setActiveSession] = useState(1)
@@ -297,7 +298,7 @@ const LearnerDashboard = ({ setActiveView }) => {
 
       {/* Learning Objectives */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-navy mb-4">Your Learning Objectives</h2>
+        <SectionHeader title="Your Learning Objectives" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {learningObjectives.map((obj, index) => {
             const Icon = obj.icon
@@ -321,17 +322,16 @@ const LearnerDashboard = ({ setActiveView }) => {
 
       {/* Session Navigation */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-navy mb-4">Sessions</h2>
+        <SectionHeader title="Sessions" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           {sessions.map((session) => (
             <button
               key={session.number}
               onClick={() => setActiveSession(session.number)}
-              className={`card text-left transition-all ${
-                activeSession === session.number
-                  ? 'border-2 border-turquoise bg-turquoise/5'
-                  : 'hover:border-turquoise/50'
-              }`}
+              className={`card text-left transition-all ${activeSession === session.number
+                ? 'border-2 border-turquoise bg-turquoise/5'
+                : 'hover:border-turquoise/50'
+                }`}
             >
               <div className="flex items-center justify-between mb-2">
                 <span className="text-2xl font-bold text-navy">Session {session.number}</span>
@@ -343,11 +343,10 @@ const LearnerDashboard = ({ setActiveView }) => {
               </div>
               <h3 className="font-bold text-sm mb-1">{session.title}</h3>
               <p className="text-xs text-gray-600">{session.date}</p>
-              <span className={`inline-block mt-2 px-2 py-1 rounded text-xs font-medium ${
-                session.status === 'completed'
-                  ? 'bg-green-100 text-green-800'
-                  : 'bg-gray-100 text-gray-600'
-              }`}>
+              <span className={`inline-block mt-2 px-2 py-1 rounded text-xs font-medium ${session.status === 'completed'
+                ? 'bg-green-100 text-green-800'
+                : 'bg-gray-100 text-gray-600'
+                }`}>
                 {session.status === 'completed' ? 'Completed' : 'Upcoming'}
               </span>
             </button>
@@ -361,11 +360,10 @@ const LearnerDashboard = ({ setActiveView }) => {
               <h3 className="text-2xl font-bold text-navy">Session {selectedSession.number}</h3>
               <p className="text-gray-600">{selectedSession.title}</p>
             </div>
-            <span className={`px-4 py-2 rounded-lg font-semibold ${
-              selectedSession.status === 'completed'
-                ? 'bg-green-100 text-green-800'
-                : 'bg-blue-100 text-blue-800'
-            }`}>
+            <span className={`px-4 py-2 rounded-lg font-semibold ${selectedSession.status === 'completed'
+              ? 'bg-green-100 text-green-800'
+              : 'bg-blue-100 text-blue-800'
+              }`}>
               {selectedSession.date}
             </span>
           </div>
@@ -425,10 +423,14 @@ const LearnerDashboard = ({ setActiveView }) => {
 
       {/* Community Insights */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-navy mb-4 flex items-center">
-          <MessageSquare className="mr-2 text-turquoise" size={28} />
-          Community Insights
-        </h2>
+        <SectionHeader
+          title={
+            <span className="flex items-center">
+              <MessageSquare className="mr-2 text-turquoise" size={28} />
+              Community Insights
+            </span>
+          }
+        />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {communityInsights.map((insight, index) => (
             <div key={index} className="card hover:shadow-lg transition-all">
@@ -455,7 +457,7 @@ const LearnerDashboard = ({ setActiveView }) => {
 
       {/* Quick Resources */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-navy mb-4">Quick Resources</h2>
+        <SectionHeader title="Quick Resources" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {quickResources.map((category, index) => (
             <div key={index} className="card">

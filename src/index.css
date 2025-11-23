@@ -14,11 +14,19 @@
 
 @layer components {
   .card {
-    @apply bg-white rounded-lg shadow-md p-6 border border-gray-200;
+    @apply bg-white rounded-lg shadow-md p-8 border border-gray-200;
   }
 
   .metric-card {
     @apply card hover:shadow-lg transition-shadow duration-200;
+  }
+
+  .font-semibold {
+    font-weight: 600;
+  }
+
+  .font-medium {
+    font-weight: 500;
   }
 
   .btn-primary {
