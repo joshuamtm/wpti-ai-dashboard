@@ -222,7 +222,7 @@ const LearnerDashboard = ({ setActiveView }) => {
               This intensive 4-week in-person training brought together 30 workforce development professionals from across New York City—career counselors, job developers, program managers, and organizational leaders—all committed to navigating the AI revolution with confidence and responsibility. Hosted by the <strong>Workforce Professionals Training Institute (WPTI)</strong> at <strong>Civic Hall, NYC and at WPTI offices</strong>, the series ran from October 31 to November 21, 2025.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Led by <strong>Joshua Peskay</strong> (Founder, Meet the Moment) and <strong>Kim Snyder</strong> (Co-facilitator), the cohort emphasized hands-on practice, ethical frameworks, and peer learning. Together, participants moved from uncertainty to mastery—building 11 functional applications, developing 90-day AI adoption strategies, and forming a community of practice committed to responsible AI implementation in workforce development.
+              Led by <strong>Joshua Peskay & Kim Snyder</strong>, co-founders of Meet the Moment (<a href="https://mtm.now" target="_blank" rel="noopener noreferrer" className="text-turquoise hover:underline">mtm.now</a>), in collaboration with <strong>Justin Collins & Andrea Vaghy</strong> of WPTI, the cohort emphasized hands-on practice, ethical frameworks, and peer learning. Together, participants moved from uncertainty to mastery—building 11 functional applications, developing 90-day AI adoption strategies, and forming a community of practice committed to responsible AI implementation in workforce development.
             </p>
           </div>
         </div>
