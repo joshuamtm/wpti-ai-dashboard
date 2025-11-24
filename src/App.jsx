@@ -1,21 +1,21 @@
 import { useState } from 'react'
-import ExecutiveDashboard from './components/ExecutiveDashboard'
 import LearnerDashboard from './components/LearnerDashboard'
 import ResearchContext from './components/ResearchContext'
+import CaseStudy from './components/CaseStudy'
 import Session1Synopsis from './components/Session1Synopsis'
 import Session2Synopsis from './components/Session2Synopsis'
 import Session3Synopsis from './components/Session3Synopsis'
 import Session4Synopsis from './components/Session4Synopsis'
-import { Users, Briefcase, Brain, Menu, X } from 'lucide-react'
+import { Users, Brain, Award, Menu, X } from 'lucide-react'
 
 function App() {
   const [activeView, setActiveView] = useState('learner')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const navItems = [
-    { id: 'executive', label: 'Executive View', icon: Briefcase },
     { id: 'learner', label: 'Learner View', icon: Users },
     { id: 'research', label: 'Research', icon: Brain },
+    { id: 'casestudy', label: 'Case Study', icon: Award },
   ]
 
   const handleNavClick = (viewId) => {
@@ -95,9 +95,9 @@ function App() {
 
       {/* Dashboard Content */}
       <main>
-        {activeView === 'executive' && <ExecutiveDashboard />}
         {activeView === 'learner' && <LearnerDashboard setActiveView={setActiveView} />}
         {activeView === 'research' && <ResearchContext />}
+        {activeView === 'casestudy' && <CaseStudy />}
         {activeView === 'synopsis1' && <Session1Synopsis onBack={() => setActiveView('learner')} />}
         {activeView === 'synopsis2' && <Session2Synopsis onBack={() => setActiveView('learner')} />}
         {activeView === 'synopsis3' && <Session3Synopsis onBack={() => setActiveView('learner')} />}

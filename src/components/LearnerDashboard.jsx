@@ -212,6 +212,22 @@ const LearnerDashboard = ({ setActiveView }) => {
         </p>
       </div>
 
+      {/* Cohort Overview */}
+      <div className="card mb-8 bg-gradient-to-r from-beige to-white border-2 border-turquoise">
+        <div className="flex items-start">
+          <Users className="text-turquoise mr-4 flex-shrink-0" size={40} />
+          <div>
+            <h2 className="text-2xl font-bold text-navy mb-3">About This Cohort</h2>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              This intensive 4-week in-person training brought together 30 workforce development professionals from across New York City—career counselors, job developers, program managers, and organizational leaders—all committed to navigating the AI revolution with confidence and responsibility. Hosted by the <strong>Workforce Professionals Training Institute (WPTI)</strong> at <strong>Civic Hall, NYC</strong>, the series ran from October 31 to November 21, 2025.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Led by <strong>Joshua Peskay</strong> (Founder, Meet the Moment) and <strong>Kim Snyder</strong> (Co-facilitator), the cohort emphasized hands-on practice, ethical frameworks, and peer learning. Together, participants moved from uncertainty to mastery—building 11 functional applications, developing 90-day AI adoption strategies, and forming a community of practice committed to responsible AI implementation in workforce development.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Session Synopsis Banners */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8">
         {/* Session 1 Synopsis */}
