@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import {
   BookOpen, CheckCircle, Circle, Award, Target, Lightbulb,
   Users, MessageSquare, Download, ExternalLink, Shield,
-  TrendingUp, Zap, Heart, Brain, Rocket, AlertCircle, Clock, FileText
+  TrendingUp, Zap, Heart, Brain, Rocket, AlertCircle, Clock, FileText, Gift, ArrowRight
 } from 'lucide-react'
 import SectionHeader from './SectionHeader'
 
 const LearnerDashboard = ({ setActiveView }) => {
+  const navigate = useNavigate()
   const [activeSession, setActiveSession] = useState(1)
 
   const sessions = [
@@ -234,6 +236,37 @@ const LearnerDashboard = ({ setActiveView }) => {
               className="rounded-lg shadow-lg border-2 border-turquoise w-full object-cover"
             />
             <p className="text-xs text-gray-600 text-center mt-2 italic">WPTI AI Training Cohort 2025</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Testimonial Banner */}
+      <div className="card mb-8 bg-gradient-to-r from-warmYellow to-turquoise border-2 border-turquoise hover:shadow-2xl transition-all">
+        <div className="flex flex-col md:flex-row items-center gap-6">
+          <div className="flex-shrink-0">
+            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
+              <Gift className="text-turquoise" size={32} />
+            </div>
+          </div>
+          <div className="flex-1 text-center md:text-left">
+            <h2 className="text-2xl font-bold text-navy mb-2">Share Your Experience + Get Early Access! 🎁</h2>
+            <p className="text-gray-800 mb-3">
+              Help other workforce professionals see what's possible with AI training. Share your testimonial and receive an exclusive discount code for the MTM AI Community Membership (launching Jan/Feb 2025).
+            </p>
+            <ul className="text-sm text-gray-700 space-y-1 mb-4">
+              <li>• <strong>Video testimonial:</strong> 50% off membership</li>
+              <li>• <strong>Written testimonial:</strong> 10% off membership</li>
+              <li>• Takes just 5 minutes (or 2-3 minutes for video)</li>
+            </ul>
+          </div>
+          <div className="flex-shrink-0">
+            <button
+              onClick={() => navigate('/testimonial')}
+              className="flex items-center px-8 py-4 bg-navy text-white rounded-lg hover:bg-opacity-90 transition-all shadow-lg font-semibold text-lg"
+            >
+              Share Your Story
+              <ArrowRight className="ml-2" size={20} />
+            </button>
           </div>
         </div>
       </div>

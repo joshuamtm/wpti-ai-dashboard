@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import LearnerDashboard from './components/LearnerDashboard'
 import ResearchContext from './components/ResearchContext'
 import CaseStudy from './components/CaseStudy'
@@ -6,9 +7,13 @@ import Session1Synopsis from './components/Session1Synopsis'
 import Session2Synopsis from './components/Session2Synopsis'
 import Session3Synopsis from './components/Session3Synopsis'
 import Session4Synopsis from './components/Session4Synopsis'
+import TestimonialForm from './components/TestimonialForm'
+import TestimonialConfirmation from './components/TestimonialConfirmation'
+import AdminTestimonials from './components/AdminTestimonials'
+import ProtectedRoute from './components/ProtectedRoute'
 import { Users, Brain, Award, Menu, X } from 'lucide-react'
 
-function App() {
+function Dashboard() {
   const [activeView, setActiveView] = useState('learner')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -159,6 +164,26 @@ function App() {
         </div>
       </footer>
     </div>
+  )
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/testimonial" element={<TestimonialForm />} />
+        <Route path="/testimonial/confirmation" element={<TestimonialConfirmation />} />
+        <Route
+          path="/admin/testimonials"
+          element={
+            <ProtectedRoute>
+              <AdminTestimonials />
+            </ProtectedRoute>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
