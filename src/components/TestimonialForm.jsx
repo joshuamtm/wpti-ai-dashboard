@@ -34,6 +34,7 @@ const TestimonialForm = () => {
     video_file: null,
     photo_file: null,
     video_url: '',
+    video_link: '',
     photo_url: '',
     has_video: false,
 
@@ -148,13 +149,15 @@ const TestimonialForm = () => {
       let videoUrl = ''
       let photoUrl = ''
 
-      // Upload video if exists
+      // Upload video if exists, or use video link
       if (formData.video_file) {
         const videoPath = `${Date.now()}_${formData.video_file.name}`
         const { data, error } = await uploadFile('testimonial-media', videoPath, formData.video_file)
         if (error) throw new Error('Video upload failed')
         videoUrl = `testimonial-media/${videoPath}`
         setUploadProgress(prev => ({ ...prev, video: 100 }))
+      } else if (formData.video_link) {
+        videoUrl = formData.video_link
       }
 
       // Upload photo if exists
@@ -524,20 +527,53 @@ Draft a testimonial that's 100-150 words, conversational and authentic—like I'
                         Remove
                       </button>
                     </div>
+                  ) : formData.video_link ? (
+                    <div className="bg-success bg-opacity-10 border border-success rounded-lg p-4">
+                      <Check className="w-6 h-6 text-success mx-auto mb-2" />
+                      <p className="text-sm font-medium text-success">Video link provided</p>
+                      <p className="text-xs text-gray-600 mt-1 break-all">{formData.video_link}</p>
+                      <button
+                        onClick={() => setFormData(prev => ({ ...prev, video_link: '', has_video: false }))}
+                        className="text-sm text-danger hover:underline mt-2"
+                      >
+                        Remove
+                      </button>
+                    </div>
                   ) : (
-                    <label className="cursor-pointer">
-                      <input
-                        type="file"
-                        accept="video/mp4,video/mov,video/webm"
-                        onChange={(e) => handleFileChange(e, 'video')}
-                        className="hidden"
-                      />
-                      <div className="inline-flex items-center px-6 py-3 bg-turquoise text-white rounded-lg hover:bg-turquoise-dark transition-colors">
-                        <Upload className="w-4 h-4 mr-2" />
-                        Choose Video File
+                    <div className="space-y-4">
+                      <label className="cursor-pointer">
+                        <input
+                          type="file"
+                          accept="video/mp4,video/mov,video/webm"
+                          onChange={(e) => handleFileChange(e, 'video')}
+                          className="hidden"
+                        />
+                        <div className="inline-flex items-center px-6 py-3 bg-turquoise text-white rounded-lg hover:bg-turquoise-dark transition-colors">
+                          <Upload className="w-4 h-4 mr-2" />
+                          Choose Video File
+                        </div>
+                        <p className="text-xs text-gray-500 mt-2">MP4, MOV, or WebM • Max 500MB</p>
+                      </label>
+
+                      <div className="text-sm text-gray-500">— or —</div>
+
+                      <div className="max-w-md mx-auto">
+                        <input
+                          type="url"
+                          placeholder="Paste video link (YouTube, Google Drive, Loom, etc.)"
+                          value={formData.video_link || ''}
+                          onChange={(e) => {
+                            const url = e.target.value
+                            setFormData(prev => ({
+                              ...prev,
+                              video_link: url,
+                              has_video: url.trim().length > 0
+                            }))
+                          }}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-turquoise focus:border-transparent text-sm"
+                        />
                       </div>
-                      <p className="text-xs text-gray-500 mt-2">MP4, MOV, or WebM • Max 500MB</p>
-                    </label>
+                    </div>
                   )}
 
                   {errors.video && <p className="text-danger text-sm mt-2">{errors.video}</p>}
