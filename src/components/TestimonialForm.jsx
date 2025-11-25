@@ -366,9 +366,25 @@ const TestimonialForm = () => {
           {currentSection === 1 && (
             <div className="space-y-6">
               <h2 className="text-2xl font-bold text-navy mb-4">Your Story</h2>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-4">
                 The best testimonials tell a quick story: where you started → what shifted → where you are now
               </p>
+
+              {/* AI Help Section */}
+              <div className="bg-turquoise bg-opacity-10 border border-turquoise rounded-lg p-4 mb-6">
+                <h3 className="text-sm font-bold text-navy mb-2">💡 Need Help Writing?</h3>
+                <p className="text-sm text-gray-700 mb-2">
+                  Feel free to use AI to help draft your responses! Here's a prompt you can use:
+                </p>
+                <div className="bg-white p-3 rounded text-xs text-gray-600 font-mono overflow-x-auto">
+                  I just completed a 4-session AI training workshop for workforce development professionals. Draft a testimonial that:
+                  <br />- Starts with my challenge: [your challenge]
+                  <br />- Describes my aha moment: [your aha moment]
+                  <br />- Explains how I'm using AI now: [your current use]
+                  <br />- Ends with a recommendation
+                  <br /><br />Keep it conversational and authentic (100-150 words).
+                </div>
+              </div>
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -454,22 +470,6 @@ const TestimonialForm = () => {
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-turquoise focus:border-transparent"
                   placeholder="Any other thoughts about your experience, the facilitation, the content, or the community"
                 />
-              </div>
-
-              {/* AI Help Section */}
-              <div className="bg-turquoise bg-opacity-10 border border-turquoise rounded-lg p-4 mt-6">
-                <h3 className="text-sm font-bold text-navy mb-2">💡 Need Help Writing?</h3>
-                <p className="text-sm text-gray-700 mb-2">
-                  Feel free to use AI to help draft your responses! Here's a prompt you can use:
-                </p>
-                <div className="bg-white p-3 rounded text-xs text-gray-600 font-mono overflow-x-auto">
-                  I just completed a 4-session AI training workshop for workforce development professionals. Draft a testimonial that:
-                  <br />- Starts with my challenge: [your challenge]
-                  <br />- Describes my aha moment: [your aha moment]
-                  <br />- Explains how I'm using AI now: [your current use]
-                  <br />- Ends with a recommendation
-                  <br /><br />Keep it conversational and authentic (100-150 words).
-                </div>
               </div>
             </div>
           )}

@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   Eye, Download, CheckCircle, Clock, FileText, Video,
-  ArrowLeft, FileSpreadsheet, Search, Filter
+  ArrowLeft, FileSpreadsheet, Search, Filter, Trash2
 } from 'lucide-react'
-import { getTestimonials, updateTestimonialStatus, supabase } from '../lib/supabaseClient'
+import { getTestimonials, updateTestimonialStatus, deleteTestimonial, supabase } from '../lib/supabaseClient'
 
 const AdminTestimonials = () => {
   const navigate = useNavigate()
@@ -34,6 +34,20 @@ const AdminTestimonials = () => {
       alert(`Status updated to: ${newStatus}`)
     } else {
       alert('Failed to update status')
+    }
+  }
+
+  const handleDelete = async (id, name) => {
+    if (!confirm(`Are you sure you want to delete the testimonial from "${name}"? This cannot be undone.`)) {
+      return
+    }
+
+    const { error } = await deleteTestimonial(id)
+    if (!error) {
+      loadTestimonials()
+      setSelectedTestimonial(null)
+    } else {
+      alert('Failed to delete testimonial')
     }
   }
 
@@ -290,6 +304,13 @@ const AdminTestimonials = () => {
                               <Download className="w-4 h-4" />
                             </button>
                           )}
+                          <button
+                            onClick={() => handleDelete(testimonial.id, testimonial.name)}
+                            className="p-2 text-danger hover:bg-danger hover:text-white rounded transition-colors"
+                            title="Delete"
+                          >
+                            <Trash2 className="w-4 h-4" />
+                          </button>
                         </div>
                       </td>
                     </tr>

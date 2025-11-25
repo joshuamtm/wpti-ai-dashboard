@@ -86,6 +86,22 @@ export const updateTestimonialStatus = async (id, status, notes = null) => {
   }
 }
 
+// Helper function to delete testimonial (admin)
+export const deleteTestimonial = async (id) => {
+  try {
+    const { error } = await supabase
+      .from('testimonials')
+      .delete()
+      .eq('id', id)
+
+    if (error) throw error
+    return { error: null }
+  } catch (error) {
+    console.error('Error deleting testimonial:', error)
+    return { error }
+  }
+}
+
 // Helper function to send email notifications via Edge Function
 export const sendTestimonialEmails = async (testimonialData) => {
   try {
