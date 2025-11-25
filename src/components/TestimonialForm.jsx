@@ -373,7 +373,7 @@ const TestimonialForm = () => {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   <AlertCircle className="inline w-4 h-4 mr-1" />
-                  What challenge or hesitation brought you to this AI training? *
+                  What challenge or hesitation brought you to this AI training?
                 </label>
                 <textarea
                   name="challenge_before"
@@ -391,7 +391,7 @@ const TestimonialForm = () => {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   <Lightbulb className="inline w-4 h-4 mr-1" />
-                  What was your biggest "aha moment" or breakthrough during the program? *
+                  What was your biggest "aha moment" or breakthrough during the program?
                 </label>
                 <textarea
                   name="aha_moment"
@@ -409,7 +409,7 @@ const TestimonialForm = () => {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   <Award className="inline w-4 h-4 mr-1" />
-                  What specific AI skill or application has been most valuable to you? *
+                  What specific AI skill or application has been most valuable to you?
                 </label>
                 <textarea
                   name="skill_gained"
