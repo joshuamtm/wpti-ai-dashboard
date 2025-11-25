@@ -12,6 +12,7 @@ const TestimonialForm = () => {
   const [currentSection, setCurrentSection] = useState(0)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [uploadProgress, setUploadProgress] = useState({ video: 0, photo: 0 })
+  const [testimonialMode, setTestimonialMode] = useState('full') // 'full' or 'sections'
   const [errors, setErrors] = useState({})
 
   // Form data state
@@ -373,6 +374,32 @@ const TestimonialForm = () => {
                 The best testimonials tell a quick story: where you started → what shifted → where you are now
               </p>
 
+              {/* Mode Toggle */}
+              <div className="flex rounded-lg border border-gray-300 overflow-hidden mb-6">
+                <button
+                  type="button"
+                  onClick={() => setTestimonialMode('full')}
+                  className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
+                    testimonialMode === 'full'
+                      ? 'bg-turquoise text-white'
+                      : 'bg-white text-gray-700 hover:bg-gray-50'
+                  }`}
+                >
+                  Paste Full Testimonial
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setTestimonialMode('sections')}
+                  className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
+                    testimonialMode === 'sections'
+                      ? 'bg-turquoise text-white'
+                      : 'bg-white text-gray-700 hover:bg-gray-50'
+                  }`}
+                >
+                  Write in Sections
+                </button>
+              </div>
+
               {/* AI Help Section */}
               <div className="bg-turquoise bg-opacity-10 border border-turquoise rounded-lg p-4 mb-6">
                 <h3 className="text-sm font-bold text-navy mb-2">💡 Need Help Writing?</h3>
@@ -405,91 +432,117 @@ Draft a testimonial that's 100-150 words, conversational and authentic—like I'
                 </div>
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  <AlertCircle className="inline w-4 h-4 mr-1" />
-                  What challenge or hesitation brought you to this AI training?
-                </label>
-                <textarea
-                  name="challenge_before"
-                  value={formData.challenge_before}
-                  onChange={handleInputChange}
-                  rows={4}
-                  className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-turquoise focus:border-transparent
-                    ${errors.challenge_before ? 'border-danger' : 'border-gray-300'}
-                  `}
-                  placeholder="What was holding you back from using AI before? What concerns did you have?"
-                />
-                {errors.challenge_before && <p className="text-danger text-sm mt-1">{errors.challenge_before}</p>}
-              </div>
+              {/* Full Testimonial Mode */}
+              {testimonialMode === 'full' && (
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <MessageSquare className="inline w-4 h-4 mr-1" />
+                    Your Testimonial *
+                  </label>
+                  <textarea
+                    name="colleague_recommendation"
+                    value={formData.colleague_recommendation}
+                    onChange={handleInputChange}
+                    rows={8}
+                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-turquoise focus:border-transparent
+                      ${errors.colleague_recommendation ? 'border-danger' : 'border-gray-300'}
+                    `}
+                    placeholder="Paste your full testimonial here (AI-generated or written yourself)"
+                  />
+                  {errors.colleague_recommendation && <p className="text-danger text-sm mt-1">{errors.colleague_recommendation}</p>}
+                </div>
+              )}
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  <Lightbulb className="inline w-4 h-4 mr-1" />
-                  What was your biggest "aha moment" or breakthrough during the program?
-                </label>
-                <textarea
-                  name="aha_moment"
-                  value={formData.aha_moment}
-                  onChange={handleInputChange}
-                  rows={4}
-                  className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-turquoise focus:border-transparent
-                    ${errors.aha_moment ? 'border-danger' : 'border-gray-300'}
-                  `}
-                  placeholder="Was there a specific session, exercise, or conversation that shifted your thinking?"
-                />
-                {errors.aha_moment && <p className="text-danger text-sm mt-1">{errors.aha_moment}</p>}
-              </div>
+              {/* Sections Mode */}
+              {testimonialMode === 'sections' && (
+                <>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      <AlertCircle className="inline w-4 h-4 mr-1" />
+                      What challenge or hesitation brought you to this AI training?
+                    </label>
+                    <textarea
+                      name="challenge_before"
+                      value={formData.challenge_before}
+                      onChange={handleInputChange}
+                      rows={4}
+                      className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-turquoise focus:border-transparent
+                        ${errors.challenge_before ? 'border-danger' : 'border-gray-300'}
+                      `}
+                      placeholder="What was holding you back from using AI before? What concerns did you have?"
+                    />
+                    {errors.challenge_before && <p className="text-danger text-sm mt-1">{errors.challenge_before}</p>}
+                  </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  <Award className="inline w-4 h-4 mr-1" />
-                  What specific AI skill or application has been most valuable to you?
-                </label>
-                <textarea
-                  name="skill_gained"
-                  value={formData.skill_gained}
-                  onChange={handleInputChange}
-                  rows={4}
-                  className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-turquoise focus:border-transparent
-                    ${errors.skill_gained ? 'border-danger' : 'border-gray-300'}
-                  `}
-                  placeholder="How are you actually using AI in your work now? Any time saved, tasks improved, or new capabilities?"
-                />
-                {errors.skill_gained && <p className="text-danger text-sm mt-1">{errors.skill_gained}</p>}
-              </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      <Lightbulb className="inline w-4 h-4 mr-1" />
+                      What was your biggest "aha moment" or breakthrough during the program?
+                    </label>
+                    <textarea
+                      name="aha_moment"
+                      value={formData.aha_moment}
+                      onChange={handleInputChange}
+                      rows={4}
+                      className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-turquoise focus:border-transparent
+                        ${errors.aha_moment ? 'border-danger' : 'border-gray-300'}
+                      `}
+                      placeholder="Was there a specific session, exercise, or conversation that shifted your thinking?"
+                    />
+                    {errors.aha_moment && <p className="text-danger text-sm mt-1">{errors.aha_moment}</p>}
+                  </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  <ThumbsUp className="inline w-4 h-4 mr-1" />
-                  What would you tell a colleague who's considering this training? *
-                </label>
-                <textarea
-                  name="colleague_recommendation"
-                  value={formData.colleague_recommendation}
-                  onChange={handleInputChange}
-                  rows={4}
-                  className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-turquoise focus:border-transparent
-                    ${errors.colleague_recommendation ? 'border-danger' : 'border-gray-300'}
-                  `}
-                  placeholder='If a fellow workforce professional asked "Is this worth it?" — what would you say?'
-                />
-                {errors.colleague_recommendation && <p className="text-danger text-sm mt-1">{errors.colleague_recommendation}</p>}
-              </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      <Award className="inline w-4 h-4 mr-1" />
+                      What specific AI skill or application has been most valuable to you?
+                    </label>
+                    <textarea
+                      name="skill_gained"
+                      value={formData.skill_gained}
+                      onChange={handleInputChange}
+                      rows={4}
+                      className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-turquoise focus:border-transparent
+                        ${errors.skill_gained ? 'border-danger' : 'border-gray-300'}
+                      `}
+                      placeholder="How are you actually using AI in your work now? Any time saved, tasks improved, or new capabilities?"
+                    />
+                    {errors.skill_gained && <p className="text-danger text-sm mt-1">{errors.skill_gained}</p>}
+                  </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Anything else you'd like to share? (Optional)
-                </label>
-                <textarea
-                  name="additional_thoughts"
-                  value={formData.additional_thoughts}
-                  onChange={handleInputChange}
-                  rows={3}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-turquoise focus:border-transparent"
-                  placeholder="Any other thoughts about your experience, the facilitation, the content, or the community"
-                />
-              </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      <ThumbsUp className="inline w-4 h-4 mr-1" />
+                      What would you tell a colleague who's considering this training? *
+                    </label>
+                    <textarea
+                      name="colleague_recommendation"
+                      value={formData.colleague_recommendation}
+                      onChange={handleInputChange}
+                      rows={4}
+                      className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-turquoise focus:border-transparent
+                        ${errors.colleague_recommendation ? 'border-danger' : 'border-gray-300'}
+                      `}
+                      placeholder='If a fellow workforce professional asked "Is this worth it?" — what would you say?'
+                    />
+                    {errors.colleague_recommendation && <p className="text-danger text-sm mt-1">{errors.colleague_recommendation}</p>}
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Anything else you'd like to share? (Optional)
+                    </label>
+                    <textarea
+                      name="additional_thoughts"
+                      value={formData.additional_thoughts}
+                      onChange={handleInputChange}
+                      rows={3}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-turquoise focus:border-transparent"
+                      placeholder="Any other thoughts about your experience, the facilitation, the content, or the community"
+                    />
+                  </div>
+                </>
+              )}
             </div>
           )}
 
