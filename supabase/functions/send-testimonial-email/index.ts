@@ -49,7 +49,7 @@ ${testimonial.additional_thoughts ? `**Additional Thoughts:**\n${testimonial.add
 
     // Email to the submitter
     const submitterEmail = {
-      from: 'WPTI AI Training <onboarding@resend.dev>',
+      from: 'WPTI AI Training <info@mtm.now>',
       to: [testimonial.email],
       subject: `Thank you for your WPTI testimonial! Here's your ${discountAmount} discount`,
       html: `
@@ -91,7 +91,7 @@ ${testimonial.additional_thoughts ? `**Additional Thoughts:**\n${testimonial.add
 
     // Email to admin (Joshua)
     const adminEmail = {
-      from: 'WPTI Testimonials <onboarding@resend.dev>',
+      from: 'WPTI Testimonials <info@mtm.now>',
       to: ['joshua@mtm.now'],
       subject: `🎉 New WPTI Testimonial from ${testimonial.name}${testimonial.has_video ? ' (VIDEO)' : ''}`,
       html: `
