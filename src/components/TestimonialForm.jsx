@@ -81,11 +81,11 @@ const TestimonialForm = () => {
     if (!file) return
 
     // Validate file size
-    const maxSize = type === 'video' ? 100 * 1024 * 1024 : 5 * 1024 * 1024 // 100MB for video, 5MB for photo
+    const maxSize = type === 'video' ? 500 * 1024 * 1024 : 5 * 1024 * 1024 // 500MB for video, 5MB for photo
     if (file.size > maxSize) {
       setErrors(prev => ({
         ...prev,
-        [type]: `File too large. Max size: ${type === 'video' ? '100MB' : '5MB'}`
+        [type]: `File too large. Max size: ${type === 'video' ? '500MB' : '5MB'}`
       }))
       return
     }
@@ -536,7 +536,7 @@ Draft a testimonial that's 100-150 words, conversational and authentic—like I'
                         <Upload className="w-4 h-4 mr-2" />
                         Choose Video File
                       </div>
-                      <p className="text-xs text-gray-500 mt-2">MP4, MOV, or WebM • Max 100MB</p>
+                      <p className="text-xs text-gray-500 mt-2">MP4, MOV, or WebM • Max 500MB</p>
                     </label>
                   )}
 
