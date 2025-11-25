@@ -5,7 +5,7 @@ import {
   Lightbulb, Award, ThumbsUp, Video, Image as ImageIcon,
   Upload, Check, AlertCircle, ChevronRight, ChevronLeft
 } from 'lucide-react'
-import { supabase, uploadFile, submitTestimonial } from '../lib/supabaseClient'
+import { supabase, uploadFile, submitTestimonial, sendTestimonialEmails } from '../lib/supabaseClient'
 
 const TestimonialForm = () => {
   const navigate = useNavigate()
@@ -110,11 +110,8 @@ const TestimonialForm = () => {
         else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = 'Email is invalid'
         break
 
-      case 1: // Story Content
-        if (!formData.challenge_before.trim()) newErrors.challenge_before = 'This field is required'
-        if (!formData.aha_moment.trim()) newErrors.aha_moment = 'This field is required'
-        if (!formData.skill_gained.trim()) newErrors.skill_gained = 'This field is required'
-        if (!formData.colleague_recommendation.trim()) newErrors.colleague_recommendation = 'This field is required'
+      case 1: // Story Content - only require one field minimum
+        if (!formData.colleague_recommendation.trim()) newErrors.colleague_recommendation = 'Please share at least your recommendation'
         break
 
       case 2: // Media (optional)
@@ -176,9 +173,9 @@ const TestimonialForm = () => {
         organization: formData.organization,
         email: formData.email,
         phone: formData.phone || null,
-        challenge_before: formData.challenge_before,
-        aha_moment: formData.aha_moment,
-        skill_gained: formData.skill_gained,
+        challenge_before: formData.challenge_before || null,
+        aha_moment: formData.aha_moment || null,
+        skill_gained: formData.skill_gained || null,
         colleague_recommendation: formData.colleague_recommendation,
         additional_thoughts: formData.additional_thoughts || null,
         video_url: videoUrl || null,
@@ -195,6 +192,12 @@ const TestimonialForm = () => {
       const { data, error } = await submitTestimonial(testimonialData)
       if (error) throw error
 
+      // Send email notifications (non-blocking)
+      sendTestimonialEmails({
+        ...testimonialData,
+        id: data[0]?.id
+      })
+
       // Clear localStorage
       localStorage.removeItem('wpti_testimonial_draft')
 
@@ -208,7 +211,7 @@ const TestimonialForm = () => {
 
     } catch (error) {
       console.error('Error submitting testimonial:', error)
-      setErrors({ submit: 'Failed to submit testimonial. Please try again or email it to joshua@meetthemoment.org' })
+      setErrors({ submit: 'Failed to submit testimonial. Please try again or email it to joshua@mtm.now' })
       setIsSubmitting(false)
     }
   }
@@ -585,7 +588,7 @@ const TestimonialForm = () => {
 
               <div className="bg-warmYellow bg-opacity-20 border border-warmYellow rounded-lg p-4">
                 <p className="text-sm text-gray-700">
-                  <strong>No camera handy?</strong> You can also email your video separately to joshua@meetthemoment.org
+                  <strong>No camera handy?</strong> You can also email your video separately to joshua@mtm.now
                 </p>
               </div>
             </div>
@@ -635,7 +638,7 @@ const TestimonialForm = () => {
                     className="mt-1 mr-3"
                   />
                   <div className="text-sm">
-                    <span className="font-medium text-gray-900">I grant permission</span> for my testimonial to be used by WPTI (Workforce Professionals Training Institute) and Meet the Moment in marketing materials, websites, social media, presentations, case studies, and promotional content. I understand I can request removal at any time by emailing joshua@meetthemoment.org.
+                    <span className="font-medium text-gray-900">I grant permission</span> for my testimonial to be used by WPTI (Workforce Professionals Training Institute) and Meet the Moment in marketing materials, websites, social media, presentations, case studies, and promotional content. I understand I can request removal at any time by emailing joshua@mtm.now.
                   </div>
                 </label>
                 {errors.permission_granted && <p className="text-danger text-sm mt-2">{errors.permission_granted}</p>}

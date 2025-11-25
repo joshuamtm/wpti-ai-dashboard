@@ -102,7 +102,7 @@ const ProtectedRoute = ({ children }) => {
 
           <div className="mt-8 pt-6 border-t border-gray-200">
             <p className="text-xs text-gray-500 text-center">
-              If you don't have the admin password, contact Joshua at joshua@meetthemoment.org
+              If you don't have the admin password, contact Joshua at joshua@mtm.now
             </p>
           </div>
         </div>

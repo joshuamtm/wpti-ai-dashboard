@@ -115,10 +115,10 @@ const TestimonialConfirmation = () => {
             If you have any questions, want to update your testimonial, or need assistance with your discount code:
           </p>
           <a
-            href="mailto:joshua@meetthemoment.org"
+            href="mailto:joshua@mtm.now"
             className="text-turquoise hover:underline font-medium text-sm"
           >
-            joshua@meetthemoment.org
+            joshua@mtm.now
           </a>
         </div>
 

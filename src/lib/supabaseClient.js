@@ -85,3 +85,28 @@ export const updateTestimonialStatus = async (id, status, notes = null) => {
     return { data: null, error }
   }
 }
+
+// Helper function to send email notifications via Edge Function
+export const sendTestimonialEmails = async (testimonialData) => {
+  try {
+    const response = await fetch(`${supabaseUrl}/functions/v1/send-testimonial-email`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${supabaseAnonKey}`
+      },
+      body: JSON.stringify(testimonialData)
+    })
+
+    if (!response.ok) {
+      console.error('Email notification failed:', await response.text())
+      // Don't throw - email failure shouldn't block submission
+    }
+
+    return { success: true }
+  } catch (error) {
+    console.error('Error sending email notification:', error)
+    // Don't throw - email failure shouldn't block submission
+    return { success: false, error }
+  }
+}
