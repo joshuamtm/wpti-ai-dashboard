@@ -374,15 +374,31 @@ const TestimonialForm = () => {
               <div className="bg-turquoise bg-opacity-10 border border-turquoise rounded-lg p-4 mb-6">
                 <h3 className="text-sm font-bold text-navy mb-2">💡 Need Help Writing?</h3>
                 <p className="text-sm text-gray-700 mb-2">
-                  Feel free to use AI to help draft your responses! Here's a prompt you can use:
+                  Copy this prompt into ChatGPT or Claude, fill in your answers, and paste the result below:
                 </p>
-                <div className="bg-white p-3 rounded text-xs text-gray-600 font-mono overflow-x-auto">
-                  I just completed a 4-session AI training workshop for workforce development professionals. Draft a testimonial that:
-                  <br />- Starts with my challenge: [your challenge]
-                  <br />- Describes my aha moment: [your aha moment]
-                  <br />- Explains how I'm using AI now: [your current use]
-                  <br />- Ends with a recommendation
-                  <br /><br />Keep it conversational and authentic (100-150 words).
+                <div className="bg-white p-3 rounded text-xs text-gray-600 font-mono overflow-x-auto whitespace-pre-line">
+{`AI Training Workshop Testimonial Generator
+I completed a 4-session AI training workshop for workforce development professionals. Using my answers below, write a testimonial for me.
+
+My answers:
+
+What challenge or hesitation brought you to this AI training?
+[your answer]
+
+What was your biggest "aha moment" or breakthrough during the program?
+[your answer]
+
+What specific AI skill or application has been most valuable to you?
+[your answer]
+
+What would you tell a colleague who's considering this training?
+[your answer]
+
+Anything else you'd like to share? (Optional)
+[your answer]
+
+Instructions:
+Draft a testimonial that's 100-150 words, conversational and authentic—like I'm talking to a colleague, not writing ad copy. Structure it as a quick story: where I started → what shifted → where I am now → my recommendation. Weave in my actual words and specific details where possible.`}
                 </div>
               </div>
 
