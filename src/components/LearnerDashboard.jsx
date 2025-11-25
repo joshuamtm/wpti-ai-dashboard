@@ -256,7 +256,7 @@ const LearnerDashboard = ({ setActiveView }) => {
             <ul className="text-sm text-gray-700 space-y-1 mb-4">
               <li>• <strong>Video testimonial:</strong> 50% off membership</li>
               <li>• <strong>Written testimonial:</strong> 10% off membership</li>
-              <li>• Takes just 5 minutes (or 2-3 minutes for video)</li>
+              <li>• Takes just 5 minutes</li>
             </ul>
           </div>
           <div className="flex-shrink-0">
