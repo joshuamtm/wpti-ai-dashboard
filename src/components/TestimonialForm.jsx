@@ -38,7 +38,7 @@ const TestimonialForm = () => {
     has_video: false,
 
     // Section 4: Attribution & Permission
-    attribution_level: 'full',
+    attribution_level: 'first_title',
     photo_permission: 'none',
     permission_granted: false
   })
